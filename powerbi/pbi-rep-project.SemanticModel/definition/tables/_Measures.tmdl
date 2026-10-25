@@ -609,7 +609,7 @@ table _Measures
 			        CurrentDate <= LastActualDate,
 			        [ERP Regnskap],
 			        BLANK ()
-			    ) 
+			    )
 		displayFolder: 08 Forecast & Prediction\Series
 		lineageTag: 7bc0e966-3cb5-489f-a8cc-1b4bc2f65b09
 
@@ -1116,26 +1116,22 @@ table _Measures
 		displayFolder: 09 Balance & Action\Current
 		lineageTag: 61985ddc-b0b5-4402-afcf-918d6d41bd4d
 
-	measure 'ERP Resterende Ramme' =
-			[ERP Årsbudsjett] - [ERP Actual YTD To Latest]
+	measure 'ERP Resterende Ramme' = [ERP Årsbudsjett] - [ERP Actual YTD To Latest]
 		formatString: #,##0.00;-#,##0.00
 		displayFolder: 09 Balance & Action\Current
 		lineageTag: 6136ddd7-9f45-4917-936e-4785907cf715
 
-	measure 'ERP Forecast EOY Avvik' =
-			[ERP Årsbudsjett] - [ERP Forecast EOY]
+	measure 'ERP Forecast EOY Avvik' = [ERP Årsbudsjett] - [ERP Forecast EOY]
 		formatString: #,##0.00;-#,##0.00
 		displayFolder: 08 Forecast & Prediction\EOY
 		lineageTag: 076b8fa1-7ce5-4b73-95d4-ee70765aa996
 
-	measure 'ERP Forecast EOY Avvik %' =
-			DIVIDE ( [ERP Forecast EOY Avvik], ABS ( [ERP Årsbudsjett] ) )
+	measure 'ERP Forecast EOY Avvik %' = DIVIDE ( [ERP Forecast EOY Avvik], ABS ( [ERP Årsbudsjett] ) )
 		formatString: 0.0%;-0.0%
 		displayFolder: 08 Forecast & Prediction\EOY
 		lineageTag: 2c86709f-7618-43a6-9d22-c2f74b556c36
 
-	measure 'ERP Total Tiltaksbehov' =
-			[ERP Månedlig Tiltaksbehov] * [ERP Måneder Igjen]
+	measure 'ERP Total Tiltaksbehov' = [ERP Månedlig Tiltaksbehov] * [ERP Måneder Igjen]
 		formatString: #,##0.00
 		displayFolder: 09 Balance & Action\Current
 		lineageTag: 5fa99d8a-aaa6-48ff-ab66-8582c3529c4e
@@ -1171,8 +1167,7 @@ table _Measures
 		displayFolder: 10 Cost Drivers\Ranking
 		lineageTag: c324316b-3e88-4d28-b2df-d10e551e7796
 
-	measure 'ERP Negativ Driver Andel %' =
-			DIVIDE ( [ERP Negativ Kostnadsdriver], [ERP Total Negativ Kostnadsdriver] )
+	measure 'ERP Negativ Driver Andel %' = DIVIDE ( [ERP Negativ Kostnadsdriver], [ERP Total Negativ Kostnadsdriver] )
 		formatString: 0.0%
 		displayFolder: 10 Cost Drivers\Contribution
 		lineageTag: 165eaee6-83ea-4502-8e1b-35b9f7a8f4c0
@@ -1194,32 +1189,27 @@ table _Measures
 		displayFolder: 10 Cost Drivers\Pareto
 		lineageTag: 317b8cc8-0bb5-4d9d-a6e5-ee180cad54f5
 
-	measure 'ERP Pareto Kumulativ %' =
-			DIVIDE ( [ERP Pareto Kumulativ Driver], [ERP Total Negativ Kostnadsdriver] )
+	measure 'ERP Pareto Kumulativ %' = DIVIDE ( [ERP Pareto Kumulativ Driver], [ERP Total Negativ Kostnadsdriver] )
 		formatString: 0.0%
 		displayFolder: 10 Cost Drivers\Pareto
 		lineageTag: 53ee3b1c-9c4f-49dd-a18a-852f7be26ece
 
-	measure 'ERP Pareto 80 %' =
-			0.8
+	measure 'ERP Pareto 80 %' = 0.8
 		formatString: 0%
 		displayFolder: 10 Cost Drivers\Pareto
 		lineageTag: 6c96649e-c65e-4f92-a6b7-13e26d3d2ad7
 
-	measure 'ERP Driver Tiltaksbehov Måned' =
-			[ERP Månedlig Tiltaksbehov] * [ERP Negativ Driver Andel %]
+	measure 'ERP Driver Tiltaksbehov Måned' = [ERP Månedlig Tiltaksbehov] * [ERP Negativ Driver Andel %]
 		formatString: #,##0.00
 		displayFolder: 10 Cost Drivers\Action
 		lineageTag: 569486c5-937b-49c4-89df-93ae3067e9c8
 
-	measure 'ERP Driver Tiltaksbehov Restår' =
-			[ERP Driver Tiltaksbehov Måned] * [ERP Måneder Igjen]
+	measure 'ERP Driver Tiltaksbehov Restår' = [ERP Driver Tiltaksbehov Måned] * [ERP Måneder Igjen]
 		formatString: #,##0.00
 		displayFolder: 10 Cost Drivers\Action
 		lineageTag: 73a905a8-cf61-4ee3-9bb0-3bc7ec219ae9
 
-	measure 'ERP Driver Tiltaksgrad %' =
-			DIVIDE ( [ERP Driver Tiltaksbehov Restår], [ERP Negativ Kostnadsdriver] )
+	measure 'ERP Driver Tiltaksgrad %' = DIVIDE ( [ERP Driver Tiltaksbehov Restår], [ERP Negativ Kostnadsdriver] )
 		formatString: 0.0%
 		displayFolder: 10 Cost Drivers\Action
 		lineageTag: c35b8d1b-19c9-47d4-b099-6beb868bd263
@@ -1275,8 +1265,7 @@ table _Measures
 		displayFolder: 13 RAG\Forecast
 		lineageTag: f666e001-d8e3-44d6-b3ad-292d16a4f490
 
-	measure 'ERP Forecast EOY Color' =
-			SWITCH ( [ERP Forecast EOY RAG], "GREEN", "#107C10", "YELLOW", "#FFB900", "RED", "#D13438", "#A19F9D" )
+	measure 'ERP Forecast EOY Color' = SWITCH ( [ERP Forecast EOY RAG], "GREEN", "#107C10", "YELLOW", "#FFB900", "RED", "#D13438", "#A19F9D" )
 		displayFolder: 14 Conditional Formatting\Colors
 		lineageTag: fa61953d-fa7d-431b-abe5-53378a808010
 
