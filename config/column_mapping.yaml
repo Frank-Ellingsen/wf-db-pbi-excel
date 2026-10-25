@@ -1,0 +1,324 @@
+# ============================================================
+# WF1 - COLUMN MAPPING
+# Version: 2.0
+#
+# Purpose:
+# Maps source-specific column names to canonical WF1 names.
+#
+# dataset_contracts.yaml:
+#     Defines WHAT each dataset must contain.
+#
+# column_mapping.yaml:
+#     Defines HOW source columns are translated into
+#     canonical column names.
+#
+# IMPORTANT:
+# Derived metrics such as variance and overspend must not
+# become authoritative source fields.
+# ============================================================
+
+version: '2.0'
+
+# ============================================================
+# DATASET IDENTIFICATION
+# ============================================================
+
+datasets:
+  # ==========================================================
+  # 1. ERP FINANCE
+  #
+  # Example:
+  # BoMiljø_ERP_Manuel_Export.csv
+  # ==========================================================
+
+  erp_finance:
+    file_patterns:
+      - '*ERP*Export*.csv'
+      - '*ERP*Manuel*.csv'
+
+    dataset_type: fact
+
+    column_mapping:
+      'Periode':
+        canonical: period
+
+      'Måned':
+        canonical: month
+
+      'Måned_Nr':
+        canonical: month_number
+
+      'Tertial':
+        canonical: tertial
+
+      'Status':
+        canonical: status
+
+      'Lokasjon':
+        canonical: location
+
+      'KOSTRA_Funksjon':
+        canonical: kostra_function_id
+
+      'Tjenesteområde':
+        canonical: service_area
+
+      'Hovedgruppe':
+        canonical: main_group
+
+      'Undergruppe':
+        canonical: sub_group
+
+      'KOSTRA_Art':
+        canonical: kostra_art
+
+      'Kontokode':
+        canonical: account_code
+
+      'Kontonavn':
+        canonical: account_name
+
+      'Budsjett':
+        canonical: budget
+
+      'Regnskap':
+        canonical: actual
+
+    drop_columns:
+      'Avvik':
+        reason: >
+          Derived metric. WF1 calculates variance as
+          budget - actual.
+
+      'Merforbruk':
+        reason: >
+          Derived metric. WF1 calculates overspend as
+          actual - budget.
+
+  # ==========================================================
+  # 2. FRAMSIKT FINANCE
+  #
+  # Example:
+  # Komskole_Framsikt_Export.csv
+  # ==========================================================
+
+  framsikt_finance:
+    file_patterns:
+      - '*Framsikt*Export*.csv'
+
+    dataset_type: fact
+
+    column_mapping:
+      'Periode (year to date)':
+        canonical: period
+
+      'Lokasjon':
+        canonical: location
+
+      # ------------------------------------------------------
+      # TEMPORARY SEMANTIC MAPPING
+      #
+      # Current source values include:
+      # 202, 203, 204...
+      #
+      # Keep this mapping under review until the source
+      # definition of "Art" has been confirmed.
+      # ------------------------------------------------------
+
+      'Art':
+        canonical: kostra_function_id
+        review_required: true
+
+      'Ansvar/Enhet':
+        canonical: organizational_unit
+
+      'Kontotype':
+        canonical: account_type
+
+      'Post':
+        canonical: account_name
+
+      'Regnskap hiå.':
+        canonical: actual_ytd
+
+      'Budsjett hiå.':
+        canonical: budget_ytd
+
+      'Årsbudsjett':
+        canonical: annual_budget
+
+      'Regnskap i fjor':
+        canonical: actual_prior_year
+
+      'Kontoklasse':
+        canonical: account_class
+
+      'Øk. Klasse':
+        canonical: economic_class
+
+    drop_columns:
+      'Avvik i kr':
+        reason: >
+          Derived metric. WF1 calculates variance_ytd as
+          budget_ytd - actual_ytd.
+
+      'Avvik i prosent':
+        reason: >
+          Derived metric. WF1 calculates variance_ytd_pct
+          from canonical values.
+
+  # ==========================================================
+  # 3. KOSTRA FUNCTION DIMENSION
+  #
+  # Example:
+  # dim_kostra_funksjon_framsikt.csv
+  # ==========================================================
+
+  kostra_function:
+    file_patterns:
+      - 'dim_kostra_funksjon*.csv'
+
+    dataset_type: dimension
+
+    column_mapping:
+      'Hovedfunksjon_Kode':
+        canonical: main_function_code
+
+      'Hovedfunksjon_Navn':
+        canonical: main_function_name
+
+      'Hovedfunksjon_Nøkkel':
+        canonical: main_function_key
+
+      'Framsikt_Tjenesteområde_Kode':
+        canonical: service_area_code
+
+      'Framsikt_Tjenesteområde_Navn':
+        canonical: service_area_name
+
+      'KOSTRA_Funksjonsgruppe_Kode':
+        canonical: function_group_code
+
+      'KOSTRA_Funksjonsgruppe_Navn':
+        canonical: function_group_name
+
+      'KOSTRA_Funksjon_ID':
+        canonical: kostra_function_id
+
+      'KOSTRA_Funksjon_Navn':
+        canonical: kostra_function_name
+
+      'Funksjon_Nøkkel':
+        canonical: function_key
+
+      'Beskrivelse_Regnskapsregel':
+        canonical: accounting_rule_description
+
+      'Aktiv':
+        canonical: active
+
+    drop_columns: {}
+
+  # ==========================================================
+  # 4. KOSTRA ACCOUNT DIMENSION
+  #
+  # Example:
+  # dim_kostra_kontoplan_framsikt.csv
+  # ==========================================================
+
+  kostra_account:
+    file_patterns:
+      - 'dim_kostra_kontoplan*.csv'
+
+    dataset_type: dimension
+
+    column_mapping:
+      'Kontoklasse_ID':
+        canonical: account_class_id
+
+      'Kontoklasse_Navn':
+        canonical: account_class_name
+
+      'Framsikt_Hovedkategori_Kode':
+        canonical: main_category_code
+
+      'Framsikt_Hovedkategori_Navn':
+        canonical: main_category_name
+
+      'Framsikt_Hovedgruppe_Kode':
+        canonical: main_group_code
+
+      'Framsikt_Hovedgruppe_Navn':
+        canonical: main_group_name
+
+      'KOSTRA_Art_3Siffer':
+        canonical: kostra_art_3digit
+
+      'KOSTRA_Art_Navn':
+        canonical: kostra_art_name
+
+      'KOSTRA_Art_4Siffer':
+        canonical: kostra_art_4digit
+
+      'Kontokode_6Siffer':
+        canonical: account_code
+
+      'Kontonavn':
+        canonical: account_name
+
+      'Konto_Nokkel':
+        canonical: account_key
+
+      'Beskrivelse_Regnskapsregel':
+        canonical: accounting_rule_description
+
+      'Aktiv':
+        canonical: active
+
+    drop_columns: {}
+
+  # ==========================================================
+  # 5. BUDGET ORGANIZATION DIMENSION
+  #
+  # Example:
+  # Kristiansand_Kommune_Omrade_og_Ansvarsstruktur.csv
+  # ==========================================================
+
+  budget_organization:
+    file_patterns:
+      - 'Kristiansand_Kommune_Omrade_og_Ansvarsstruktur*.csv'
+
+    dataset_type: dimension
+
+    column_mapping:
+      'Niva_1_Kode':
+        canonical: budget_level_1_code
+
+      'Niva_1_Navn':
+        canonical: budget_level_1_name
+
+      'Omrade_Kode':
+        canonical: budget_level_2_code
+
+      'Omrade_Navn':
+        canonical: budget_level_2_name
+
+      'Ansvarsnummer_Serie':
+        canonical: responsibility_number_range
+
+      'Eksempel_Ansvarsnummer':
+        canonical: example_responsibility_number
+
+      'Eksempel_Enhet':
+        canonical: example_unit
+
+      'KOSTRA_Funksjoner':
+        canonical: kostra_functions
+
+      'Politisk_Bindende_Niva':
+        canonical: politically_binding_level
+
+      'Beskrivelse':
+        canonical: description
+
+    drop_columns: {}

@@ -1,0 +1,112 @@
+table dim_kostra_function
+	lineageTag: f636dda4-6620-49a2-8fa1-b09046d6ac07
+
+	column kostra_function_id
+		dataType: string
+		lineageTag: b037bdf7-dff2-4134-b6aa-dc9a7ca73d0f
+		summarizeBy: none
+		sourceColumn: kostra_function_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_function_name
+		dataType: string
+		lineageTag: 276242a5-5fb9-4550-a5d5-6377017c94fb
+		summarizeBy: none
+		sourceColumn: kostra_function_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column function_key
+		dataType: string
+		lineageTag: e7b19d46-f67f-45b5-853d-003f7ff77755
+		summarizeBy: none
+		sourceColumn: function_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column active
+		dataType: string
+		lineageTag: 9a3beda8-bc82-484b-b07b-a44182a7271e
+		summarizeBy: none
+		sourceColumn: active
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_function_code
+		dataType: string
+		lineageTag: e161b6e0-e839-4aa8-88d3-2e774f9504c4
+		summarizeBy: none
+		sourceColumn: main_function_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_function_name
+		dataType: string
+		lineageTag: c3f8cdbc-a7b2-4847-95a6-c36871e1fce9
+		summarizeBy: none
+		sourceColumn: main_function_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_function_key
+		dataType: string
+		lineageTag: 0aa64b5e-e18a-4ed4-92de-e1547f793b5f
+		summarizeBy: none
+		sourceColumn: main_function_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_area_code
+		dataType: string
+		lineageTag: 088f0db4-34c3-40b6-bc65-fdba682966f1
+		summarizeBy: none
+		sourceColumn: service_area_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_area_name
+		dataType: string
+		lineageTag: ca3248e1-04fd-42f2-a3a0-00d0f2235043
+		summarizeBy: none
+		sourceColumn: service_area_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column function_group_code
+		dataType: string
+		lineageTag: 6f666d24-515e-4cba-af1f-bd6939adcbf6
+		summarizeBy: none
+		sourceColumn: function_group_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column function_group_name
+		dataType: string
+		lineageTag: d2065ed2-af13-4203-ad8c-65e3b587cdfe
+		summarizeBy: none
+		sourceColumn: function_group_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column accounting_rule_description
+		dataType: string
+		lineageTag: e5a28b02-dbb2-423c-a2fb-8ddd82884fe7
+		summarizeBy: none
+		sourceColumn: accounting_rule_description
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_kostra_function = m
+		mode: import
+		source =
+				let
+				    Source = Odbc.DataSource("access_mode=read_only;dsn=DuckDB_pbi", [HierarchicalNavigation=true]),
+				    project_finance_powerbi_Database = Source{[Name="project_finance_powerbi",Kind="Database"]}[Data],
+				    gold_Schema = project_finance_powerbi_Database{[Name="gold",Kind="Schema"]}[Data],
+				    dim_kostra_function_Table = gold_Schema{[Name="dim_kostra_function",Kind="Table"]}[Data]
+				in
+				    dim_kostra_function_Table
+
+	annotation PBI_ResultType = Table
+

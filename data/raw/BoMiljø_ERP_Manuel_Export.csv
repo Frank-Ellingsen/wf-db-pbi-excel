@@ -1,0 +1,1057 @@
+﻿Periode,Måned,Måned_Nr,Tertial,Status,Lokasjon,KOSTRA_Funksjon,Tjenesteområde,Hovedgruppe,Undergruppe,KOSTRA_Art,Kontokode,Kontonavn,Budsjett,Regnskap,Avvik,Merforbruk
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,821676.0,659882.34,161793.66,-161793.66
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,821676.0,956490.83,-134814.83,134814.83
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,821676.0,923021.33,-101345.33,101345.33
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,821676.0,804796.85,16879.15,-16879.15
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,857162.0,920235.95,-63073.95,63073.95
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,-126322.0,111858.5,-238180.5,238180.5
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,857144.0,953189.12,-96045.12,96045.12
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,857162.0,877293.69,-20131.69,20131.69
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,857162.0,0.0,0.0,-857162.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,857162.0,0.0,0.0,-857162.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,857162.0,0.0,0.0,-857162.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101000,Fastlønn - ordinære,857364.0,0.0,0.0,-857364.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56644.0,36599.82,20044.18,-20044.18
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56644.0,70150.5,-13506.5,13506.5
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56644.0,39979.31,16664.69,-16664.69
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56644.0,48274.93,8369.07,-8369.07
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56644.0,47870.48,8773.52,-8773.52
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56644.0,-6962.54,63606.54,-63606.54
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56644.0,43842.94,12801.06,-12801.06
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56644.0,44006.01,12637.99,-12637.99
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56644.0,0.0,0.0,-56644.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56644.0,0.0,0.0,-56644.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56644.0,0.0,0.0,-56644.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101030,Fastlønn - lørdags- og søndagstillegg,56916.0,0.0,0.0,-56916.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70447.0,63095.38,7351.62,-7351.62
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70447.0,70583.67,-136.67,136.67
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70447.0,64251.84,6195.16,-6195.16
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70447.0,84135.94,-13688.94,13688.94
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70447.0,79057.96,-8610.96,8610.96
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70447.0,-14989.09,85436.09,-85436.09
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70447.0,66994.64,3452.36,-3452.36
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70447.0,68899.92,1547.08,-1547.08
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70447.0,0.0,0.0,-70447.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70447.0,0.0,0.0,-70447.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70447.0,0.0,0.0,-70447.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101031,Fastlønn - kvelds- og nattillegg,70783.0,0.0,0.0,-70783.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,41400.0,0.0,41400.0,-41400.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,69138.0,68846.15,291.85,-291.85
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,151524.0,124415.44,27108.56,-27108.56
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,82800.0,83030.13,-230.13,230.13
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,69138.0,74223.33,-5085.33,5085.33
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101032,Fastlønn - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1292.0,0.0,1292.0,-1292.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1292.0,0.0,1292.0,-1292.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1292.0,686.45,605.55,-605.55
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1292.0,1120.0,172.0,-172.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1292.0,1120.0,172.0,-172.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1292.0,-172.31,1464.31,-1464.31
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1292.0,1120.0,172.0,-172.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1292.0,1120.0,172.0,-172.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1292.0,0.0,0.0,-1292.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1292.0,0.0,0.0,-1292.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1292.0,0.0,0.0,-1292.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1010,101040,Fastlønn - veiledningstillegg,1788.0,0.0,0.0,-1788.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16660.0,0.0,16660.0,-16660.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16660.0,96432.33,-79772.33,79772.33
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16660.0,35833.75,-19173.75,19173.75
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16660.0,34855.64,-18195.64,18195.64
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16660.0,13105.85,3554.15,-3554.15
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16660.0,3417.85,13242.15,-13242.15
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16660.0,13415.11,3244.89,-3244.89
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16660.0,15319.5,1340.5,-1340.5
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16660.0,0.0,0.0,-16660.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16660.0,0.0,0.0,-16660.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16660.0,0.0,0.0,-16660.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102000,Vikar - sykefravær - med refusjon,16740.0,0.0,0.0,-16740.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,21809.0,0.0,21809.0,-21809.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,21809.0,39187.82,-17378.82,17378.82
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,21809.0,3729.89,18079.11,-18079.11
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,21809.0,1558.23,20250.77,-20250.77
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,21809.0,13647.27,8161.73,-8161.73
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,21807.0,18359.38,3447.62,-3447.62
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,21809.0,33861.46,-12052.46,12052.46
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,21809.0,18868.99,2940.01,-2940.01
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,21809.0,0.0,0.0,-21809.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,21809.0,0.0,0.0,-21809.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,21809.0,0.0,0.0,-21809.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102001,Vikar - sykefravær - uten refusjon,22103.0,0.0,0.0,-22103.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23741.0,0.0,23741.0,-23741.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23741.0,0.0,23741.0,-23741.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23741.0,0.0,23741.0,-23741.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23741.0,0.0,23741.0,-23741.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23741.0,0.0,23741.0,-23741.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23741.0,0.0,23741.0,-23741.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23741.0,0.0,23741.0,-23741.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23741.0,0.0,23741.0,-23741.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23741.0,0.0,0.0,-23741.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23741.0,0.0,0.0,-23741.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23741.0,0.0,0.0,-23741.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102002,Vikar - foreldrepermisjon,23849.0,0.0,0.0,-23849.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4738.0,0.0,4738.0,-4738.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4738.0,8996.59,-4258.59,4258.59
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4738.0,0.0,4738.0,-4738.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4738.0,5110.73,-372.73,372.73
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4738.0,3351.87,1386.13,-1386.13
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4738.0,2130.8,2607.2,-2607.2
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4738.0,964.38,3773.62,-3773.62
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4738.0,3854.21,883.79,-883.79
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4738.0,0.0,0.0,-4738.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4738.0,0.0,0.0,-4738.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4738.0,0.0,0.0,-4738.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102010,Vikar - lønnet perm inkl tillitsverv og velf.perm.,4882.0,0.0,0.0,-4882.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,31172.0,0.0,31172.0,-31172.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,10992.0,95936.89,-84944.89,84944.89
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,11621.0,17258.03,-5637.03,5637.03
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,17299.0,8563.3,8735.7,-8735.7
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,14760.0,5394.12,9365.88,-9365.88
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,21311.0,2111.58,19199.42,-19199.42
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,66668.0,43393.77,23274.23,-23274.23
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,147227.0,131265.74,15961.26,-15961.26
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,126463.0,0.0,0.0,-126463.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,40837.0,0.0,0.0,-40837.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,40611.0,0.0,0.0,-40611.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102011,Vikar - feriefravær,40040.0,0.0,0.0,-40040.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,18404.54,-18404.54,18404.54
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,9241.3,-9241.3,9241.3
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,6405.76,-6405.76,6405.76
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,3444.98,-3444.98,3444.98
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,14052.56,-14052.56,14052.56
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,8319.14,-8319.14,8319.14
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,1585.75,-1585.75,1585.75
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102013,Vikar - korttidsfravær,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,14543.2,-14543.2,14543.2
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,17012.8,-17012.8,17012.8
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,13955.2,-13955.2,13955.2
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,18874.8,-18874.8,18874.8
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,18188.52,-18188.52,18188.52
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,29733.2,-29733.2,29733.2
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,28439.6,-28439.6,28439.6
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102030,Vikar - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,59390.49,-59390.49,59390.49
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,25189.15,-25189.15,25189.15
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,28784.59,-28784.59,28784.59
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,28468.81,-28468.81,28468.81
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,32469.26,-32469.26,32469.26
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,39092.31,-39092.31,39092.31
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,45909.48,-45909.48,45909.48
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102031,Vikar - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,20065.97,-20065.97,20065.97
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,164.59,-164.59,164.59
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,29714.92,-29714.92,29714.92
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,14652.72,-14652.72,14652.72
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,28871.57,-28871.57,28871.57
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1020,102032,Vikar - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,32502.05,-32502.05,32502.05
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,26230.47,-26230.47,26230.47
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,4661.68,-4661.68,4661.68
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,12263.23,-12263.23,12263.23
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,34776.14,-34776.14,34776.14
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,20546.22,-20546.22,20546.22
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,10668.91,-10668.91,10668.91
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103000,Ekstrahjelp,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,1881.6,-1881.6,1881.6
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,558.46,-558.46,558.46
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,1058.4,-1058.4,1058.4
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,1881.6,-1881.6,1881.6
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103030,Ekstrahjelp - lørdags- og søndagstillegg,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,1740.48,-1740.48,1740.48
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,831.04,-831.04,831.04
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,1641.4,-1641.4,1641.4
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,1383.76,-1383.76,1383.76
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,987.84,-987.84,987.84
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103031,Ekstrahjelp - kvelds- og nattillegg,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,1708.4,-1708.4,1708.4
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,4900.9,-4900.9,4900.9
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103032,Ekstrahjelp - helligdagstillegg,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,19282.89,-19282.89,19282.89
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103040,Engasjementer / midlertidige stillinger,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,10175.6,-10175.6,10175.6
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,19858.59,-19858.59,19858.59
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1030,103050,Sommer- og sesonghjelp,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7063.0,0.0,7063.0,-7063.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7063.0,103533.77,-96470.77,96470.77
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7063.0,66482.4,-59419.4,59419.4
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7063.0,8461.82,-1398.82,1398.82
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7063.0,4272.71,2790.29,-2790.29
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7063.0,6065.63,997.37,-997.37
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7063.0,31970.72,-24907.72,24907.72
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7063.0,21288.8,-14225.8,14225.8
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7063.0,0.0,0.0,-7063.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7063.0,0.0,0.0,-7063.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7063.0,0.0,0.0,-7063.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1040,104000,Overtidslønn,7307.0,0.0,0.0,-7307.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,8900.99,-8900.99,8900.99
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,14522.67,-14522.67,14522.67
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,14522.67,-14522.67,14522.67
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,-1403.44,1403.44,-1403.44
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,15504.53,-15504.53,15504.53
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,17630.16,-17630.16,17630.16
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105000,Lærlinger,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105042,Lønn utrykning,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,12191.9,-12191.9,12191.9
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,1075.2,-1075.2,1075.2
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,12519.36,-12519.36,12519.36
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105045,Turtillegg - reise med pasient / klient/brukere,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,6334.29,-6334.29,6334.29
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,3689.04,-3689.04,3689.04
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,3891.32,-3891.32,3891.32
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,72.26,-72.26,72.26
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,990.72,-990.72,990.72
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,1940.37,-1940.37,1940.37
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,3424.71,-3424.71,3424.71
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105046,Forskjøvet arbeidstid,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,333.0,0.0,333.0,-333.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,333.0,0.0,333.0,-333.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,333.0,0.0,333.0,-333.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,333.0,0.0,333.0,-333.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,333.0,0.0,333.0,-333.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,333.0,0.0,333.0,-333.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,333.0,0.0,333.0,-333.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,333.0,0.0,333.0,-333.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,333.0,0.0,0.0,-333.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,333.0,0.0,0.0,-333.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,333.0,0.0,0.0,-333.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105060,Skattepl. telefongodtgjørelse,337.0,0.0,0.0,-337.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1416.0,1127.32,288.68,-288.68
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1416.0,1295.0,121.0,-121.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1416.0,1180.87,235.13,-235.13
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1416.0,1070.2,345.8,-345.8
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1416.0,1107.86,308.14,-308.14
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1416.0,1016.81,399.19,-399.19
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1416.0,974.22,441.78,-441.78
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1416.0,974.22,441.78,-441.78
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1416.0,0.0,0.0,-1416.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1416.0,0.0,0.0,-1416.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1416.0,0.0,0.0,-1416.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105064,Skattepl. klesgodtgjørelse,1424.0,0.0,0.0,-1424.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,81.14,-81.14,81.14
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,411.89,-411.89,411.89
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1050,105065,Skattepl. km-godtgjørelse,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),171251.0,111774.79,59476.21,-59476.21
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),171250.0,201470.68,-30220.68,30220.68
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),171248.0,168932.97,2315.03,-2315.03
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),1055848.0,1034142.89,21705.11,-21705.11
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),177108.0,165027.58,12080.42,-12080.42
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),115925.0,174781.14,-58856.14,58856.14
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),176359.0,174748.32,1610.68,-1610.68
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),177110.0,180009.25,-2899.25,2899.25
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),177108.0,0.0,0.0,-177108.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),177107.0,0.0,0.0,-177107.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),177103.0,0.0,0.0,-177103.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1090,109000,Pensjon fellesordningen - ordinære (klp),297706.0,0.0,0.0,-297706.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,184285.0,123019.51,61265.49,-61265.49
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,184284.0,263333.66,-79049.66,79049.66
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,184283.0,199701.82,-15418.82,15418.82
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,308983.0,286457.1,22525.9,-22525.9
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,190108.0,190833.22,-725.22,725.22
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,-5583.0,70719.1,-76302.1,76302.1
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,189347.0,210674.84,-21327.84,21327.84
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,190110.0,182691.88,7418.12,-7418.12
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,190113.0,0.0,0.0,-190113.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,190115.0,0.0,0.0,-190115.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,190111.0,0.0,0.0,-190111.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,10 Lønn,1099,109999,Arbeidsgiveravgift,207011.0,0.0,0.0,-207011.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45399.0,-5370.0,-40029.0,40029.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45399.0,-80559.0,35160.0,-35160.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45399.0,-45142.0,-257.0,257.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45399.0,-73049.0,27650.0,-27650.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45399.0,-1975.0,-43424.0,43424.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45399.0,-62611.0,17212.0,-17212.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45399.0,-66066.0,20667.0,-20667.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45399.0,-36621.0,-8778.0,8778.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45399.0,0.0,0.0,45399.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45399.0,0.0,0.0,45399.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45399.0,0.0,0.0,45399.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171000,Refusjon sykepenger,-45611.0,0.0,0.0,45611.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44149.0,0.0,-44149.0,44149.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44149.0,-3928.0,-40221.0,40221.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44149.0,-72352.0,28203.0,-28203.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44149.0,-34750.0,-9399.0,9399.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44149.0,-91375.0,47226.0,-47226.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44150.0,-49830.0,5680.0,-5680.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44149.0,-49529.0,5380.0,-5380.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44149.0,-59548.0,15399.0,-15399.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44149.0,0.0,0.0,44149.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44149.0,0.0,0.0,44149.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44149.0,0.0,0.0,44149.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,1 Lønn,11 Refusjon lønn,1710,171005,Refusjon foreldrepenger,-44360.0,0.0,0.0,44360.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,412.8,587.2,-587.2
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,609.31,390.69,-390.69
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,1262.18,-262.18,262.18
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,564.9,435.1,-435.1
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,0.0,1000.0,-1000.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,813.95,186.05,-186.05
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,0.0,1000.0,-1000.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,295.07,704.93,-704.93
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,0.0,0.0,-1000.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,0.0,0.0,-1000.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,0.0,0.0,-1000.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110000,Kontormateriell / rekvisita,1000.0,0.0,0.0,-1000.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),270.0,0.0,270.0,-270.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),270.0,0.0,270.0,-270.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),270.0,0.0,270.0,-270.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),270.0,0.0,270.0,-270.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),270.0,0.0,270.0,-270.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),270.0,0.0,270.0,-270.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),270.0,0.0,270.0,-270.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),270.0,0.0,270.0,-270.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),270.0,0.0,0.0,-270.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),270.0,0.0,0.0,-270.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),270.0,0.0,0.0,-270.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1100,110020,Kopieringsmatriell - papir / toner (ikke leie),30.0,0.0,0.0,-30.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2210.0,2238.74,-28.74,28.74
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2210.0,3843.9,-1633.9,1633.9
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2210.0,0.0,2210.0,-2210.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2210.0,2060.1,149.9,-149.9
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2210.0,553.2,1656.8,-1656.8
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2210.0,2296.35,-86.35,86.35
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2210.0,0.0,2210.0,-2210.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2210.0,881.0,1329.0,-1329.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2210.0,0.0,0.0,-2210.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2210.0,0.0,0.0,-2210.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2210.0,0.0,0.0,-2210.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1110,111000,Medisinsk forbruksmateriell,2690.0,0.0,0.0,-2690.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,850.0,0.0,850.0,-850.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,850.0,0.0,850.0,-850.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,850.0,0.0,850.0,-850.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,850.0,2562.05,-1712.05,1712.05
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,850.0,0.0,850.0,-850.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,850.0,0.0,850.0,-850.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,850.0,0.0,850.0,-850.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,850.0,0.0,850.0,-850.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,850.0,0.0,0.0,-850.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,850.0,0.0,0.0,-850.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,850.0,0.0,0.0,-850.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1114,111400,Medisiner,650.0,0.0,0.0,-650.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,222.23,-222.23,222.23
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,585.89,-585.89,585.89
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,630.59,-630.59,630.59
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,716.97,-716.97,716.97
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,130.44,-130.44,130.44
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111500,Matvarer / drikke - ikke møtevirksomhet,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1868.0,0.0,1868.0,-1868.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1868.0,294.5,1573.5,-1573.5
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1868.0,477.59,1390.41,-1390.41
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1868.0,0.0,1868.0,-1868.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1868.0,4957.78,-3089.78,3089.78
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1868.0,0.0,1868.0,-1868.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1868.0,0.0,1868.0,-1868.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1868.0,0.0,1868.0,-1868.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1868.0,0.0,0.0,-1868.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1868.0,0.0,0.0,-1868.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1868.0,0.0,0.0,-1868.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111502,Bevertning møter / kurs / opplæring / overtidsmat,1452.0,0.0,0.0,-1452.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,12.0,-12.0,12.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,21.0,-21.0,21.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,24.0,-24.0,24.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1115,111509,Pant,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1868.0,0.0,1868.0,-1868.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1868.0,0.0,1868.0,-1868.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1868.0,0.0,1868.0,-1868.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1868.0,103.8,1764.2,-1764.2
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1868.0,0.0,1868.0,-1868.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1868.0,483.2,1384.8,-1384.8
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1868.0,0.0,1868.0,-1868.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1868.0,0.0,1868.0,-1868.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1868.0,0.0,0.0,-1868.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1868.0,0.0,0.0,-1868.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1868.0,0.0,0.0,-1868.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112000,Velferdstiltak / arrangementer -  ansatte,1452.0,0.0,0.0,-1452.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,340.0,491.15,-151.15,151.15
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,340.0,0.0,340.0,-340.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,340.0,0.0,340.0,-340.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,340.0,0.0,340.0,-340.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,340.0,0.0,340.0,-340.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,340.0,0.0,340.0,-340.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,340.0,0.0,340.0,-340.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,340.0,0.0,340.0,-340.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,340.0,0.0,0.0,-340.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,340.0,0.0,0.0,-340.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,340.0,0.0,0.0,-340.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112002,Påskjønnelser - jfr reglement,260.0,0.0,0.0,-260.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,1144.5,-1144.5,1144.5
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,2289.0,-2289.0,2289.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,881.0,-881.0,881.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112010,Arbeidsklær / verneutstyr / uniformer,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,732.0,-732.0,732.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,1098.0,-1098.0,1098.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,366.0,-366.0,366.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,366.0,-366.0,366.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,366.0,-366.0,366.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112012,GAVE EKOM USKATT (LT 4800),0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,-732.0,732.0,-732.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,-1098.0,1098.0,-1098.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,-366.0,366.0,-366.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,-366.0,366.0,-366.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,-366.0,366.0,-366.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112013,MOTPOST GAVE EKOM USKATT (LT 4802),0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,786.64,-786.64,786.64
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112020,Plast og papir,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1868.0,805.51,1062.49,-1062.49
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1868.0,0.0,1868.0,-1868.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1868.0,0.0,1868.0,-1868.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1868.0,5108.25,-3240.25,3240.25
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1868.0,1999.8,-131.8,131.8
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1868.0,2043.3,-175.3,175.3
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1868.0,0.0,1868.0,-1868.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1868.0,0.0,1868.0,-1868.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1868.0,0.0,0.0,-1868.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1868.0,0.0,0.0,-1868.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1868.0,0.0,0.0,-1868.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112021,Renholdsutstyr,1452.0,0.0,0.0,-1452.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,850.0,7132.57,-6282.57,6282.57
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,850.0,0.0,850.0,-850.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,850.0,0.0,850.0,-850.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,850.0,0.0,850.0,-850.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,850.0,0.0,850.0,-850.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,850.0,0.0,850.0,-850.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,850.0,0.0,850.0,-850.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,850.0,0.0,850.0,-850.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,850.0,0.0,0.0,-850.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,850.0,0.0,0.0,-850.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,850.0,0.0,0.0,-850.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112022,Rengjøringsmidler,650.0,0.0,0.0,-650.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,600.0,-600.0,600.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112024,Tekstiler og gardiner,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,3486.0,-3486.0,3486.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112025,Planter,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,170.0,0.0,170.0,-170.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,170.0,0.0,170.0,-170.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,170.0,0.0,170.0,-170.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,170.0,0.0,170.0,-170.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,170.0,0.0,170.0,-170.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,170.0,0.0,170.0,-170.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,170.0,0.0,170.0,-170.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,170.0,0.0,170.0,-170.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,170.0,0.0,0.0,-170.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,170.0,0.0,0.0,-170.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,170.0,0.0,0.0,-170.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112060,Brukerbelønning,130.0,0.0,0.0,-130.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",3536.0,4413.72,-877.72,877.72
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",3536.0,3804.96,-268.96,268.96
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",3536.0,2925.8,610.2,-610.2
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",3536.0,4818.5,-1282.5,1282.5
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",3536.0,4414.29,-878.29,878.29
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",3536.0,7675.68,-4139.68,4139.68
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",3536.0,1358.36,2177.64,-2177.64
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",3536.0,48.4,3487.6,-3487.6
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",3536.0,0.0,0.0,-3536.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",3536.0,0.0,0.0,-3536.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",3536.0,0.0,0.0,-3536.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112090,"Annet forbruksmateriell, varer og tjenester",4104.0,0.0,0.0,-4104.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,-61447.0,61447.0,-61447.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,-99000.0,99000.0,-99000.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112098,Tilskudd lærlinger (intern),0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,100.0,-100.0,100.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,308.0,-308.0,308.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,205.0,-205.0,205.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1120,112099,Interne inntekter/utgifter,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",850.0,0.0,850.0,-850.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",850.0,137.99,712.01,-712.01
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",850.0,273.21,576.79,-576.79
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",850.0,137.0,713.0,-713.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",850.0,138.98,711.02,-711.02
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",850.0,135.42,714.58,-714.58
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",850.0,545.08,304.92,-304.92
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",850.0,491.99,358.01,-358.01
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",850.0,0.0,0.0,-850.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",850.0,0.0,0.0,-850.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",850.0,0.0,0.0,-850.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113000,"Abonnement / samtale for mobil, telefon, nettbrett",650.0,0.0,0.0,-650.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,295.0,-295.0,295.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1130,113004,Bank og finansielle gebyrer,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2550.0,0.0,2550.0,-2550.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2550.0,6875.0,-4325.0,4325.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2550.0,137.5,2412.5,-2412.5
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2550.0,0.0,2550.0,-2550.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2550.0,0.0,2550.0,-2550.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2550.0,3300.0,-750.0,750.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2550.0,0.0,2550.0,-2550.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2550.0,0.0,2550.0,-2550.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2550.0,0.0,0.0,-2550.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2550.0,0.0,0.0,-2550.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2550.0,0.0,0.0,-2550.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1140,114000,Stillingsannonser,2950.0,0.0,0.0,-2950.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5268.0,0.0,5268.0,-5268.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5268.0,0.0,5268.0,-5268.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5268.0,282.0,4986.0,-4986.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5268.0,1125.0,4143.0,-4143.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5268.0,6640.18,-1372.18,1372.18
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5268.0,0.0,5268.0,-5268.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5268.0,0.0,5268.0,-5268.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5268.0,0.0,5268.0,-5268.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5268.0,0.0,0.0,-5268.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5268.0,0.0,0.0,-5268.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5268.0,0.0,0.0,-5268.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1150,115000,Kurs / konferanser/opplæring - inkl. hotell,5052.0,0.0,0.0,-5052.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",850.0,0.0,850.0,-850.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",850.0,0.0,850.0,-850.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",850.0,0.0,850.0,-850.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",850.0,0.0,850.0,-850.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",850.0,0.0,850.0,-850.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",850.0,538.2,311.8,-311.8
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",850.0,1471.05,-621.05,621.05
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",850.0,0.0,850.0,-850.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",850.0,0.0,0.0,-850.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",850.0,0.0,0.0,-850.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",850.0,0.0,0.0,-850.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1160,116000,"Km-godtgjørelse, inkl. passasjertillegg - oppl.pl",650.0,0.0,0.0,-650.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4078.0,1287.68,2790.32,-2790.32
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4078.0,1206.14,2871.86,-2871.86
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4078.0,1272.76,2805.24,-2805.24
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4078.0,1002.81,3075.19,-3075.19
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4078.0,1113.62,2964.38,-2964.38
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4078.0,999.62,3078.38,-3078.38
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4078.0,3184.4,893.6,-893.6
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4078.0,1211.48,2866.52,-2866.52
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4078.0,0.0,0.0,-4078.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4078.0,0.0,0.0,-4078.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4078.0,0.0,0.0,-4078.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117000,"Drivstoff - inkludert strøm til el-biler, bio",4142.0,0.0,0.0,-4142.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,400.0,-400.0,400.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117002,Vedlikehold / service transportmidler og anleggsm.,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117004,SKADER OG EGENANDELER TRANSPORTMIDLER OG ANLEGGSMASKINER,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",858.0,2250.0,-1392.0,1392.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",858.0,1250.0,-392.0,392.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",858.0,1739.5,-881.5,881.5
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",858.0,1250.0,-392.0,392.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",858.0,1250.0,-392.0,392.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",858.0,26317.58,-25459.58,25459.58
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",858.0,2175.64,-1317.64,1317.64
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",858.0,3317.0,-2459.0,2459.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",858.0,0.0,0.0,-858.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",858.0,0.0,0.0,-858.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",858.0,0.0,0.0,-858.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117030,"Reiseutg. buss, tog,taxi, fly, leiebil, bom, park.",562.0,0.0,0.0,-562.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1170,117040,Flyttetjenester,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,850.0,0.0,850.0,-850.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,850.0,0.0,850.0,-850.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,850.0,0.0,850.0,-850.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,850.0,0.0,850.0,-850.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,850.0,0.0,850.0,-850.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,850.0,0.0,850.0,-850.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,850.0,0.0,850.0,-850.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,850.0,0.0,850.0,-850.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,850.0,0.0,0.0,-850.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,850.0,0.0,0.0,-850.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,850.0,0.0,0.0,-850.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119520,Tv-lisens og kabel-tv,650.0,0.0,0.0,-650.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,150.0,-150.0,150.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,11.95,-11.95,11.95
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119550,Kommunale gebyrer,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1195,119590,"Andre avgifter, gebyrer og lisenser",0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4078.0,0.0,4078.0,-4078.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4078.0,0.0,4078.0,-4078.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4078.0,0.0,4078.0,-4078.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4078.0,0.0,4078.0,-4078.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4078.0,0.0,4078.0,-4078.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4078.0,0.0,4078.0,-4078.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4078.0,0.0,4078.0,-4078.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4078.0,0.0,4078.0,-4078.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4078.0,0.0,0.0,-4078.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4078.0,0.0,0.0,-4078.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4078.0,0.0,0.0,-4078.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120000,"Inventar - møbler, madrasser",4142.0,0.0,0.0,-4142.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1164.0,0.0,1164.0,-1164.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1164.0,4026.0,-2862.0,2862.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1164.0,0.0,1164.0,-1164.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1164.0,0.0,1164.0,-1164.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1164.0,0.0,1164.0,-1164.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1164.0,0.0,1164.0,-1164.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1164.0,0.0,1164.0,-1164.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1164.0,11046.27,-9882.27,9882.27
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1164.0,0.0,0.0,-1164.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1164.0,0.0,0.0,-1164.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1164.0,0.0,0.0,-1164.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120010,"Datautstyr, ikke elev-pcer",1196.0,0.0,0.0,-1196.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1868.0,0.0,1868.0,-1868.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1868.0,0.0,1868.0,-1868.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1868.0,0.0,1868.0,-1868.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1868.0,5026.2,-3158.2,3158.2
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1868.0,0.0,1868.0,-1868.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1868.0,5760.0,-3892.0,3892.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1868.0,0.0,1868.0,-1868.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1868.0,0.0,1868.0,-1868.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1868.0,0.0,0.0,-1868.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1868.0,0.0,0.0,-1868.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1868.0,0.0,0.0,-1868.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120015,Kjøp av mobiltlf / telefon / nettbrett,1452.0,0.0,0.0,-1452.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120030,Hvite / brune varer / elektriske produkter,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,3314.4,-3314.4,3314.4
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120045,Kjøkkenutstyr,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1200,120090,Annet utstyr / andre maskiner,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,221.4,-221.4,221.4
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,3564.51,-3564.51,3564.51
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,3595.97,-3595.97,3595.97
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,3938.21,-3938.21,3938.21
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,4730.22,-4730.22,4730.22
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,1416.2,-1416.2,1416.2
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,3719.8,-3719.8,3719.8
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,468.81,-468.81,468.81
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1210,121010,Leie / leasing av transportmidler,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1700.0,2658.0,-958.0,958.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1700.0,0.0,1700.0,-1700.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1700.0,0.0,1700.0,-1700.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1700.0,2658.0,-958.0,958.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1700.0,0.0,1700.0,-1700.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1700.0,0.0,1700.0,-1700.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1700.0,2658.0,-958.0,958.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1700.0,0.0,1700.0,-1700.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1700.0,0.0,0.0,-1700.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1700.0,0.0,0.0,-1700.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1700.0,0.0,0.0,-1700.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1220,122000,Leie av kontorutstyr / maskiner,1300.0,0.0,0.0,-1300.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123020,Vedlikehold - bygning,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,9432.57,-9432.57,9432.57
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,1470.0,-1470.0,1470.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1230,123022,Vedlikehold - elektriske installasjoner,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,557.4,-557.4,557.4
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,572.6,-572.6,572.6
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,1676.4,-1676.4,1676.4
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,692.0,-692.0,692.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,1515.9,-1515.9,1515.9
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,521.2,-521.2,521.2
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124010,Drifts- / serviceavtaler - kontormaskiner,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1240,124023,Driftsavtaler - medisinsk utstyr,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1250,125000,Materialer til vedl. - bygg,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,129480.0,-129480.0,129480.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,253176.0,253176.0,253176.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127040,Kjøp av vikarbyråtjenester,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,400.0,-400.0,400.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1260,126000,Renholdstjenester,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,11 Refusjon lønn,1270,127050,Bedriftshelsetjenester,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11662.0,5070.82,6591.18,-6591.18
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11662.0,7325.59,4336.41,-4336.41
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11662.0,854.99,10807.01,-10807.01
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11662.0,6710.36,4951.64,-4951.64
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11662.0,3213.92,8448.08,-8448.08
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11662.0,7138.93,4523.07,-4523.07
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11662.0,1353.12,10308.88,-10308.88
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11662.0,3549.55,8112.45,-8112.45
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11662.0,0.0,0.0,-11662.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11662.0,0.0,0.0,-11662.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11662.0,0.0,0.0,-11662.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1429,142900,Merverdiavgift som gir rett til momskompensasjon,11718.0,0.0,0.0,-11718.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11662.0,-5070.82,-6591.18,6591.18
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11662.0,-7325.59,-4336.41,4336.41
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11662.0,-854.99,-10807.01,10807.01
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11662.0,-6710.36,-4951.64,4951.64
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11662.0,-3213.92,-8448.08,8448.08
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11662.0,-7138.93,-4523.07,4523.07
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11662.0,-1353.12,-10308.88,10308.88
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11662.0,-3549.55,-8112.45,8112.45
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11662.0,0.0,0.0,11662.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11662.0,0.0,0.0,11662.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11662.0,0.0,0.0,11662.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,14 Overføringer,1729,172900,Kompensasjon for merverdiavgift,-11718.0,0.0,0.0,11718.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,9.27,-9.27,9.27
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,0.0,0.0,0.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,2 Utgifter,15 Finansutgifter,1500,150010,Forsinkelsesrenter (mora),0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,14.0,0.0,14.0,-14.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,14.0,0.0,14.0,-14.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,14.0,0.0,14.0,-14.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,14.0,0.0,14.0,-14.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,14.0,0.0,14.0,-14.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,14.0,0.0,14.0,-14.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,14.0,0.0,14.0,-14.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,14.0,0.0,14.0,-14.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,14.0,0.0,0.0,-14.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,14.0,0.0,0.0,-14.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,14.0,0.0,0.0,-14.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,16 Brukerbetaling,1600,160000,Brukerbetaling for kommunale tjenester -,-154.0,0.0,0.0,154.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,-7100.0,7100.0,-7100.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1700,170080,Øremerkede statstilskudd,0.0,0.0,0.0,0.0
+2024-01,Januar,1,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,0.0,0.0,0.0
+2024-02,Februar,2,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,0.0,0.0,0.0
+2024-03,Mars,3,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,0.0,0.0,0.0
+2024-04,April,4,T1,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,0.0,0.0,0.0
+2024-05,Mai,5,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,0.0,0.0,0.0
+2024-06,Juni,6,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,0.0,0.0,0.0
+2024-07,Juli,7,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,0.0,0.0,0.0
+2024-08,August,8,T2,Bokført,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,-960.0,960.0,-960.0
+2024-09,September,9,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,0.0,0.0,0.0
+2024-10,Oktober,10,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,0.0,0.0,0.0
+2024-11,November,11,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,0.0,0.0,0.0
+2024-12,Desember,12,T3,Gjenstående budsjett,Kommunal Boenhet,254,Helse og mestring,3 Inntekter,17 Refusjoner,1770,177000,Refusjon fra private,0.0,0.0,0.0,0.0

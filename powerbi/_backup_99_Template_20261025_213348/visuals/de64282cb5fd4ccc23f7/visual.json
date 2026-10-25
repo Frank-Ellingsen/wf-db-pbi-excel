@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "de64282cb5fd4ccc23f7",
+  "position": {
+    "x": 1750,
+    "y": 870,
+    "z": 27000,
+    "height": 210,
+    "width": 170,
+    "tabOrder": 27000
+  },
+  "visual": {
+    "visualType": "ganttChart",
+    "drillFilterOtherVisuals": true
+  }
+}

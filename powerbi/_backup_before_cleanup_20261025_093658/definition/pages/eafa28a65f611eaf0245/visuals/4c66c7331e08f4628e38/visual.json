@@ -1,0 +1,16 @@
+{
+  "visual": {
+    "drillFilterOtherVisuals": true,
+    "visualType": "scatterChart"
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "position": {
+    "tabOrder": 0,
+    "width": 1770,
+    "y": 40,
+    "height": 900,
+    "z": 0,
+    "x": 40
+  },
+  "name": "4c66c7331e08f4628e38"
+}

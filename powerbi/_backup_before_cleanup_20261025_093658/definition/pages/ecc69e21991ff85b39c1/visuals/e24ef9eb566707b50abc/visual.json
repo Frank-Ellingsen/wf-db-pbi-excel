@@ -1,0 +1,73 @@
+{
+  "visual": {
+    "drillFilterOtherVisuals": true,
+    "visualType": "lineClusteredColumnComboChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "nativeQueryRef": "year_month",
+              "active": true,
+              "queryRef": "dim_date.year_month",
+              "field": {
+                "Column": {
+                  "Property": "year_month",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_date"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "queryRef": "_Measures.ERP Regnskap",
+              "field": {
+                "Measure": {
+                  "Property": "ERP Regnskap",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "queryRef": "_Measures.ERP Budsjett",
+              "field": {
+                "Measure": {
+                  "Property": "ERP Budsjett",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "position": {
+    "tabOrder": 1,
+    "width": 870,
+    "y": 40,
+    "height": 430,
+    "z": 1,
+    "x": 940
+  },
+  "name": "e24ef9eb566707b50abc"
+}

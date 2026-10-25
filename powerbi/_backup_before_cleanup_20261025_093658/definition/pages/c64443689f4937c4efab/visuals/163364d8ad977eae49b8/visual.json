@@ -1,0 +1,37 @@
+{
+  "visual": {
+    "drillFilterOtherVisuals": true,
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "queryRef": "_Measures.ERP Mapping %",
+              "field": {
+                "Measure": {
+                  "Property": "ERP Mapping %",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "position": {
+    "tabOrder": 1,
+    "width": 330,
+    "y": 40,
+    "height": 160,
+    "z": 1,
+    "x": 390
+  },
+  "name": "163364d8ad977eae49b8"
+}

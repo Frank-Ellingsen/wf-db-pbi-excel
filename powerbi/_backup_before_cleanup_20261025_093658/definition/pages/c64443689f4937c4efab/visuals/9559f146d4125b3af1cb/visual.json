@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "visual": {
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "queryRef": "_Measures.ERP Unmapped Account Rows",
+              "field": {
+                "Measure": {
+                  "Property": "ERP Unmapped Account Rows",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "visualType": "cardVisual",
+    "drillFilterOtherVisuals": true
+  },
+  "position": {
+    "tabOrder": 50,
+    "height": 160,
+    "y": 40,
+    "width": 330,
+    "x": 1090,
+    "z": 50
+  },
+  "name": "9559f146d4125b3af1cb"
+}

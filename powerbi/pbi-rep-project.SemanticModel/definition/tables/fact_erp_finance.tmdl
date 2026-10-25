@@ -1,0 +1,372 @@
+table fact_erp_finance
+	lineageTag: a8a1e555-615e-411b-b8d0-e928ba6f26a5
+
+	column year_month
+		dataType: string
+		lineageTag: c528b2b1-4a96-48d9-b5cf-7d35c73725d5
+		summarizeBy: none
+		sourceColumn: year_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column month
+		dataType: string
+		lineageTag: 07aef896-0138-4edc-9dd4-ba793b74b0d7
+		summarizeBy: none
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_number
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e250110-fcb2-4e83-b32d-544bc155d515
+		summarizeBy: sum
+		sourceColumn: month_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column tertial
+		dataType: string
+		lineageTag: 92a6b82e-db48-4dd4-8b96-68e15770d067
+		summarizeBy: none
+		sourceColumn: tertial
+
+		annotation SummarizationSetBy = Automatic
+
+	column location
+		dataType: string
+		lineageTag: 6443e9da-7610-41af-917b-abd299ca4bc5
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_function_id
+		dataType: string
+		lineageTag: 6357ad46-b5dd-4604-a209-df6b5bbc4d99
+		summarizeBy: none
+		sourceColumn: kostra_function_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_function_name
+		dataType: string
+		lineageTag: cefc6600-b0f8-4285-a256-2804b3eb684a
+		summarizeBy: none
+		sourceColumn: kostra_function_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column function_key
+		dataType: string
+		lineageTag: 8ae9d760-9284-473b-9ce9-36461fcc601c
+		summarizeBy: none
+		sourceColumn: function_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_function_code
+		dataType: string
+		lineageTag: c908bada-bd63-496a-ab4c-0bac5055cf70
+		summarizeBy: none
+		sourceColumn: main_function_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_function_name
+		dataType: string
+		lineageTag: 478af3d9-d7fa-40ec-abc3-5389e116e894
+		summarizeBy: none
+		sourceColumn: main_function_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_area_code
+		dataType: string
+		lineageTag: 32a6f3e3-1f60-4d8c-b2db-2ca592ba8c2a
+		summarizeBy: none
+		sourceColumn: service_area_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_area_name
+		dataType: string
+		lineageTag: e59ff937-3c5f-4a1d-a8c5-5d9f0344ec5f
+		summarizeBy: none
+		sourceColumn: service_area_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column function_group_code
+		dataType: string
+		lineageTag: 3a4d400e-5ae4-438e-abc6-88c69037819e
+		summarizeBy: none
+		sourceColumn: function_group_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column function_group_name
+		dataType: string
+		lineageTag: 8620af73-9de6-4f60-beb7-b51ad70fb340
+		summarizeBy: none
+		sourceColumn: function_group_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column function_mapping_status
+		dataType: string
+		lineageTag: db0fb225-bb87-48a8-932a-81efb564dcfe
+		summarizeBy: none
+		sourceColumn: function_mapping_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_art
+		dataType: string
+		lineageTag: 58e08ba6-ff20-440c-a60b-76534888a1c8
+		summarizeBy: none
+		sourceColumn: kostra_art
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_code
+		dataType: string
+		lineageTag: faf23cf9-147b-4250-93d1-268117b8759d
+		summarizeBy: none
+		sourceColumn: account_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_name
+		dataType: string
+		lineageTag: 0e6aa03b-ef06-41d9-8371-5d7454df416b
+		summarizeBy: none
+		sourceColumn: account_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_key
+		dataType: string
+		lineageTag: c11d8544-65f3-4361-a327-7efe2c721894
+		summarizeBy: none
+		sourceColumn: account_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_art_4digit
+		dataType: string
+		lineageTag: 0933b278-8029-40ec-bc6f-30f77bda1770
+		summarizeBy: none
+		sourceColumn: kostra_art_4digit
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_art_3digit
+		dataType: string
+		lineageTag: a1e78049-d19d-4758-8b64-4a99c9d79133
+		summarizeBy: none
+		sourceColumn: kostra_art_3digit
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_art_name
+		dataType: string
+		lineageTag: f5cb7146-9f90-40d0-b6af-ba2707050017
+		summarizeBy: none
+		sourceColumn: kostra_art_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_class_id
+		dataType: string
+		lineageTag: 190397aa-abd8-4223-baef-426f52ea9bf9
+		summarizeBy: none
+		sourceColumn: account_class_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_class_name
+		dataType: string
+		lineageTag: f7e94249-3bd6-4fd1-b713-8f6bb6ebb24b
+		summarizeBy: none
+		sourceColumn: account_class_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_category_code
+		dataType: string
+		lineageTag: da83d80c-62df-4ebe-b1e4-d9e5d7b8abc1
+		summarizeBy: none
+		sourceColumn: main_category_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_category_name
+		dataType: string
+		lineageTag: 02a15a7b-b0e7-4e8d-8ba9-f55f82a30daa
+		summarizeBy: none
+		sourceColumn: main_category_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_group_code
+		dataType: string
+		lineageTag: 1068f888-5f22-4df6-bcce-9e6e6ebdfc46
+		summarizeBy: none
+		sourceColumn: main_group_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_group_name
+		dataType: string
+		lineageTag: 2677b058-4542-4765-babd-748c4dccfbe8
+		summarizeBy: none
+		sourceColumn: main_group_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_mapping_status
+		dataType: string
+		lineageTag: 22450438-6ace-4553-94ec-535db307055b
+		summarizeBy: none
+		sourceColumn: account_mapping_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget
+		dataType: double
+		lineageTag: 9fbc7424-8896-43ba-825a-efdbf051b574
+		summarizeBy: sum
+		sourceColumn: budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actual
+		dataType: double
+		lineageTag: e37ba84f-7c01-46f1-b40e-0a057622f97d
+		summarizeBy: sum
+		sourceColumn: actual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column variance
+		dataType: double
+		lineageTag: 31a54969-bc6b-45e2-b281-28cf0aca0dc2
+		summarizeBy: sum
+		sourceColumn: variance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column variance_pct
+		dataType: double
+		lineageTag: 402befdf-2c03-4d17-baaf-45a021164ce0
+		summarizeBy: sum
+		sourceColumn: variance_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column status
+		dataType: string
+		lineageTag: 84c26a0e-b1a9-42b3-aba8-592953126744
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_area
+		dataType: string
+		lineageTag: f2b6861c-4463-4edc-aa7e-c47e90fa82ac
+		summarizeBy: none
+		sourceColumn: service_area
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_group
+		dataType: string
+		lineageTag: 42854b15-ea56-4e13-9e2c-ff203b9dc893
+		summarizeBy: none
+		sourceColumn: main_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column sub_group
+		dataType: string
+		lineageTag: 15fe6a4f-ac62-4144-98e3-ecaca4a68bee
+		summarizeBy: none
+		sourceColumn: sub_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c722d1d3-494e-45f3-a149-7029ac38ea0d
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column period
+		dataType: string
+		lineageTag: 52b84784-9eaa-41c1-8b91-a9865e9fccaf
+		summarizeBy: none
+		sourceColumn: period
+
+		annotation SummarizationSetBy = Automatic
+
+	column variance_rag
+		dataType: string
+		lineageTag: 0e73ba94-335a-4cba-8107-afaa98edb594
+		summarizeBy: none
+		sourceColumn: variance_rag
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_quality_status
+		dataType: string
+		lineageTag: a7cd347b-2874-4c1f-b207-47338d35e76b
+		summarizeBy: none
+		sourceColumn: data_quality_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column reporting_status
+		dataType: string
+		lineageTag: 918c559a-e183-483d-ab2e-83411b246717
+		summarizeBy: none
+		sourceColumn: reporting_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget_organization_key
+		dataType: string
+		lineageTag: 1cceba3d-c02c-4fbe-be59-10424dd83e07
+		summarizeBy: none
+		sourceColumn: budget_organization_key
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_erp_finance = m
+		mode: import
+		source =
+				let
+				    Source = Odbc.DataSource("access_mode=read_only;dsn=DuckDB_pbi", [HierarchicalNavigation=true]),
+				    project_finance_powerbi_Database = Source{[Name="project_finance_powerbi",Kind="Database"]}[Data],
+				    gold_Schema = project_finance_powerbi_Database{[Name="gold",Kind="Schema"]}[Data],
+				    fact_erp_finance_Table = gold_Schema{[Name="fact_erp_finance",Kind="Table"]}[Data]
+				in
+				    fact_erp_finance_Table
+
+	annotation PBI_ResultType = Table
+

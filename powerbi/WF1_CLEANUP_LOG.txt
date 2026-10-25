@@ -1,0 +1,24 @@
+WF1 CLEANUP LOG
+Generated: 2026-10-25 09:36:59
+Backup: C:\Users\frank\Desktop\WF1\powerbi\_backup_before_cleanup_20261025_093658
+
+KEPT SLICERS
+dim_account.main_group_name -> 244a7c0ff269b71c912d
+dim_date.tertial -> 554839a77998ab18dcbf
+dim_date.year -> 1c216514f843eacef61d
+dim_date.year_month -> e6cdca844f258e12881b
+dim_kostra_function.service_area_name -> 5d6709ed05c08bded735
+
+REMOVED DUPLICATES
+dim_account.main_group_name -> 7a5311f795893d6d7909
+dim_account.main_group_name -> b07d5f0070893f14e2c9
+dim_account.main_group_name -> de2f70a8327e3afa0ea4
+dim_date.tertial -> 8b258d01ecd9a2e634b0
+dim_date.tertial -> a3677d7f726d90710ed0
+dim_date.tertial -> b1990faa3d0c96dd5a0f
+dim_date.year -> 4e835244157ba3f246d7
+dim_date.year -> af7134697773b59fbbeb
+dim_date.year -> ef3004639da6795253a7
+dim_kostra_function.service_area_name -> 6f4d87c6e8865931fe1e
+dim_kostra_function.service_area_name -> 7bea8e6ad7dc6cd6c229
+dim_kostra_function.service_area_name -> cb48ca77a33823a11484

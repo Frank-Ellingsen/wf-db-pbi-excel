@@ -1,0 +1,158 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "580bb920828802176305",
+  "position": {
+    "x": 40,
+    "y": 230,
+    "z": 3,
+    "height": 760,
+    "width": 1810,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_kostra_function"
+                    }
+                  },
+                  "Property": "main_function_name"
+                }
+              },
+              "queryRef": "dim_kostra_function.main_function_name",
+              "nativeQueryRef": "main_function_name",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_kostra_function"
+                    }
+                  },
+                  "Property": "service_area_name"
+                }
+              },
+              "queryRef": "dim_kostra_function.service_area_name",
+              "nativeQueryRef": "service_area_name",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_kostra_function"
+                    }
+                  },
+                  "Property": "function_group_name"
+                }
+              },
+              "queryRef": "dim_kostra_function.function_group_name",
+              "nativeQueryRef": "function_group_name",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_kostra_function"
+                    }
+                  },
+                  "Property": "kostra_function_name"
+                }
+              },
+              "queryRef": "dim_kostra_function.kostra_function_name",
+              "nativeQueryRef": "kostra_function_name",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Budsjett YTD"
+                }
+              },
+              "queryRef": "_Measures.ERP Budsjett YTD",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Regnskap YTD"
+                }
+              },
+              "queryRef": "_Measures.ERP Regnskap YTD",
+              "active": false
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Avvik YTD"
+                }
+              },
+              "queryRef": "_Measures.ERP Avvik YTD",
+              "active": false
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Avvik YTD %"
+                }
+              },
+              "queryRef": "_Measures.ERP Avvik YTD %",
+              "active": false
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP RAG Symbol"
+                }
+              },
+              "queryRef": "_Measures.ERP RAG Symbol",
+              "active": false
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

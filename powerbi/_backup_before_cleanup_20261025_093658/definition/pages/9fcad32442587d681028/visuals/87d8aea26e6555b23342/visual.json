@@ -1,0 +1,56 @@
+{
+  "visual": {
+    "drillFilterOtherVisuals": true,
+    "visualType": "waterfallChart",
+    "query": {
+      "queryState": {
+        "Y": {
+          "projections": [
+            {
+              "queryRef": "_Measures.ERP Avvik",
+              "field": {
+                "Measure": {
+                  "Property": "ERP Avvik",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Category": {
+          "projections": [
+            {
+              "nativeQueryRef": "main_group_name",
+              "active": true,
+              "queryRef": "dim_account.main_group_name",
+              "field": {
+                "Column": {
+                  "Property": "main_group_name",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_account"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "position": {
+    "tabOrder": 1,
+    "width": 870,
+    "y": 40,
+    "height": 430,
+    "z": 1,
+    "x": 940
+  },
+  "name": "87d8aea26e6555b23342"
+}

@@ -1,0 +1,498 @@
+{
+  "generated_at_utc": "2026-10-23T14:39:47.992901+00:00",
+  "contract_version": "1.0",
+  "datasets": [
+    {
+      "dataset": "erp_finance",
+      "status": "PASS",
+      "parquet_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\erp_finance.parquet",
+      "column_count": 21,
+      "technical_columns": [
+        "_contract_version",
+        "_dataset",
+        "_loaded_at_utc",
+        "_run_id",
+        "_source_file",
+        "_validated_at_utc"
+      ],
+      "checks": [
+        {
+          "column": "period",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "location",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "kostra_function_id",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "kostra_art",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "account_code",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "account_name",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "budget",
+          "status": "PASS",
+          "expected": "number",
+          "actual": "number",
+          "physical_type": "double",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "actual",
+          "status": "PASS",
+          "expected": "number",
+          "actual": "number",
+          "physical_type": "double",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "month",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "month_number",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "tertial",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "status",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "service_area",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "main_group",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "sub_group",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        }
+      ],
+      "arrow_schema": "period: large_string\nmonth: large_string\nmonth_number: int64\ntertial: large_string\nstatus: large_string\nlocation: large_string\nkostra_function_id: int64\nservice_area: large_string\nmain_group: large_string\nsub_group: large_string\nkostra_art: int64\naccount_code: int64\naccount_name: large_string\nbudget: double\nactual: double\n_dataset: large_string\n_source_file: large_string\n_loaded_at_utc: large_string\n_run_id: large_string\n_contract_version: double\n_validated_at_utc: large_string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2556"
+    },
+    {
+      "dataset": "framsikt_finance",
+      "status": "PASS",
+      "parquet_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\framsikt_finance.parquet",
+      "column_count": 18,
+      "technical_columns": [
+        "_contract_version",
+        "_dataset",
+        "_loaded_at_utc",
+        "_run_id",
+        "_source_file",
+        "_validated_at_utc"
+      ],
+      "checks": [
+        {
+          "column": "period",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "location",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "organizational_unit",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "actual_ytd",
+          "status": "PASS",
+          "expected": "number",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "budget_ytd",
+          "status": "PASS",
+          "expected": "number",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "kostra_function_id",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "account_type",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "account_name",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "annual_budget",
+          "status": "PASS",
+          "expected": "number",
+          "actual": "number",
+          "physical_type": "double",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "actual_prior_year",
+          "status": "PASS",
+          "expected": "number",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "account_class",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "economic_class",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        }
+      ],
+      "arrow_schema": "period: large_string\nlocation: large_string\nkostra_function_id: int64\norganizational_unit: large_string\naccount_type: large_string\naccount_name: large_string\nactual_ytd: int64\nbudget_ytd: int64\nannual_budget: double\nactual_prior_year: int64\naccount_class: large_string\neconomic_class: large_string\n_dataset: large_string\n_source_file: large_string\n_loaded_at_utc: large_string\n_run_id: large_string\n_contract_version: double\n_validated_at_utc: large_string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2289"
+    },
+    {
+      "dataset": "kostra_account",
+      "status": "PASS",
+      "parquet_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\kostra_account.parquet",
+      "column_count": 20,
+      "technical_columns": [
+        "_contract_version",
+        "_dataset",
+        "_loaded_at_utc",
+        "_run_id",
+        "_source_file",
+        "_validated_at_utc"
+      ],
+      "checks": [
+        {
+          "column": "account_code",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "account_name",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "account_key",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "kostra_art_4digit",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "active",
+          "status": "PASS",
+          "expected": "boolean",
+          "actual": "boolean",
+          "physical_type": "bool",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "account_class_id",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "account_class_name",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "main_category_code",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "main_category_name",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "main_group_code",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "main_group_name",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "kostra_art_3digit",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "kostra_art_name",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "accounting_rule_description",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        }
+      ],
+      "arrow_schema": "account_class_id: int64\naccount_class_name: large_string\nmain_category_code: int64\nmain_category_name: large_string\nmain_group_code: int64\nmain_group_name: large_string\nkostra_art_3digit: int64\nkostra_art_name: large_string\nkostra_art_4digit: int64\naccount_code: int64\naccount_name: large_string\naccount_key: large_string\naccounting_rule_description: large_string\nactive: bool\n_dataset: large_string\n_source_file: large_string\n_loaded_at_utc: large_string\n_run_id: large_string\n_contract_version: double\n_validated_at_utc: large_string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2607"
+    },
+    {
+      "dataset": "kostra_function",
+      "status": "PASS",
+      "parquet_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\kostra_function.parquet",
+      "column_count": 18,
+      "technical_columns": [
+        "_contract_version",
+        "_dataset",
+        "_loaded_at_utc",
+        "_run_id",
+        "_source_file",
+        "_validated_at_utc"
+      ],
+      "checks": [
+        {
+          "column": "kostra_function_id",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "kostra_function_name",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "function_key",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "active",
+          "status": "PASS",
+          "expected": "boolean",
+          "actual": "boolean",
+          "physical_type": "bool",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "main_function_code",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "main_function_name",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "main_function_key",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "service_area_code",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "service_area_name",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "function_group_code",
+          "status": "PASS",
+          "expected": "integer",
+          "actual": "integer",
+          "physical_type": "int64",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "function_group_name",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        },
+        {
+          "column": "accounting_rule_description",
+          "status": "PASS",
+          "expected": "string",
+          "actual": "string",
+          "physical_type": "large_string",
+          "message": "Datatype compatible."
+        }
+      ],
+      "arrow_schema": "main_function_code: large_string\nmain_function_name: large_string\nmain_function_key: large_string\nservice_area_code: int64\nservice_area_name: large_string\nfunction_group_code: int64\nfunction_group_name: large_string\nkostra_function_id: int64\nkostra_function_name: large_string\nfunction_key: large_string\naccounting_rule_description: large_string\nactive: bool\n_dataset: large_string\n_source_file: large_string\n_loaded_at_utc: large_string\n_run_id: large_string\n_contract_version: double\n_validated_at_utc: large_string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2394"
+    }
+  ]
+}

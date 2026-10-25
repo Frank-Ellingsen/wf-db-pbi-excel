@@ -1,0 +1,436 @@
+# ============================================================
+# WF1 - DATASET CONTRACTS
+# Version: 1.0
+#
+# Purpose:
+# Defines minimum structural requirements for each dataset type.
+#
+# IMPORTANT:
+# - This file defines WHAT the canonical dataset must contain.
+# - column_mapping.yaml defines HOW source columns are mapped
+#   to canonical columns.
+# - Derived metrics such as variance should not be stored when
+#   they can be calculated deterministically.
+# ============================================================
+
+version: '1.0'
+
+# ============================================================
+# GLOBAL RULES
+# ============================================================
+
+global_rules:
+  require_header_row: true
+
+  header_row: 1
+
+  first_column: 1
+
+  allow_blank_headers: false
+
+  allow_duplicate_headers: false
+
+  allow_empty_dataset: false
+
+  allow_unknown_columns: true
+
+  preserve_raw_file: true
+
+  trim_column_names: true
+
+# ============================================================
+# DATASET CONTRACTS
+# ============================================================
+
+datasets:
+  # ==========================================================
+  # ERP FINANCE FACT
+  #
+  # Example source:
+  # BoMiljø_ERP_Manuel_Export.csv
+  # ==========================================================
+
+  erp_finance:
+    dataset_type: fact
+
+    description: >
+      Periodisk økonomidata fra ERP eller manuell ERP-eksport.
+
+    required_columns:
+      period:
+        type: string
+        nullable: false
+
+      location:
+        type: string
+        nullable: false
+
+      kostra_function_id:
+        type: integer
+        nullable: false
+
+      kostra_art:
+        type: integer
+        nullable: false
+
+      account_code:
+        type: integer
+        nullable: false
+
+      account_name:
+        type: string
+        nullable: false
+
+      budget:
+        type: number
+        nullable: false
+
+      actual:
+        type: number
+        nullable: false
+
+    optional_columns:
+      month:
+        type: string
+        nullable: true
+
+      month_number:
+        type: integer
+        nullable: true
+
+      tertial:
+        type: string
+        nullable: true
+
+      status:
+        type: string
+        nullable: true
+
+      service_area:
+        type: string
+        nullable: true
+
+      main_group:
+        type: string
+        nullable: true
+
+      sub_group:
+        type: string
+        nullable: true
+
+    derived_columns:
+      variance:
+        formula: 'budget - actual'
+        persist: false
+
+      variance_pct:
+        formula: 'variance / budget'
+        persist: false
+
+      overspend:
+        formula: 'actual - budget'
+        persist: false
+
+    forbidden_source_columns:
+      - variance
+      - variance_pct
+      - avvik
+      - avvik_i_kr
+      - avvik_i_prosent
+      - merforbruk
+
+  # ==========================================================
+  # FRAMSIKT FINANCE FACT
+  #
+  # Example source:
+  # Komskole_Framsikt_Export.csv
+  # ==========================================================
+
+  framsikt_finance:
+    dataset_type: fact
+
+    description: >
+      Year-to-date økonomidata eksportert fra Framsikt.
+
+    required_columns:
+      period:
+        type: string
+        nullable: false
+
+      location:
+        type: string
+        nullable: false
+
+      organizational_unit:
+        type: string
+        nullable: false
+
+      actual_ytd:
+        type: number
+        nullable: false
+
+      budget_ytd:
+        type: number
+        nullable: false
+
+    optional_columns:
+      kostra_function_id:
+        type: integer
+        nullable: true
+
+      account_type:
+        type: string
+        nullable: true
+
+      account_name:
+        type: string
+        nullable: true
+
+      annual_budget:
+        type: number
+        nullable: true
+
+      actual_prior_year:
+        type: number
+        nullable: true
+
+      account_class:
+        type: string
+        nullable: true
+
+      economic_class:
+        type: string
+        nullable: true
+
+    derived_columns:
+      variance_ytd:
+        formula: 'budget_ytd - actual_ytd'
+        persist: false
+
+      variance_ytd_pct:
+        formula: 'variance_ytd / budget_ytd'
+        persist: false
+
+    forbidden_source_columns:
+      - variance
+      - variance_pct
+      - variance_ytd
+      - variance_ytd_pct
+      - avvik
+      - avvik_i_kr
+      - avvik_i_prosent
+
+  # ==========================================================
+  # KOSTRA FUNCTION DIMENSION
+  #
+  # Example source:
+  # dim_kostra_funksjon_framsikt.csv
+  # ==========================================================
+
+  kostra_function:
+    dataset_type: dimension
+
+    description: >
+      Hierarkisk dimensjon for KOSTRA-funksjoner
+      og tjenesteområder.
+
+    primary_key:
+      - kostra_function_id
+
+    required_columns:
+      kostra_function_id:
+        type: integer
+        nullable: false
+
+      kostra_function_name:
+        type: string
+        nullable: false
+
+      function_key:
+        type: string
+        nullable: false
+
+      active:
+        type: boolean
+        nullable: false
+
+    optional_columns:
+      main_function_code:
+        type: string
+        nullable: true
+
+      main_function_name:
+        type: string
+        nullable: true
+
+      main_function_key:
+        type: string
+        nullable: true
+
+      service_area_code:
+        type: integer
+        nullable: true
+
+      service_area_name:
+        type: string
+        nullable: true
+
+      function_group_code:
+        type: integer
+        nullable: true
+
+      function_group_name:
+        type: string
+        nullable: true
+
+      accounting_rule_description:
+        type: string
+        nullable: true
+
+    validation:
+      primary_key_unique: true
+
+      primary_key_not_null: true
+
+  # ==========================================================
+  # KOSTRA ACCOUNT DIMENSION
+  #
+  # Example source:
+  # dim_kostra_kontoplan_framsikt.csv
+  # ==========================================================
+
+  kostra_account:
+    dataset_type: dimension
+
+    description: >
+      Kontoplan med KOSTRA-art, lokal kontokode
+      og tilhørende kontohierarki.
+
+    primary_key:
+      - account_code
+
+    required_columns:
+      account_code:
+        type: integer
+        nullable: false
+
+      account_name:
+        type: string
+        nullable: false
+
+      account_key:
+        type: string
+        nullable: false
+
+      kostra_art_4digit:
+        type: integer
+        nullable: false
+
+      active:
+        type: boolean
+        nullable: false
+
+    optional_columns:
+      account_class_id:
+        type: integer
+        nullable: true
+
+      account_class_name:
+        type: string
+        nullable: true
+
+      main_category_code:
+        type: integer
+        nullable: true
+
+      main_category_name:
+        type: string
+        nullable: true
+
+      main_group_code:
+        type: integer
+        nullable: true
+
+      main_group_name:
+        type: string
+        nullable: true
+
+      kostra_art_3digit:
+        type: integer
+        nullable: true
+
+      kostra_art_name:
+        type: string
+        nullable: true
+
+      accounting_rule_description:
+        type: string
+        nullable: true
+
+    validation:
+      primary_key_unique: true
+
+      primary_key_not_null: true
+
+  # ==========================================================
+  # BUDGET ORGANIZATION DIMENSION
+  #
+  # Example source:
+  # Kristiansand_Kommune_Omrade_og_Ansvarsstruktur.csv
+  # ==========================================================
+
+  budget_organization:
+    dataset_type: dimension
+
+    description: >
+      Organisasjons- og ansvarsstruktur for budsjettstyring
+      i Kristiansand kommune.
+
+    primary_key:
+      - budget_level_2_code
+
+    required_columns:
+      budget_level_1_code:
+        type: integer
+        nullable: false
+
+      budget_level_1_name:
+        type: string
+        nullable: false
+
+      budget_level_2_code:
+        type: string
+        nullable: false
+
+      budget_level_2_name:
+        type: string
+        nullable: false
+
+      responsibility_number_range:
+        type: string
+        nullable: false
+
+    optional_columns:
+      example_responsibility_number:
+        type: integer
+        nullable: true
+
+      example_unit:
+        type: string
+        nullable: true
+
+      kostra_functions:
+        type: string
+        nullable: true
+
+      politically_binding_level:
+        type: string
+        nullable: true
+
+      description:
+        type: string
+        nullable: true
+
+    validation:
+      primary_key_unique: true
+      primary_key_not_null: true

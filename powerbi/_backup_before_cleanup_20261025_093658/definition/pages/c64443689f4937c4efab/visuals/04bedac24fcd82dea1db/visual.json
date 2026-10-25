@@ -1,0 +1,99 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "04bedac24fcd82dea1db",
+  "position": {
+    "x": 40,
+    "y": 230,
+    "z": 3,
+    "height": 700,
+    "width": 1770,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_kostra_function"
+                    }
+                  },
+                  "Property": "kostra_function_name"
+                }
+              },
+              "queryRef": "dim_kostra_function.kostra_function_name",
+              "nativeQueryRef": "kostra_function_name",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Unmapped Function Rows"
+                }
+              },
+              "queryRef": "_Measures.ERP Unmapped Function Rows",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Unmapped Function IDs"
+                }
+              },
+              "queryRef": "_Measures.ERP Unmapped Function IDs",
+              "active": false
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Framsikt Unmapped Function Rows"
+                }
+              },
+              "queryRef": "_Measures.Framsikt Unmapped Function Rows",
+              "active": false
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Framsikt Unmapped Function IDs"
+                }
+              },
+              "queryRef": "_Measures.Framsikt Unmapped Function IDs",
+              "active": false
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

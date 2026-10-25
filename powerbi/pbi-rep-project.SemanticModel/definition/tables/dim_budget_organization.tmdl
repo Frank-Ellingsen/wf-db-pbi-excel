@@ -1,0 +1,110 @@
+table dim_budget_organization
+	lineageTag: 6dc5f7e2-8f3a-499f-8938-dfd00e378e82
+
+	column budget_organization_key
+		dataType: string
+		lineageTag: 948d2bab-3082-48d2-a6de-d14f9dfa25ef
+		summarizeBy: none
+		sourceColumn: budget_organization_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget_level_1_code
+		dataType: string
+		lineageTag: 49ca7032-a612-46ee-aaad-50cdc5587b65
+		summarizeBy: none
+		sourceColumn: budget_level_1_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget_level_1_name
+		dataType: string
+		lineageTag: da564c59-7c6e-41a8-ade4-1bfc5d686bfd
+		summarizeBy: none
+		sourceColumn: budget_level_1_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget_level_2_code
+		dataType: string
+		lineageTag: 7ce7aa5e-11f3-4154-b430-e22c26da98dd
+		summarizeBy: none
+		sourceColumn: budget_level_2_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget_level_2_name
+		dataType: string
+		lineageTag: 9f33aae1-1a2f-489e-9740-90b44b38ee8e
+		summarizeBy: none
+		sourceColumn: budget_level_2_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column responsibility_number_range
+		dataType: string
+		lineageTag: b697ed32-c3a5-42b5-b0ba-d212b7009566
+		summarizeBy: none
+		sourceColumn: responsibility_number_range
+
+		annotation SummarizationSetBy = Automatic
+
+	column example_responsibility_number
+		dataType: string
+		lineageTag: 3dbafc9b-759d-4295-a169-7b4ecb2a2653
+		summarizeBy: none
+		sourceColumn: example_responsibility_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column example_unit
+		dataType: string
+		lineageTag: 5e4fa6ab-b60e-4cd9-b72c-4a525cd4165a
+		summarizeBy: none
+		sourceColumn: example_unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_functions
+		dataType: string
+		lineageTag: 5d4770a0-11e8-4493-bb6a-b70e2d0945f9
+		summarizeBy: none
+		sourceColumn: kostra_functions
+
+		annotation SummarizationSetBy = Automatic
+
+	column politically_binding_level
+		dataType: string
+		lineageTag: 57658246-f48f-4268-a58b-39273db7434a
+		summarizeBy: none
+		sourceColumn: politically_binding_level
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: 7bf5e297-cf83-4454-8111-04b9e9f62ac4
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column active
+		dataType: string
+		lineageTag: b50ce778-5919-4ef4-aa89-74dd15597263
+		summarizeBy: none
+		sourceColumn: active
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_budget_organization = m
+		mode: import
+		source =
+				let
+				    Source = Odbc.DataSource("access_mode=read_only;dsn=DuckDB_pbi", [HierarchicalNavigation=true]),
+				    project_finance_powerbi_Database = Source{[Name="project_finance_powerbi",Kind="Database"]}[Data],
+				    gold_Schema = project_finance_powerbi_Database{[Name="gold",Kind="Schema"]}[Data],
+				    dim_budget_organization_Table = gold_Schema{[Name="dim_budget_organization",Kind="Table"]}[Data]
+				in
+				    dim_budget_organization_Table
+

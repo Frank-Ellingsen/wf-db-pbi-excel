@@ -1,0 +1,56 @@
+{
+  "visual": {
+    "drillFilterOtherVisuals": true,
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Y": {
+          "projections": [
+            {
+              "queryRef": "_Measures.ERP Regnskap MoM",
+              "field": {
+                "Measure": {
+                  "Property": "ERP Regnskap MoM",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Category": {
+          "projections": [
+            {
+              "nativeQueryRef": "year_month",
+              "active": true,
+              "queryRef": "dim_date.year_month",
+              "field": {
+                "Column": {
+                  "Property": "year_month",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_date"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "position": {
+    "tabOrder": 2,
+    "width": 870,
+    "y": 500,
+    "height": 430,
+    "z": 2,
+    "x": 40
+  },
+  "name": "1521a1bd84c380d5adb0"
+}

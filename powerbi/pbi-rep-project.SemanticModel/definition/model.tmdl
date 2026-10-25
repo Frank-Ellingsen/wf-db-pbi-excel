@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["dim_account","dim_date","dim_kostra_function","fact_framsikt_finance","fact_erp_finance","dim_budget_organization"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_account
+ref table dim_date
+ref table dim_kostra_function
+ref table fact_framsikt_finance
+ref table fact_erp_finance
+ref table _Measures
+ref table dim_budget_organization
+
+ref cultureInfo en-US
+

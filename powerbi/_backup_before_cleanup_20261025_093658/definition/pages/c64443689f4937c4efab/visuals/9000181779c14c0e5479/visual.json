@@ -1,0 +1,37 @@
+{
+  "visual": {
+    "drillFilterOtherVisuals": true,
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "queryRef": "_Measures.Overall Data Quality Status",
+              "field": {
+                "Measure": {
+                  "Property": "Overall Data Quality Status",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "position": {
+    "tabOrder": 2,
+    "width": 330,
+    "y": 40,
+    "height": 160,
+    "z": 2,
+    "x": 740
+  },
+  "name": "9000181779c14c0e5479"
+}

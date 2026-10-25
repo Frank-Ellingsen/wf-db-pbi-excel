@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "e82f421fe9a3fe72a455",
+  "position": {
+    "x": 590,
+    "y": 290,
+    "z": 9000,
+    "height": 280,
+    "width": 280,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "funnel",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_kostra_function"
+                    }
+                  },
+                  "Property": "service_area_name"
+                }
+              },
+              "queryRef": "dim_kostra_function.service_area_name",
+              "nativeQueryRef": "service_area_name",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Regnskap"
+                }
+              },
+              "queryRef": "_Measures.ERP Regnskap",
+              "nativeQueryRef": "ERP Regnskap"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Kostnadstrapp Tjenesteomrader'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

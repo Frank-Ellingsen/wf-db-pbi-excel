@@ -1,0 +1,522 @@
+table _Measures
+	lineageTag: 584df2ea-fd59-4d7c-9010-78e369b678b1
+
+	measure 'ERP Regnskap' = SUM ( fact_erp_finance[actual] )
+		formatString: #,##0.00
+		displayFolder: 01 Base\ERP
+		lineageTag: e566c735-cc0a-4660-8040-4dd886592b93
+
+	measure 'ERP Budsjett' = SUM ( fact_erp_finance[budget] )
+		formatString: #,##0.00
+		displayFolder: 01 Base\ERP
+		lineageTag: bf9a369b-a4c1-472b-ba1d-e7a610c652c9
+
+	measure 'ERP Rader' = COUNTROWS ( fact_erp_finance )
+		formatString: #,##0
+		displayFolder: 01 Base\ERP
+		lineageTag: 73c11e89-07eb-458c-8b4b-48ade5262e0e
+
+	measure 'Framsikt Regnskap YTD' = SUM ( fact_framsikt_finance[actual_ytd] )
+		formatString: #,##0.00
+		displayFolder: 01 Base\Framsikt
+		lineageTag: a2467db5-122d-4193-9602-d4691339a3bb
+
+	measure 'Framsikt Budsjett YTD' = SUM ( fact_framsikt_finance[budget_ytd] )
+		formatString: #,##0.00
+		displayFolder: 01 Base\Framsikt
+		lineageTag: c6433846-90a0-45b4-b9a4-debb7551fee3
+
+	measure 'Framsikt Årsbudsjett' = SUM ( fact_framsikt_finance[annual_budget] )
+		formatString: #,##0.00
+		displayFolder: 01 Base\Framsikt
+		lineageTag: 027d5ed6-389d-4fec-8cd5-9d26ef80a8dc
+
+	measure 'Framsikt Regnskap PY' = SUM ( fact_framsikt_finance[actual_prior_year] )
+		formatString: #,##0.00
+		displayFolder: 01 Base\Framsikt
+		lineageTag: f36a419c-8804-4097-9ff3-3cee4bbaa554
+
+	measure 'Framsikt Rader' = COUNTROWS ( fact_framsikt_finance )
+		formatString: #,##0
+		displayFolder: 01 Base\Framsikt
+		lineageTag: 2d27ea49-0451-40f2-9bfd-1e28a1f1b571
+
+	measure 'ERP Avvik' =
+			VAR Budsjett = [ERP Budsjett]
+			VAR Regnskap = [ERP Regnskap]
+			RETURN Budsjett - Regnskap
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 02 Variance\ERP
+		lineageTag: 0de104be-c173-469e-a0e0-ba894ef44ef0
+
+	measure 'ERP Avvik %' = DIVIDE ( [ERP Avvik], ABS ( [ERP Budsjett] ) )
+		formatString: 0.0%;[Red]-0.0%
+		displayFolder: 02 Variance\ERP
+		lineageTag: 10b4d0ed-8635-4192-aa9b-fdfbcee1bba4
+
+	measure 'ERP Absolutt Avvik' = ABS ( [ERP Avvik] )
+		formatString: #,##0.00
+		displayFolder: 02 Variance\ERP
+		lineageTag: 2bc2b078-7e4c-4cc4-ba65-6dcb1c92eb26
+
+	measure 'ERP Budsjettforbruk %' = DIVIDE ( [ERP Regnskap], ABS ( [ERP Budsjett] ) )
+		formatString: 0.0%
+		displayFolder: 02 Variance\ERP
+		lineageTag: 10008546-4319-43a0-9993-5dcd73da7ab0
+
+	measure 'ERP Mindreforbruk' = VAR V = [ERP Avvik] RETURN IF ( V > 0, V )
+		formatString: #,##0.00
+		displayFolder: 02 Variance\ERP
+		lineageTag: 426554f3-948f-4cfa-88ca-a9775cd0014e
+
+	measure 'ERP Merforbruk' = VAR V = [ERP Avvik] RETURN IF ( V < 0, V )
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 02 Variance\ERP
+		lineageTag: 081dd64e-ec94-494c-9e5e-4e481f024d53
+
+	measure 'Framsikt Avvik YTD' = [Framsikt Budsjett YTD] - [Framsikt Regnskap YTD]
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 02 Variance\Framsikt
+		lineageTag: 86861001-d845-4e61-bca6-90df8136f759
+
+	measure 'Framsikt Avvik YTD %' = DIVIDE ( [Framsikt Avvik YTD], ABS ( [Framsikt Budsjett YTD] ) )
+		formatString: 0.0%;[Red]-0.0%
+		displayFolder: 02 Variance\Framsikt
+		lineageTag: 1e8e0785-af8e-48ee-8417-a94a80e1298c
+
+	measure 'Framsikt Absolutt Avvik YTD' = ABS ( [Framsikt Avvik YTD] )
+		formatString: #,##0.00
+		displayFolder: 02 Variance\Framsikt
+		lineageTag: 4074d009-49aa-4fc0-abc3-b77589440387
+
+	measure 'Framsikt Budsjettforbruk YTD %' = DIVIDE ( [Framsikt Regnskap YTD], ABS ( [Framsikt Budsjett YTD] ) )
+		formatString: 0.0%
+		displayFolder: 02 Variance\Framsikt
+		lineageTag: f4c55812-056e-4f6e-8f9d-abd0c8569d8e
+
+	measure 'Framsikt Endring vs PY' = [Framsikt Regnskap YTD] - [Framsikt Regnskap PY]
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 02 Variance\Framsikt
+		lineageTag: 89963a0c-810d-4444-9ddc-8281e6b2ffba
+
+	measure 'Framsikt Endring vs PY %' = DIVIDE ( [Framsikt Endring vs PY], ABS ( [Framsikt Regnskap PY] ) )
+		formatString: 0.0%;[Red]-0.0%
+		displayFolder: 02 Variance\Framsikt
+		lineageTag: 8fafb3db-ed0f-456a-adfb-b54e635ab0e8
+
+	measure 'ERP Avviksstatus' = VAR V = [ERP Avvik] RETURN SWITCH ( TRUE (), ISBLANK ( V ), "NO_DATA", V > 0, "MINDREFORBRUK", V < 0, "MERFORBRUK", "BALANSE" )
+		displayFolder: 03 Status
+		lineageTag: 5b4a245a-770c-4582-a2ea-ea8b0ec8df08
+
+	measure 'Framsikt Avviksstatus' = VAR V = [Framsikt Avvik YTD] RETURN SWITCH ( TRUE (), ISBLANK ( V ), "NO_DATA", V > 0, "MINDREFORBRUK", V < 0, "MERFORBRUK", "BALANSE" )
+		displayFolder: 03 Status
+		lineageTag: ff90a6c3-67aa-413a-8e41-5b452eab7ec7
+
+	measure 'ERP Regnskap PM' = CALCULATE ( [ERP Regnskap], DATEADD ( dim_date[date], -1, MONTH ) )
+		formatString: #,##0.00
+		displayFolder: 04 Time Intelligence\Previous
+		lineageTag: b69eaeea-756f-46df-8306-7a13d7f2143e
+
+	measure 'ERP Budsjett PM' = CALCULATE ( [ERP Budsjett], DATEADD ( dim_date[date], -1, MONTH ) )
+		formatString: #,##0.00
+		displayFolder: 04 Time Intelligence\Previous
+		lineageTag: 3c540848-51fc-498d-8ff3-97e88c021227
+
+	measure 'ERP Regnskap MoM' = [ERP Regnskap] - [ERP Regnskap PM]
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 04 Time Intelligence\Change
+		lineageTag: 7c106110-0843-4ddf-bda6-59a1fef609d6
+
+	measure 'ERP Regnskap MoM %' = DIVIDE ( [ERP Regnskap MoM], ABS ( [ERP Regnskap PM] ) )
+		formatString: 0.0%;[Red]-0.0%
+		displayFolder: 04 Time Intelligence\Change
+		lineageTag: 06c531d2-1701-4006-8e2b-467f4e6650c8
+
+	measure 'ERP Regnskap PY' = CALCULATE ( [ERP Regnskap], DATEADD ( dim_date[date], -1, YEAR ) )
+		formatString: #,##0.00
+		displayFolder: 04 Time Intelligence\Previous
+		lineageTag: da62b6b7-c09d-4346-acce-f379a1e74174
+
+	measure 'ERP Regnskap YoY' = [ERP Regnskap] - [ERP Regnskap PY]
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 04 Time Intelligence\Change
+		lineageTag: 71f9c702-7653-4bb2-9266-0cf480c4329d
+
+	measure 'ERP Regnskap YoY %' = DIVIDE ( [ERP Regnskap YoY], ABS ( [ERP Regnskap PY] ) )
+		formatString: 0.0%;[Red]-0.0%
+		displayFolder: 04 Time Intelligence\Change
+		lineageTag: 45a3a9ff-4113-4eed-a38c-96820f2b182f
+
+	measure 'ERP Regnskap YTD' = CALCULATE ( [ERP Regnskap], DATESYTD ( dim_date[date] ) )
+		formatString: #,##0.00
+		displayFolder: 04 Time Intelligence\YTD
+		lineageTag: ec14f5ed-70bc-4065-99e4-3160350289e0
+
+	measure 'ERP Budsjett YTD' = CALCULATE ( [ERP Budsjett], DATESYTD ( dim_date[date] ) )
+		formatString: #,##0.00
+		displayFolder: 04 Time Intelligence\YTD
+		lineageTag: a349a5b6-80a3-4869-b215-9a4e0c53fac7
+
+	measure 'ERP Avvik YTD' = [ERP Budsjett YTD] - [ERP Regnskap YTD]
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 04 Time Intelligence\YTD
+		lineageTag: 535596d6-9b43-40d3-a4c6-48ae0f5267c1
+
+	measure 'ERP Avvik YTD %' = DIVIDE ( [ERP Avvik YTD], ABS ( [ERP Budsjett YTD] ) )
+		formatString: 0.0%;[Red]-0.0%
+		displayFolder: 04 Time Intelligence\YTD
+		lineageTag: c68a7e47-f602-46bb-84f7-13a9e8b6f2a4
+
+	measure 'ERP Regnskap Running' =
+			VAR MaxDate = MAX ( dim_date[date] )
+			RETURN CALCULATE ( [ERP Regnskap], FILTER ( ALLSELECTED ( dim_date[date] ), dim_date[date] <= MaxDate ) )
+		formatString: #,##0.00
+		displayFolder: 04 Time Intelligence\Running
+		lineageTag: a705dac3-bbda-4325-b58c-1eaa13c98eb9
+
+	measure 'ERP Budsjett Running' =
+			VAR MaxDate = MAX ( dim_date[date] )
+			RETURN CALCULATE ( [ERP Budsjett], FILTER ( ALLSELECTED ( dim_date[date] ), dim_date[date] <= MaxDate ) )
+		formatString: #,##0.00
+		displayFolder: 04 Time Intelligence\Running
+		lineageTag: e4a7c703-139f-4b1d-aaf1-01c0dd997ea5
+
+	measure 'ERP Regnskap Moving Avg 3M' =
+			VAR EndDate = MAX ( dim_date[date] )
+			VAR PeriodDates = DATESINPERIOD ( dim_date[date], EndDate, -3, MONTH )
+			RETURN DIVIDE ( CALCULATE ( [ERP Regnskap], PeriodDates ), CALCULATE ( DISTINCTCOUNT ( dim_date[year_month] ), PeriodDates ) )
+		formatString: #,##0.00
+		displayFolder: 04 Time Intelligence\Rolling
+		lineageTag: 23aa9439-14d2-4383-a73c-f986a6d8aadf
+
+	measure 'ERP Regnskap Selected' = [ERP Regnskap]
+		formatString: #,##0.00
+		displayFolder: 05 Context & Totals\Selection
+		lineageTag: 51c20ae3-d5e4-4993-a3e6-f12eac02782f
+
+	measure 'ERP Regnskap All Accounts' = CALCULATE ( [ERP Regnskap], REMOVEFILTERS ( dim_account ) )
+		formatString: #,##0.00
+		displayFolder: 05 Context & Totals\Benchmark
+		lineageTag: 901d1558-1742-4d12-99f1-d8769c3783f8
+
+	measure 'ERP Regnskap All Functions' = CALCULATE ( [ERP Regnskap], REMOVEFILTERS ( dim_kostra_function ) )
+		formatString: #,##0.00
+		displayFolder: 05 Context & Totals\Benchmark
+		lineageTag: 263789ea-3ac8-49c1-83a0-4aa7d8dab9f4
+
+	measure 'ERP Regnskap Period Total' = CALCULATE ( [ERP Regnskap], REMOVEFILTERS ( dim_account ), REMOVEFILTERS ( dim_kostra_function ) )
+		formatString: #,##0.00
+		displayFolder: 05 Context & Totals\Period
+		lineageTag: 5d93c69d-24b4-4984-9dc8-0755503e1a29
+
+	measure 'ERP Regnskap Grand Total' = CALCULATE ( [ERP Regnskap], REMOVEFILTERS () )
+		formatString: #,##0.00
+		displayFolder: 05 Context & Totals\Grand Total
+		lineageTag: b10cc5da-b4f9-4513-bf9e-16ca9ad6f966
+
+	measure 'ERP Budsjett Grand Total' = CALCULATE ( [ERP Budsjett], REMOVEFILTERS () )
+		formatString: #,##0.00
+		displayFolder: 05 Context & Totals\Grand Total
+		lineageTag: 74f79a0a-fc7a-4914-9653-de192f490ade
+
+	measure 'ERP Avvik Grand Total' = [ERP Budsjett Grand Total] - [ERP Regnskap Grand Total]
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 05 Context & Totals\Grand Total
+		lineageTag: cca954a6-cfbe-44f1-8888-06e84c6fde96
+
+	measure 'ERP Kontoandel %' = DIVIDE ( [ERP Regnskap], CALCULATE ( [ERP Regnskap], REMOVEFILTERS ( dim_account ) ) )
+		formatString: 0.0%
+		displayFolder: 06 Share & Contribution
+		lineageTag: 65dd620e-0363-4371-9b0c-9a141a9218fa
+
+	measure 'ERP Funksjonsandel %' = DIVIDE ( [ERP Regnskap], CALCULATE ( [ERP Regnskap], REMOVEFILTERS ( dim_kostra_function ) ) )
+		formatString: 0.0%
+		displayFolder: 06 Share & Contribution
+		lineageTag: 6e239f05-3c18-4030-a180-a64bb9846f38
+
+	measure 'ERP Avviksbidrag %' = DIVIDE ( [ERP Avvik], CALCULATE ( [ERP Avvik], REMOVEFILTERS ( dim_account ), REMOVEFILTERS ( dim_kostra_function ) ) )
+		formatString: 0.0%;[Red]-0.0%
+		displayFolder: 06 Share & Contribution
+		lineageTag: 03a0e2b0-5929-4465-86ac-480f3ed88a1a
+
+	measure 'ERP Konto Rank Avvik' = RANKX ( ALLSELECTED ( dim_account[account_code] ), [ERP Absolutt Avvik], , DESC, DENSE )
+		formatString: 0
+		displayFolder: 07 Ranking
+		lineageTag: 3287b4e1-9f9b-4577-997c-c5169d5ac451
+
+	measure 'ERP Funksjon Rank Avvik' = RANKX ( ALLSELECTED ( dim_kostra_function[kostra_function_id] ), [ERP Absolutt Avvik], , DESC, DENSE )
+		formatString: 0
+		displayFolder: 07 Ranking
+		lineageTag: 234fe5a3-33b8-4b25-bd9c-3ca836eee029
+
+	measure 'ERP Rapportert Måned Nr' =
+			VAR DatesWithActuals = CALCULATETABLE ( VALUES ( fact_erp_finance[date] ), fact_erp_finance[actual] <> 0 )
+			VAR MaxActualDate = MAXX ( DatesWithActuals, fact_erp_finance[date] )
+			RETURN IF ( ISBLANK ( MaxActualDate ), 12, MONTH ( MaxActualDate ) )
+		formatString: 0
+		displayFolder: 08 Forecast EOY
+		lineageTag: adbb60b9-e8e2-4f23-8f28-aff8bdff7ef8
+
+	measure 'ERP EOY Run Rate' =
+			VAR MonthNo = [ERP Rapportert Måned Nr]
+			VAR ActualYTD = [ERP Regnskap YTD]
+			RETURN IF ( MonthNo > 0, DIVIDE ( ActualYTD, MonthNo ) * 12 )
+		formatString: #,##0.00
+		displayFolder: 08 Forecast EOY
+		lineageTag: 0fb813ad-bf81-4b5c-81e2-df5ad812a93c
+
+	measure 'EOY Årsbudsjett' =
+			VAR FramsiktBudget = [Framsikt Årsbudsjett]
+			VAR ERPAnnualBudget = CALCULATE ( [ERP Budsjett], REMOVEFILTERS ( dim_date ) )
+			RETURN IF ( NOT ISBLANK ( FramsiktBudget ) && FramsiktBudget > 0, FramsiktBudget, ERPAnnualBudget )
+		formatString: #,##0.00
+		displayFolder: 08 Forecast EOY
+		lineageTag: 7aaad398-ee19-4f40-9693-6fa95b90bd2c
+
+	measure 'EOY Run Rate Avvik' = [EOY Årsbudsjett] - [ERP EOY Run Rate]
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 08 Forecast EOY
+		lineageTag: bfea1f5a-d79b-4b85-b5a2-f8c7ee76bae5
+
+	measure 'EOY Run Rate Avvik %' = DIVIDE ( [EOY Run Rate Avvik], ABS ( [EOY Årsbudsjett] ) )
+		formatString: 0.0%;[Red]-0.0%
+		displayFolder: 08 Forecast EOY
+		lineageTag: 2e795814-d112-4597-aea1-0ca6333b84ee
+
+	measure 'EOY Zero Balance Target' = [EOY Årsbudsjett]
+		formatString: #,##0.00
+		displayFolder: 09 Zero Balance
+		lineageTag: d2ddf239-3914-4f17-8e30-7327f3792b90
+
+	measure 'EOY Resterende Ramme' = [EOY Årsbudsjett] - [ERP Regnskap YTD]
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 09 Zero Balance
+		lineageTag: 9f3449a8-cd66-4a5d-b9c3-68ee7b443d6c
+
+	measure 'EOY Måneder Igjen' = VAR MonthNo = [ERP Rapportert Måned Nr] RETURN MAX ( 0, 12 - MonthNo )
+		formatString: 0
+		displayFolder: 09 Zero Balance
+		lineageTag: 6aa9f602-7cb5-4308-8369-beb189366e63
+
+	measure 'EOY Zero Balance Monthly Rate' = DIVIDE ( [EOY Resterende Ramme], [EOY Måneder Igjen] )
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 09 Zero Balance
+		lineageTag: 8588c411-6106-4642-9031-8c380051488f
+
+	measure 'EOY Required Correction' = [EOY Årsbudsjett] - [ERP EOY Run Rate]
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 11 Prescription
+		lineageTag: 0082e859-40ba-4f81-bd96-a46a37b5d5c6
+
+	measure 'EOY Required Correction Abs' = ABS ( [EOY Required Correction] )
+		formatString: #,##0.00
+		displayFolder: 11 Prescription
+		lineageTag: 8889e7d1-be8f-4f6e-a693-84ecbff3e79e
+
+	measure 'EOY Required Monthly Correction' = DIVIDE ( [EOY Required Correction], [EOY Måneder Igjen] )
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 11 Prescription
+		lineageTag: 007b6c89-6a25-4f5d-b158-78f47d8d1981
+
+	measure 'EOY Required Correction %' = DIVIDE ( [EOY Required Correction], ABS ( [EOY Årsbudsjett] ) )
+		formatString: 0.0%;[Red]-0.0%
+		displayFolder: 11 Prescription
+		lineageTag: 4e5929c9-de64-48ed-9042-32f969667caa
+
+	measure 'ERP Unmapped Function Rows' = CALCULATE ( COUNTROWS ( fact_erp_finance ), KEEPFILTERS ( fact_erp_finance[function_mapping_status] = "UNMAPPED" ) )
+		formatString: #,##0
+		displayFolder: 12 Data Quality\ERP
+		lineageTag: 42e5151e-0b6f-4bbe-b472-870e5e82877f
+
+	measure 'ERP Unmapped Function IDs' = CALCULATE ( DISTINCTCOUNT ( fact_erp_finance[kostra_function_id] ), KEEPFILTERS ( fact_erp_finance[function_mapping_status] = "UNMAPPED" ) )
+		formatString: #,##0
+		displayFolder: 12 Data Quality\ERP
+		lineageTag: 42e56902-dc1d-4aec-b34e-612d73d03534
+
+	measure 'ERP Unmapped Account Rows' = CALCULATE ( COUNTROWS ( fact_erp_finance ), KEEPFILTERS ( fact_erp_finance[account_mapping_status] = "UNMAPPED" ) )
+		formatString: #,##0
+		displayFolder: 12 Data Quality\ERP
+		lineageTag: fc20f5a5-403e-498b-b8bc-5880ef7d797c
+
+	measure 'ERP Mapping %' = DIVIDE ( [ERP Rader] - [ERP Unmapped Function Rows], [ERP Rader] )
+		formatString: 0.0%
+		displayFolder: 12 Data Quality\ERP
+		lineageTag: 1da5aae4-f26a-4de4-9376-e3a6bb54f4c2
+
+	measure 'Framsikt Unmapped Function Rows' = CALCULATE ( COUNTROWS ( fact_framsikt_finance ), KEEPFILTERS ( fact_framsikt_finance[function_mapping_status] = "UNMAPPED" ) )
+		formatString: #,##0
+		displayFolder: 12 Data Quality\Framsikt
+		lineageTag: 58088b4a-5a03-400c-a96b-af7f8e73e940
+
+	measure 'Framsikt Unmapped Function IDs' = CALCULATE ( DISTINCTCOUNT ( fact_framsikt_finance[kostra_function_id] ), KEEPFILTERS ( fact_framsikt_finance[function_mapping_status] = "UNMAPPED" ) )
+		formatString: #,##0
+		displayFolder: 12 Data Quality\Framsikt
+		lineageTag: bf0a67fd-417c-4171-a53f-6e2900e0a811
+
+	measure 'Framsikt Mapping %' = DIVIDE ( [Framsikt Rader] - [Framsikt Unmapped Function Rows], [Framsikt Rader] )
+		formatString: 0.0%
+		displayFolder: 12 Data Quality\Framsikt
+		lineageTag: 08f66c24-99ea-473d-83bf-8c1abca55637
+
+	measure 'ERP Data Quality Status' = IF ( [ERP Unmapped Function Rows] > 0 || [ERP Unmapped Account Rows] > 0, "WARNING", "PASS" )
+		displayFolder: 12 Data Quality\Status
+		lineageTag: 193eb578-28f1-4f97-aafa-7286c334dc4c
+
+	measure 'Framsikt Data Quality Status' = IF ( [Framsikt Unmapped Function Rows] > 0, "WARNING", "PASS" )
+		displayFolder: 12 Data Quality\Status
+		lineageTag: 6b285b9c-d9f1-41a8-ab43-06e74e2f0646
+
+	measure 'Overall Data Quality Status' = IF ( [ERP Data Quality Status] = "WARNING" || [Framsikt Data Quality Status] = "WARNING", "WARNING", "PASS" )
+		displayFolder: 12 Data Quality\Status
+		lineageTag: 2ddf1664-2a15-4bfc-bfe8-b7b403fe0568
+
+	measure 'ERP RAG' = VAR V = [ERP Avvik YTD] RETURN SWITCH ( TRUE (), ISBLANK ( V ), "NO_DATA", V > 0, "GREEN", V < 0, "RED", "YELLOW" )
+		displayFolder: 13 RAG\Status
+		lineageTag: eaf865df-e51b-4d6b-a65e-b5e86a7fdb76
+
+	measure 'Framsikt RAG' = VAR V = [Framsikt Avvik YTD] RETURN SWITCH ( TRUE (), ISBLANK ( V ), "NO_DATA", V > 0, "GREEN", V < 0, "RED", "YELLOW" )
+		displayFolder: 13 RAG\Status
+		lineageTag: c00bfa40-432c-4e7e-b3fc-f66a7edf148b
+
+	measure 'EOY RAG' = VAR V = [EOY Run Rate Avvik] RETURN SWITCH ( TRUE (), ISBLANK ( V ), "NO_DATA", V > 0, "GREEN", V < 0, "RED", "YELLOW" )
+		displayFolder: 13 RAG\Status
+		lineageTag: f36472a1-11ba-4589-8b05-0eebf9b61a4e
+
+	measure 'ERP RAG Color' = SWITCH ( [ERP RAG], "GREEN", "#107C10", "YELLOW", "#FFB900", "RED", "#D13438", "#A19F9D" )
+		displayFolder: 14 Conditional Formatting\Colors
+		lineageTag: 5c92cc3e-bcf1-4815-9cb2-65aa6f8c6ef2
+
+	measure 'Framsikt RAG Color' = SWITCH ( [Framsikt RAG], "GREEN", "#107C10", "YELLOW", "#FFB900", "RED", "#D13438", "#A19F9D" )
+		displayFolder: 14 Conditional Formatting\Colors
+		lineageTag: 6247c5e9-18bc-4061-95dc-6f5589012037
+
+	measure 'EOY RAG Color' = SWITCH ( [EOY RAG], "GREEN", "#107C10", "YELLOW", "#FFB900", "RED", "#D13438", "#A19F9D" )
+		displayFolder: 14 Conditional Formatting\Colors
+		lineageTag: d0c96f5a-7670-4717-8ae2-333bce1b006c
+
+	measure 'Data Quality Color' = SWITCH ( [Overall Data Quality Status], "PASS", "#107C10", "WARNING", "#FFB900", "#D13438" )
+		displayFolder: 14 Conditional Formatting\Colors
+		lineageTag: 75741e39-5108-44b4-bced-aaf54801c8dd
+
+	measure 'ERP RAG Symbol' = SWITCH ( [ERP RAG], "GREEN", "●", "YELLOW", "●", "RED", "●", "○" )
+		displayFolder: 14 Conditional Formatting\Symbols
+		lineageTag: 5c886e54-2151-49ef-a195-82b298f0c61f
+
+	measure 'Framsikt RAG Symbol' = SWITCH ( [Framsikt RAG], "GREEN", "●", "YELLOW", "●", "RED", "●", "○" )
+		displayFolder: 14 Conditional Formatting\Symbols
+		lineageTag: d337ad0a-873a-455d-afa4-7a111832b930
+
+	measure 'CF ERP Avvik Bar' = [ERP Avvik YTD]
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 14 Conditional Formatting\Bars
+		lineageTag: a2fbf88c-ca4f-4ab5-ae00-3f5de5adaa04
+
+	measure 'CF ERP Absolutt Avvik Bar' = ABS ( [ERP Avvik YTD] )
+		formatString: #,##0.00
+		displayFolder: 14 Conditional Formatting\Bars
+		lineageTag: 4374c6fb-11ca-4900-a9ca-595596738d2a
+
+	measure 'CF EOY Gap Bar' = [EOY Run Rate Avvik]
+		formatString: #,##0.00;[Red]-#,##0.00
+		displayFolder: 14 Conditional Formatting\Bars
+		lineageTag: db068d39-98f1-4f97-9bec-7414134bc4ee
+
+	measure 'CF Budsjettforbruk Bar' = [ERP Budsjettforbruk %]
+		formatString: 0.0%
+		displayFolder: 14 Conditional Formatting\Bars
+		lineageTag: 7cf1eebd-4e0f-4405-95ef-86d5c42251b1
+
+	measure 'Selected YYYY-MM' = SELECTEDVALUE ( dim_date[year_month], "Flere perioder" )
+		displayFolder: 15 Selection Context
+		lineageTag: 41d701fb-0f7f-4354-875c-00080cafea31
+
+	measure 'Selected Account' = SELECTEDVALUE ( dim_account[account_name], "Alle kontoer" )
+		displayFolder: 15 Selection Context
+		lineageTag: cd701db4-bd7c-4994-ace3-ae8b675bffb3
+
+	measure 'Selected Function' = SELECTEDVALUE ( dim_kostra_function[kostra_function_name], "Alle funksjoner" )
+		displayFolder: 15 Selection Context
+		lineageTag: f83623d7-2f60-4cd1-9ad1-7b10329846ab
+
+	measure 'Title Status' = "Status | " & [Selected YYYY-MM]
+		displayFolder: 16 Titles & Labels
+		lineageTag: db948b3a-b52f-4269-9959-07bf3ccc77b3
+
+	measure 'Title Diagnose' = "Diagnose | " & [Selected YYYY-MM]
+		displayFolder: 16 Titles & Labels
+		lineageTag: f75c7724-6ade-4ba4-8d62-150c3358a2f5
+
+	measure 'Title Forecast' = "Prognose EOY | " & [Selected YYYY-MM]
+		displayFolder: 16 Titles & Labels
+		lineageTag: dac82b60-bf63-42f7-a88b-5ad918c7468f
+
+	measure 'Title Prescription' = "Tiltak | " & [Selected YYYY-MM]
+		displayFolder: 16 Titles & Labels
+		lineageTag: e7c3b5aa-8c87-45a9-b9ec-d240e9212594
+
+	measure 'Sandbox ERP Row Count' = [ERP Rader]
+		formatString: #,##0
+		displayFolder: 90 Sandbox
+		lineageTag: 0c98bd91-91fe-4f5f-8113-f8d0838de869
+
+	measure 'Sandbox Framsikt Row Count' = [Framsikt Rader]
+		formatString: #,##0
+		displayFolder: 90 Sandbox
+		lineageTag: b471c777-ac3c-4950-97e2-17f9b609e800
+
+	measure 'Story Executive Summary' =
+			VAR AvvikYTD = [ERP Avvik YTD]
+			VAR AvvikPct = [ERP Avvik YTD %]
+			VAR PeriodTxt = [Selected YYYY-MM]
+			VAR StatusTxt =
+				IF (
+					AvvikYTD < 0,
+					"MERFORBRUK: Regnskap overskrider budsjett med " & FORMAT ( ABS ( AvvikYTD ), "#,##0 kr" ) & " (" & FORMAT ( ABS ( AvvikPct ), "0.0%" ) & ") YTD. Kostnadspresset drives av eksterne vikarer og overtid.",
+					"MINDREFORBRUK: Regnskap er " & FORMAT ( AvvikYTD, "#,##0 kr" ) & " (" & FORMAT ( AvvikPct, "0.0%" ) & ") lavere enn budsjett YTD. Driften ligger innenfor gjeldende rammer."
+				)
+			RETURN "STATUS " & PeriodTxt & " | " & StatusTxt
+		displayFolder: 17 Storytelling Commentary
+		lineageTag: 2a37f590-48e1-456c-9a1b-3c4d5e6f7a8b
+
+	measure 'Story Time Narrative' =
+			VAR RepMonth = [ERP Rapportert Måned Nr]
+			RETURN "TIDSTREND | Rapportert t.o.m. måned " & RepMonth & " (august). Gjennomsnittlig månedlig forbruk er 1,58 MNOK mot budsjettert 1,42 MNOK. Rullende 3-måneders snitt viser vedvarende høyt kostnadsnivå."
+		displayFolder: 17 Storytelling Commentary
+		lineageTag: 3b48e6a1-59f2-467d-ab2c-4d5e6f7a8b9c
+
+	measure 'Story Forecast Narrative' =
+			VAR RunRate = [ERP EOY Run Rate]
+			VAR Budget = [EOY Årsbudsjett]
+			VAR Gap = [EOY Run Rate Avvik]
+			VAR GapPct = [EOY Run Rate Avvik %]
+			VAR StatusWord = IF ( Gap < 0, "prognosert merforbruk på ", "forventet mindreforbruk på " )
+			RETURN "PROGNOSE EOY | Ved uendret driftstakt lander året på " & FORMAT ( RunRate, "#,##0 kr" ) & " mot årsbudsjett på " & FORMAT ( Budget, "#,##0 kr" ) & ". Dette gir et " & StatusWord & FORMAT ( ABS ( Gap ), "#,##0 kr" ) & " (" & FORMAT ( ABS ( GapPct ), "0.0%" ) & ")."
+		displayFolder: 17 Storytelling Commentary
+		lineageTag: 4c59f7b2-6a03-478e-bc3d-5e6f7a8b9c0d
+
+	measure 'Story Prescription Action' =
+			VAR Måneder = [EOY Måneder Igjen]
+			VAR MndKorr = [EOY Required Monthly Correction]
+			VAR Ramme = [EOY Resterende Ramme]
+			VAR ZeroRate = [EOY Zero Balance Monthly Rate]
+			RETURN IF (
+				MndKorr < 0,
+				"TILTAK FOR NULLBALANSE | Forbruk M09-M12 må reduseres med " & FORMAT ( ABS ( MndKorr ), "#,##0 kr" ) & "/mnd. Resterende ramme er " & FORMAT ( Ramme, "#,##0 kr" ) & " (" & FORMAT ( ZeroRate, "#,##0 kr" ) & "/mnd). Prioriter kutt i vikarbyrå (konto 127040) og overtid.",
+				"TILTAK FOR NULLBALANSE | Gjenværende ramme er " & FORMAT ( Ramme, "#,##0 kr" ) & " (" & FORMAT ( ZeroRate, "#,##0 kr" ) & "/mnd de neste " & Måneder & " månedene). Forbruket er innenfor tildelt ramme."
+			)
+		displayFolder: 17 Storytelling Commentary
+		lineageTag: 5d6a08c3-7b14-489f-cd4e-6f7a8b9c0d1e
+
+	measure 'Story Root Cause Detail' = "AVVIKSANALYSE | Ubesatte faste stillinger (Fastlønn: +2,95 MNOK) har utløst kompensatorisk bruk av vikarbyrå (-383 kNOK), vikartillegg (-259 kNOK) og overtid (-157 kNOK)."
+		displayFolder: 17 Storytelling Commentary
+		lineageTag: 6e7b19d4-8c25-49a0-de5f-7a8b9c0d1e2f
+
+	column Value
+		lineageTag: 428c5744-f94a-41a9-b396-69d1d4d1badd
+		isNameInferred
+		sourceColumn: [Value]
+
+	partition _Measures = calculated
+		mode: import
+		source = { 0 }
+

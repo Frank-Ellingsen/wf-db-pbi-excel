@@ -1,0 +1,57 @@
+{
+  "visual": {
+    "drillFilterOtherVisuals": true,
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "nativeQueryRef": "account_name",
+              "active": true,
+              "queryRef": "dim_account.account_name",
+              "field": {
+                "Column": {
+                  "Property": "account_name",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_account"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "active": true,
+              "queryRef": "_Measures.ERP Absolutt Avvik",
+              "field": {
+                "Measure": {
+                  "Property": "ERP Absolutt Avvik",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "position": {
+    "tabOrder": 1,
+    "width": 870,
+    "y": 40,
+    "height": 900,
+    "z": 1,
+    "x": 940
+  },
+  "name": "eeb0cf0536e33f6d212b"
+}

@@ -1,0 +1,71 @@
+{
+  "run_id": "WF1-20261023T143944Z-2B45B5F7",
+  "contract_version": "1.0",
+  "generated_at_utc": "2026-10-23T14:39:45.554073+00:00",
+  "datasets": [
+    {
+      "run_id": "WF1-20261023T143944Z-2B45B5F7",
+      "dataset": "erp_finance",
+      "staging_file": "erp_finance.csv",
+      "contract_version": "1.0",
+      "status": "PASS",
+      "rows_input": 1056,
+      "rows_valid": 1056,
+      "rows_invalid": 0,
+      "validation_errors": 0,
+      "started_at_utc": "2026-10-23T14:39:44.281283+00:00",
+      "completed_at_utc": "2026-10-23T14:39:45.217519+00:00",
+      "curated_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\erp_finance.csv",
+      "quarantine_file": null,
+      "error_file": null
+    },
+    {
+      "run_id": "WF1-20261023T143944Z-2B45B5F7",
+      "dataset": "framsikt_finance",
+      "staging_file": "framsikt_finance.csv",
+      "contract_version": "1.0",
+      "status": "PASS",
+      "rows_input": 194,
+      "rows_valid": 194,
+      "rows_invalid": 0,
+      "validation_errors": 0,
+      "started_at_utc": "2026-10-23T14:39:45.217519+00:00",
+      "completed_at_utc": "2026-10-23T14:39:45.354756+00:00",
+      "curated_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\framsikt_finance.csv",
+      "quarantine_file": null,
+      "error_file": null
+    },
+    {
+      "run_id": "WF1-20261023T143944Z-2B45B5F7",
+      "dataset": "kostra_account",
+      "staging_file": "kostra_account.csv",
+      "contract_version": "1.0",
+      "status": "PASS",
+      "rows_input": 172,
+      "rows_valid": 172,
+      "rows_invalid": 0,
+      "validation_errors": 0,
+      "started_at_utc": "2026-10-23T14:39:45.354756+00:00",
+      "completed_at_utc": "2026-10-23T14:39:45.501693+00:00",
+      "curated_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\kostra_account.csv",
+      "quarantine_file": null,
+      "error_file": null
+    },
+    {
+      "run_id": "WF1-20261023T143944Z-2B45B5F7",
+      "dataset": "kostra_function",
+      "staging_file": "kostra_function.csv",
+      "contract_version": "1.0",
+      "status": "PASS",
+      "rows_input": 56,
+      "rows_valid": 56,
+      "rows_invalid": 0,
+      "validation_errors": 0,
+      "started_at_utc": "2026-10-23T14:39:45.501693+00:00",
+      "completed_at_utc": "2026-10-23T14:39:45.554073+00:00",
+      "curated_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\kostra_function.csv",
+      "quarantine_file": null,
+      "error_file": null
+    }
+  ]
+}

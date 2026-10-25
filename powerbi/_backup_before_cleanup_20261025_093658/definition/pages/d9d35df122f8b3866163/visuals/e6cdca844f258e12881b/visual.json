@@ -1,0 +1,39 @@
+{
+  "visual": {
+    "drillFilterOtherVisuals": true,
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "nativeQueryRef": "year_month",
+              "active": true,
+              "queryRef": "dim_date.year_month",
+              "field": {
+                "Column": {
+                  "Property": "year_month",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_date"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "position": {
+    "tabOrder": 1,
+    "width": 350,
+    "y": 230,
+    "height": 260,
+    "z": 1,
+    "x": 40
+  },
+  "name": "e6cdca844f258e12881b"
+}

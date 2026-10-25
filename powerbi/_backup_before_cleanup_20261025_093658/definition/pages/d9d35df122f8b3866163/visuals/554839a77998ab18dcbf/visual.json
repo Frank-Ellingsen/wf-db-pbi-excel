@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "visual": {
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Property": "tertial",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_date"
+                    }
+                  }
+                }
+              },
+              "active": true,
+              "queryRef": "dim_date.tertial",
+              "nativeQueryRef": "tertial"
+            }
+          ]
+        }
+      }
+    },
+    "visualType": "slicer",
+    "drillFilterOtherVisuals": true
+  },
+  "position": {
+    "tabOrder": 50,
+    "height": 180,
+    "y": 700,
+    "width": 350,
+    "x": 40,
+    "z": 50
+  },
+  "name": "554839a77998ab18dcbf"
+}

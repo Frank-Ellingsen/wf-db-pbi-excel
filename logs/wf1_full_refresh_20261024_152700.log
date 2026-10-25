@@ -1,0 +1,313 @@
+WF1 FULL REFRESH
+Python : C:\Users\frank\miniconda3\envs\wf1\python.exe
+Project: C:\Users\frank\Desktop\WF1
+
+====================================================================================================
+STEP: RAW to Historical Silver
+====================================================================================================
+
+====================================================================================================
+WF1 END-TO-END PIPELINE V2
+====================================================================================================
+Project root: C:\Users\frank\Desktop\WF1
+Python      : C:\Users\frank\miniconda3\envs\wf1\python.exe
+Run ID      : WF1-20261024T132701Z-F7035589
+
+====================================================================================================
+PIPELINE STAGE: REGISTRY DISCOVERY
+====================================================================================================
+
+====================================================================================================
+WF1 PIPELINE REGISTRY V2
+====================================================================================================
+Raw      : C:\Users\frank\Desktop\WF1\data\raw
+Registry : C:\Users\frank\Desktop\WF1\db\pipeline_registry.db
+Run ID   : WF1-20261024T132703Z-62A383AB
+Mapping  : 2.0
+Contract : 1.0
+
+Files detected: 4
+  - BoMilj�_ERP_Manuel_Export.csv
+  - dim_kostra_funksjon_framsikt.csv
+  - dim_kostra_kontoplan_framsikt.csv
+  - Komskole_Framsikt_Export.csv
+
+====================================================================================================
+FILE: BoMilj�_ERP_Manuel_Export.csv
+====================================================================================================
+Dataset : erp_finance
+Status  : ALREADY_REGISTERED
+Lifecycle: SILVER_READY
+SHA256  : cdc2b79808111aac9df44a22c3fed077310377bd3287610140512e6e9a6abbf2
+Registry ID: 1
+Run ID: WF1-20261023T143924Z-DAFF551F
+
+====================================================================================================
+FILE: dim_kostra_funksjon_framsikt.csv
+====================================================================================================
+Dataset : kostra_function
+Status  : ALREADY_REGISTERED
+Lifecycle: SILVER_READY
+SHA256  : 2f307d767a898960e13efd1e3b616868b3715735dbd5249f62fab3ce95b1e26b
+Registry ID: 2
+Run ID: WF1-20261023T143924Z-DAFF551F
+
+====================================================================================================
+FILE: dim_kostra_kontoplan_framsikt.csv
+====================================================================================================
+Dataset : kostra_account
+Status  : ALREADY_REGISTERED
+Lifecycle: SILVER_READY
+SHA256  : fa48655b23c1412e7ab685c767a06d150831ed97a3b867816a09969599056085
+Registry ID: 3
+Run ID: WF1-20261023T143924Z-DAFF551F
+
+====================================================================================================
+FILE: Komskole_Framsikt_Export.csv
+====================================================================================================
+Dataset : framsikt_finance
+Status  : ALREADY_REGISTERED
+Lifecycle: SILVER_READY
+SHA256  : a9f3fcffd07119c0a0272c006be4c93eaa173987cc652ba1c78c10c1453ea1c6
+Registry ID: 4
+Run ID: WF1-20261023T143924Z-DAFF551F
+
+====================================================================================================
+REGISTRY RUN SUMMARY
+====================================================================================================
+Run ID             : WF1-20261024T132703Z-62A383AB
+New files          : 0
+Already registered : 4
+Failed             : 0
+Total discovered   : 4
+
+====================================================================================================
+REGISTRY CONTENT
+====================================================================================================
+erp_finance | SILVER_READY | files: 1
+framsikt_finance | SILVER_READY | files: 1
+kostra_account | SILVER_READY | files: 1
+kostra_function | SILVER_READY | files: 1
+
+Lifecycle totals:
+  NEW                    0
+  PROFILED               0
+  CLEANED                0
+  RECONCILED             0
+  VALIDATED              0
+  PARQUET_WRITTEN        0
+  SCHEMA_VALIDATED       0
+  SILVER_MATERIALIZED    0
+  SILVER_READY           4
+  FAILED                 0
+STAGE RESULT: PASS
+
+====================================================================================================
+PIPELINE SUMMARY
+====================================================================================================
+Pending records : 0
+Silver ready    : 4
+Action          : Nothing to process.
+====================================================================================================
+
+STEP RESULT: PASS
+
+====================================================================================================
+STEP: Build DuckDB Silver
+====================================================================================================
+
+====================================================================================================
+WF1 DUCKDB BUILDER V2
+====================================================================================================
+Project root: C:\Users\frank\Desktop\WF1
+Silver      : C:\Users\frank\Desktop\WF1\data\silver
+DuckDB      : C:\Users\frank\Desktop\WF1\db\project_finance.duckdb
+
+Silver datasets:
+  - erp_finance | files: 1
+  - framsikt_finance | files: 1
+  - kostra_account | files: 1
+  - kostra_function | files: 1
+
+====================================================================================================
+DATASET : erp_finance
+====================================================================================================
+Files     : 1
+Rows      : 1056
+Snapshots : 1
+
+PASS | row_count_gt_zero              | 1056
+PASS | snapshot_count                 | 1
+PASS | null_source_hash               | 0
+PASS | null_registry_id               | 0
+
+====================================================================================================
+DATASET : framsikt_finance
+====================================================================================================
+Files     : 1
+Rows      : 194
+Snapshots : 1
+
+PASS | row_count_gt_zero              | 194
+PASS | snapshot_count                 | 1
+PASS | null_source_hash               | 0
+PASS | null_registry_id               | 0
+
+====================================================================================================
+DATASET : kostra_account
+====================================================================================================
+Files     : 1
+Rows      : 172
+Snapshots : 1
+
+PASS | row_count_gt_zero              | 172
+PASS | snapshot_count                 | 1
+PASS | null_source_hash               | 0
+PASS | null_registry_id               | 0
+PASS | primary_key_null               | 0
+PASS | primary_key_duplicate          | 0
+
+====================================================================================================
+DATASET : kostra_function
+====================================================================================================
+Files     : 1
+Rows      : 56
+Snapshots : 1
+
+PASS | row_count_gt_zero              | 56
+PASS | snapshot_count                 | 1
+PASS | null_source_hash               | 0
+PASS | null_registry_id               | 0
+PASS | primary_key_null               | 0
+PASS | primary_key_duplicate          | 0
+
+====================================================================================================
+RELATIONSHIP CHECKS
+====================================================================================================
+WARNING | erp_finance          | orphan_kostra_function         | 1
+WARNING | framsikt_finance     | orphan_kostra_function         | 4
+PASS | erp_finance          | orphan_account_code            | 0
+
+====================================================================================================
+DUCKDB BUILD SUMMARY
+====================================================================================================
+Database : C:\Users\frank\Desktop\WF1\db\project_finance.duckdb
+Datasets : 4
+Failures : 0
+Warnings : 2
+Reopen   : PASS
+Result   : PASS WITH WARNINGS
+====================================================================================================
+
+STEP RESULT: PASS
+
+====================================================================================================
+STEP: Build Gold
+====================================================================================================
+
+====================================================================================================
+WF1 GOLD BUILDER V1
+====================================================================================================
+Database: C:\Users\frank\Desktop\WF1\db\project_finance.duckdb
+
+====================================================================================================
+DIMENSION CHECKS
+====================================================================================================
+PASS | dim_account          | rows: 172
+PASS | dim_kostra_function  | rows: 56
+
+====================================================================================================
+FACT ROW RECONCILIATION
+====================================================================================================
+PASS | erp_finance          | Silver:   1056 | Gold:   1056
+PASS | framsikt_finance     | Silver:    194 | Gold:    194
+
+====================================================================================================
+UNMAPPED KOSTRA FUNCTIONS
+====================================================================================================
+WARNING | ERP        | function  254 | rows 1056 | actual  12622851.42 | budget  17233691.00
+WARNING | FRAMSIKT   | function  203 | rows    2 | actual         1.00 | budget         0.00
+WARNING | FRAMSIKT   | function  204 | rows    2 | actual      -307.00 | budget         0.00
+WARNING | FRAMSIKT   | function  214 | rows   35 | actual      2760.00 | budget      2496.00
+WARNING | FRAMSIKT   | function  223 | rows    3 | actual       469.00 | budget       516.00
+
+====================================================================================================
+GOLD OBJECTS
+====================================================================================================
+  - gold.dim_account
+  - gold.dim_kostra_function
+  - gold.fact_erp_finance
+  - gold.fact_framsikt_finance
+  - gold.v_unmapped_kostra_functions
+  - gold.v_data_quality_summary
+
+====================================================================================================
+GOLD BUILD SUMMARY
+====================================================================================================
+Failures : 0
+Warnings : 5
+Reopen   : PASS
+Result   : PASS WITH WARNINGS
+====================================================================================================
+
+STEP RESULT: PASS
+
+====================================================================================================
+STEP: Build Gold Reporting
+====================================================================================================
+
+====================================================================================================
+WF1 GOLD REPORTING BUILDER V3
+====================================================================================================
+Database: C:\Users\frank\Desktop\WF1\db\project_finance.duckdb
+
+====================================================================================================
+REPORTING OBJECTS
+====================================================================================================
+gold.v_erp_period_normalized | rows: 1056
+gold.v_framsikt_period_normalized | rows: 194
+gold.v_reporting_date_boundaries | rows: 2
+gold.dim_date | rows: 731
+gold.v_erp_actual_horizon | rows: 1
+gold.fact_erp_finance_pbi | rows: 1056
+gold.v_erp_kpi_monthly | rows: 12
+gold.fact_framsikt_finance_pbi | rows: 194
+gold.v_framsikt_kpi_summary | rows: 1
+gold.v_finance_quality | rows: 2
+gold.v_period_quality | rows: 2
+
+====================================================================================================
+PERIOD NORMALIZATION
+====================================================================================================
+ERP invalid periods      : 0
+Framsikt invalid periods : 0
+
+====================================================================================================
+REPORTING DATE BOUNDARIES
+====================================================================================================
+ERP | min: 2024-01-01 | max: 2024-12-01 | rows: 1056 | periods: 12
+FRAMSIKT | min: 2025-08-01 | max: 2025-08-01 | rows: 194 | periods: 1
+
+====================================================================================================
+DIM_DATE VALIDATION
+====================================================================================================
+Rows            : 731
+Unique dates    : 731
+NULL dates      : 0
+Duplicate dates : 0
+Missing dates   : 0
+Minimum date    : 2024-01-01
+Maximum date    : 2025-12-31
+Result          : PASS
+
+====================================================================================================
+GOLD REPORTING BUILD SUMMARY
+====================================================================================================
+Objects         : 11
+Invalid periods : 0
+Failures        : 0
+Reopen          : PASS
+Result          : PASS
+====================================================================================================
+
+STEP RESULT: PASS

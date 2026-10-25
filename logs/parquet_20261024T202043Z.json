@@ -1,0 +1,110 @@
+{
+  "generated_at_utc": "2026-10-24T20:20:43.833192+00:00",
+  "contract_version": "1.0",
+  "pandas_version": "3.1.0",
+  "pyarrow_version": "26.0.0",
+  "engine": "pyarrow",
+  "compression": "snappy",
+  "datasets": [
+    {
+      "dataset": "erp_finance",
+      "status": "PASS",
+      "source_csv": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\erp_finance.csv",
+      "parquet_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\erp_finance.parquet",
+      "rows": 1056,
+      "columns": 21,
+      "engine": "pyarrow",
+      "compression": "snappy",
+      "csv_bytes": 311391,
+      "parquet_bytes": 20012,
+      "csv_sha256": "5c4d710d2d60edba744be662704dc6149f131fedcff4ec17f6f6a7e4c6df781a",
+      "parquet_sha256": "4c7a18a3303f2f661c5e81858845b6434a64005df6bb5b964b52633593fceb4f",
+      "verification": {
+        "rows_source": 1056,
+        "rows_parquet": 1056,
+        "columns_source": 21,
+        "columns_parquet": 21,
+        "row_count_match": true,
+        "column_count_match": true,
+        "column_names_match": true
+      },
+      "started_at_utc": "2026-10-24T20:20:43.605799+00:00",
+      "completed_at_utc": "2026-10-24T20:20:43.735521+00:00"
+    },
+    {
+      "dataset": "framsikt_finance",
+      "status": "PASS",
+      "source_csv": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\framsikt_finance.csv",
+      "parquet_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\framsikt_finance.parquet",
+      "rows": 194,
+      "columns": 18,
+      "engine": "pyarrow",
+      "compression": "snappy",
+      "csv_bytes": 57987,
+      "parquet_bytes": 16353,
+      "csv_sha256": "9625c20baba0c595ae361d261101bb48b51f3d68eb9dbf4d27d95152f02f7458",
+      "parquet_sha256": "d46f6a5db3ffef2b7380e31494ff8a09e8f91befd8d1b1a6309e1ab664b07449",
+      "verification": {
+        "rows_source": 194,
+        "rows_parquet": 194,
+        "columns_source": 18,
+        "columns_parquet": 18,
+        "row_count_match": true,
+        "column_count_match": true,
+        "column_names_match": true
+      },
+      "started_at_utc": "2026-10-24T20:20:43.735521+00:00",
+      "completed_at_utc": "2026-10-24T20:20:43.771596+00:00"
+    },
+    {
+      "dataset": "kostra_account",
+      "status": "PASS",
+      "source_csv": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\kostra_account.csv",
+      "parquet_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\kostra_account.parquet",
+      "rows": 172,
+      "columns": 20,
+      "engine": "pyarrow",
+      "compression": "snappy",
+      "csv_bytes": 64092,
+      "parquet_bytes": 26553,
+      "csv_sha256": "49116698cda7aef4c55f3ace3a93aebdd138a7afd1121b69f73390c0e55228c5",
+      "parquet_sha256": "738d98b304f87d4d993d9628b3f59aab5dc484769b2a02ac875277bf235e76e6",
+      "verification": {
+        "rows_source": 172,
+        "rows_parquet": 172,
+        "columns_source": 20,
+        "columns_parquet": 20,
+        "row_count_match": true,
+        "column_count_match": true,
+        "column_names_match": true
+      },
+      "started_at_utc": "2026-10-24T20:20:43.771596+00:00",
+      "completed_at_utc": "2026-10-24T20:20:43.806586+00:00"
+    },
+    {
+      "dataset": "kostra_function",
+      "status": "PASS",
+      "source_csv": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\kostra_function.csv",
+      "parquet_file": "C:\\Users\\frank\\Desktop\\WF1\\data\\curated\\kostra_function.parquet",
+      "rows": 61,
+      "columns": 18,
+      "engine": "pyarrow",
+      "compression": "snappy",
+      "csv_bytes": 27824,
+      "parquet_bytes": 21416,
+      "csv_sha256": "34f77a106be1c5a873b4073b82d97922211695df3f0f8725b1ef98118b211f73",
+      "parquet_sha256": "83cb5d03b57fb0536fbafc3f59830b9b951a235cc63bf19d320edc9aaa88bcc2",
+      "verification": {
+        "rows_source": 61,
+        "rows_parquet": 61,
+        "columns_source": 18,
+        "columns_parquet": 18,
+        "row_count_match": true,
+        "column_count_match": true,
+        "column_names_match": true
+      },
+      "started_at_utc": "2026-10-24T20:20:43.806586+00:00",
+      "completed_at_utc": "2026-10-24T20:20:43.833192+00:00"
+    }
+  ]
+}

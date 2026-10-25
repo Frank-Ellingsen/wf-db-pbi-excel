@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "visual": {
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "queryRef": "_Measures.ERP Data Quality Status",
+              "field": {
+                "Measure": {
+                  "Property": "ERP Data Quality Status",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "visualType": "cardVisual",
+    "drillFilterOtherVisuals": true
+  },
+  "position": {
+    "tabOrder": 50,
+    "height": 160,
+    "y": 40,
+    "width": 330,
+    "x": 1440,
+    "z": 50
+  },
+  "name": "c1e81f8fa18a8506b211"
+}

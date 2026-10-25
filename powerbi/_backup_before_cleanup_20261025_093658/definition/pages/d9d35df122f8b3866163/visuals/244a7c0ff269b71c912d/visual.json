@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "visual": {
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Property": "main_group_name",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_account"
+                    }
+                  }
+                }
+              },
+              "active": true,
+              "queryRef": "dim_account.main_group_name",
+              "nativeQueryRef": "main_group_name"
+            }
+          ]
+        }
+      }
+    },
+    "visualType": "slicer",
+    "drillFilterOtherVisuals": true
+  },
+  "position": {
+    "tabOrder": 50,
+    "height": 110,
+    "y": 950,
+    "width": 680,
+    "x": 1130,
+    "z": 50
+  },
+  "name": "244a7c0ff269b71c912d"
+}

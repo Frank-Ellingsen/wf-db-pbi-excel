@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "41af970d405bd1264415",
+  "position": {
+    "x": 39.016042780748663,
+    "y": 39.016042780748663,
+    "z": 0,
+    "height": 106.7807486631016,
+    "width": 178.6524064171123,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Avvik YTD"
+                }
+              },
+              "queryRef": "_Measures.ERP Avvik YTD",
+              "nativeQueryRef": "ERP Avvik YTD"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "ERP RAG"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.ERP Avvik YTD"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,262 @@
+table fact_framsikt_finance
+	lineageTag: 5327761e-698e-4a6a-a73e-5f1ab5e2257c
+
+	column year_month
+		dataType: string
+		lineageTag: 9f4f70e5-07ee-4b7a-8bdb-f198bf73bec5
+		summarizeBy: none
+		sourceColumn: year_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column period
+		dataType: string
+		lineageTag: 30db28b7-c405-4b13-8d0f-47332c6e6f32
+		summarizeBy: none
+		sourceColumn: period
+
+		annotation SummarizationSetBy = Automatic
+
+	column location
+		dataType: string
+		lineageTag: b11abdf8-452e-4215-8f4d-6b58ace8d8a4
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = Automatic
+
+	column organizational_unit
+		dataType: string
+		lineageTag: de9ad695-7a91-4b06-bea3-27defc6a2257
+		summarizeBy: none
+		sourceColumn: organizational_unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_function_id
+		dataType: string
+		lineageTag: a6bb8dc1-389d-4343-b4e7-a22a46d60f4c
+		summarizeBy: none
+		sourceColumn: kostra_function_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_function_name
+		dataType: string
+		lineageTag: d6c02c17-76d5-4b88-868c-a38f9050e16d
+		summarizeBy: none
+		sourceColumn: kostra_function_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column function_key
+		dataType: string
+		lineageTag: 69716eab-b09b-4194-a4bc-b76a45687a95
+		summarizeBy: none
+		sourceColumn: function_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_function_code
+		dataType: string
+		lineageTag: 6bf284db-6463-4a02-8aca-38d17b01b2b7
+		summarizeBy: none
+		sourceColumn: main_function_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_function_name
+		dataType: string
+		lineageTag: eee5bcfb-be7e-4b34-b3c0-94368758bba2
+		summarizeBy: none
+		sourceColumn: main_function_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_area_code
+		dataType: string
+		lineageTag: 48598ef3-bdcb-43f4-ac62-2ac315cad9eb
+		summarizeBy: none
+		sourceColumn: service_area_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_area_name
+		dataType: string
+		lineageTag: 35613ed2-05f1-459b-bfa0-6b6f4b89150a
+		summarizeBy: none
+		sourceColumn: service_area_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column function_group_code
+		dataType: string
+		lineageTag: bd0d1636-b85f-42a8-ac15-a13bd5bf893c
+		summarizeBy: none
+		sourceColumn: function_group_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column function_group_name
+		dataType: string
+		lineageTag: 6280a5b0-f998-4cd4-ad36-8867413a48ba
+		summarizeBy: none
+		sourceColumn: function_group_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column function_mapping_status
+		dataType: string
+		lineageTag: 745383d0-6a00-4e71-accd-c2f9ac4281f0
+		summarizeBy: none
+		sourceColumn: function_mapping_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_type
+		dataType: string
+		lineageTag: 107a627a-2c0a-49de-b26e-7b8c7d6663a4
+		summarizeBy: none
+		sourceColumn: account_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_name
+		dataType: string
+		lineageTag: 1c4d1925-ce04-4cc2-8d5b-a5fde21f3999
+		summarizeBy: none
+		sourceColumn: account_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_class
+		dataType: string
+		lineageTag: 66b88b76-0a13-4633-a49d-86554eaaff97
+		summarizeBy: none
+		sourceColumn: account_class
+
+		annotation SummarizationSetBy = Automatic
+
+	column economic_class
+		dataType: string
+		lineageTag: fde7ae51-f590-4487-b9fb-feee7872628e
+		summarizeBy: none
+		sourceColumn: economic_class
+
+		annotation SummarizationSetBy = Automatic
+
+	column actual_ytd
+		dataType: int64
+		formatString: 0
+		lineageTag: e84a0775-ac5c-42a2-bdba-7be131456bd7
+		summarizeBy: sum
+		sourceColumn: actual_ytd
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget_ytd
+		dataType: int64
+		formatString: 0
+		lineageTag: b055b461-d33e-4bf2-ac26-9255dfee7245
+		summarizeBy: sum
+		sourceColumn: budget_ytd
+
+		annotation SummarizationSetBy = Automatic
+
+	column annual_budget
+		dataType: double
+		lineageTag: 09f016a6-057e-4e50-9336-5053b04ad4ca
+		summarizeBy: sum
+		sourceColumn: annual_budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actual_prior_year
+		dataType: int64
+		formatString: 0
+		lineageTag: b5a5e4f5-4e2e-4137-9d5b-2e948dabd07e
+		summarizeBy: sum
+		sourceColumn: actual_prior_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column variance_ytd
+		dataType: int64
+		formatString: 0
+		lineageTag: 1ef1a490-eed3-4424-a1dd-01073869e0ff
+		summarizeBy: sum
+		sourceColumn: variance_ytd
+
+		annotation SummarizationSetBy = Automatic
+
+	column variance_ytd_pct
+		dataType: double
+		lineageTag: 77d504c7-4327-419b-93ad-2824fe14ad7b
+		summarizeBy: sum
+		sourceColumn: variance_ytd_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column change_vs_prior_year
+		dataType: int64
+		formatString: 0
+		lineageTag: 67aa47a2-d073-40ab-afba-60cfb5e69441
+		summarizeBy: sum
+		sourceColumn: change_vs_prior_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column change_vs_prior_year_pct
+		dataType: double
+		lineageTag: 32f88b55-5a95-4afe-8e37-77fa70b5e07e
+		summarizeBy: sum
+		sourceColumn: change_vs_prior_year_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 76c94117-ce30-46eb-b7a4-efadf7e8b043
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column variance_rag
+		dataType: string
+		lineageTag: 2e39324f-2482-428e-ba47-4cc19ec7025d
+		summarizeBy: none
+		sourceColumn: variance_rag
+
+		annotation SummarizationSetBy = Automatic
+
+	column reporting_status
+		dataType: string
+		lineageTag: 720b21fe-240d-40fa-8f71-38a5f7001876
+		summarizeBy: none
+		sourceColumn: reporting_status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_framsikt_finance = m
+		mode: import
+		source =
+				let
+				    Source = Odbc.DataSource("access_mode=read_only;dsn=DuckDB_pbi", [HierarchicalNavigation=true]),
+				    project_finance_powerbi_Database = Source{[Name="project_finance_powerbi",Kind="Database"]}[Data],
+				    gold_Schema = project_finance_powerbi_Database{[Name="gold",Kind="Schema"]}[Data],
+				    fact_framsikt_finance_Table = gold_Schema{[Name="fact_framsikt_finance",Kind="Table"]}[Data]
+				in
+				    fact_framsikt_finance_Table
+
+	annotation PBI_ResultType = Table
+

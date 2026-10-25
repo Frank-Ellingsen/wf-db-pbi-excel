@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "5d6709ed05c08bded735",
+  "position": {
+    "x": 430,
+    "y": 950,
+    "z": 6000,
+    "height": 110,
+    "width": 680,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_kostra_function"
+                    }
+                  },
+                  "Property": "service_area_name"
+                }
+              },
+              "queryRef": "dim_kostra_function.service_area_name",
+              "nativeQueryRef": "service_area_name",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

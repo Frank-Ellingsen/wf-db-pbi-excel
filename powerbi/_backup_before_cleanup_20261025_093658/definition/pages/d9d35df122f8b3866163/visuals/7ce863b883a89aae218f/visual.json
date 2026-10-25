@@ -1,0 +1,56 @@
+{
+  "visual": {
+    "drillFilterOtherVisuals": true,
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "nativeQueryRef": "kostra_function_name",
+              "active": true,
+              "queryRef": "dim_kostra_function.kostra_function_name",
+              "field": {
+                "Column": {
+                  "Property": "kostra_function_name",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_kostra_function"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "queryRef": "_Measures.ERP Regnskap",
+              "field": {
+                "Measure": {
+                  "Property": "ERP Regnskap",
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "position": {
+    "tabOrder": 2,
+    "width": 1420,
+    "y": 40,
+    "height": 900,
+    "z": 2,
+    "x": 430
+  },
+  "name": "7ce863b883a89aae218f"
+}
