@@ -1,8 +1,0 @@
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
-  "name": "6bd499320d0f7d6a9029",
-  "displayName": "20_Decompose",
-  "displayOption": "FitToPage",
-  "height": 1080,
-  "width": 1920
-}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "307df352efdd4481830a",
+  "position": {
+    "x": 800,
+    "y": 105,
+    "z": 2030,
+    "height": 95,
+    "width": 400,
+    "tabOrder": 2030
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Månedlig Gjennomsnitt"
+                }
+              },
+              "queryRef": "_Measures.ERP Månedlig Gjennomsnitt",
+              "nativeQueryRef": "ERP Månedlig Gjennomsnitt"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Snittforbruk/mnd'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

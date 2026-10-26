@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "p03_monthly_combo_003",
+  "displayName": "03_Monthly_Budget_Actual",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920
+}

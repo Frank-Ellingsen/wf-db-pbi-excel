@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "f23e665686484a259ec4",
+  "position": {
+    "x": 40,
+    "y": 15,
+    "z": 500,
+    "height": 80,
+    "width": 1180,
+    "tabOrder": 500
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Story Forecast Narrative"
+                }
+              },
+              "queryRef": "_Measures.Story Forecast Narrative",
+              "nativeQueryRef": "Story Forecast Narrative"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'19 Drillthrough Kontodybde | Test: Gir drillthrough-siden full transaksjonshistorikk og trend for enhver valgt konto?'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

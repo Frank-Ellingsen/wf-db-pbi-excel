@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "d7d14ba4f4df4424be86",
+  "position": {
+    "x": 40,
+    "y": 210,
+    "z": 2500,
+    "height": 840,
+    "width": 1160,
+    "tabOrder": 2500
+  },
+  "visual": {
+    "visualType": "gauge",
+    "query": {
+      "queryState": {
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Regnskap YTD"
+                }
+              },
+              "queryRef": "_Measures.ERP Regnskap YTD",
+              "nativeQueryRef": "ERP Regnskap YTD"
+            }
+          ]
+        },
+        "TargetValue": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Årsbudsjett"
+                }
+              },
+              "queryRef": "_Measures.ERP Årsbudsjett",
+              "nativeQueryRef": "ERP Årsbudsjett"
+            }
+          ]
+        },
+        "MaxValue": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Forecast EOY"
+                }
+              },
+              "queryRef": "_Measures.ERP Forecast EOY",
+              "nativeQueryRef": "ERP Forecast EOY"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Helårsramme & Runway Gauge (Faktisk vs Årsbudsjett vs EAC)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

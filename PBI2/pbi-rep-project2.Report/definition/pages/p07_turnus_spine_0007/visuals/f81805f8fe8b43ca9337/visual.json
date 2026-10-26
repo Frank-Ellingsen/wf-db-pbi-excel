@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "f81805f8fe8b43ca9337",
+  "position": {
+    "x": 40,
+    "y": 105,
+    "z": 2010,
+    "height": 95,
+    "width": 360,
+    "tabOrder": 2010
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Fastlønn Regnskap"
+                }
+              },
+              "queryRef": "_Measures.ERP Fastlønn Regnskap",
+              "nativeQueryRef": "ERP Fastlønn Regnskap"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Fastlønn Ordinære'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "b06d29f5aa1a4cdd9c29",
+  "position": {
+    "x": 40,
+    "y": 15,
+    "z": 500,
+    "height": 80,
+    "width": 1180,
+    "tabOrder": 500
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Story Forecast Narrative"
+                }
+              },
+              "queryRef": "_Measures.Story Forecast Narrative",
+              "nativeQueryRef": "Story Forecast Narrative"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'01 Akkumulert S-Kurve & Helårsprognose (EAC) | Test: Gir S-kurven tilstrekkelig tidlig varsel om at 17,2M årsrammen overskrides?'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

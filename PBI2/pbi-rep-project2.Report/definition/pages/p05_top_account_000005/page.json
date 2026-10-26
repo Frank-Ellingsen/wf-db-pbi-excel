@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "p05_top_account_000005",
+  "displayName": "05_Top_Account_Ranking",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920
+}

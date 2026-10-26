@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "9803f67541de4182a50a",
+  "position": {
+    "x": 40,
+    "y": 105,
+    "z": 2010,
+    "height": 95,
+    "width": 560,
+    "tabOrder": 2010
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Corr Regnskap vs Avvik"
+                }
+              },
+              "queryRef": "_Measures.Corr Regnskap vs Avvik",
+              "nativeQueryRef": "Corr Regnskap vs Avvik"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Korrelasjon Regnskap/Avvik'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

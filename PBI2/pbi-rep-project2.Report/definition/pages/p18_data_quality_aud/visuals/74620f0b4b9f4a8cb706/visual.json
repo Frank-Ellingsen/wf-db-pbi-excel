@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "74620f0b4b9f4a8cb706",
+  "position": {
+    "x": 40,
+    "y": 15,
+    "z": 500,
+    "height": 80,
+    "width": 1180,
+    "tabOrder": 500
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Story Forecast Narrative"
+                }
+              },
+              "queryRef": "_Measures.Story Forecast Narrative",
+              "nativeQueryRef": "Story Forecast Narrative"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'18 Datakvalitet, Avstemming & Mapping Health | Test: Gir revisjonskortet 100% trygghet på at ERP stemmer mot Framsikt og KOSTRA?'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "2e3d072339554818b362",
+  "position": {
+    "x": 40,
+    "y": 15,
+    "z": 500,
+    "height": 80,
+    "width": 1180,
+    "tabOrder": 500
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Story Forecast Narrative"
+                }
+              },
+              "queryRef": "_Measures.Story Forecast Narrative",
+              "nativeQueryRef": "Story Forecast Narrative"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'14 Power BI AI Dekomponeringstre (Root Cause) | Test: Kan kunstig intelligens automatisk finne grenene med størst negativt avvik?'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
