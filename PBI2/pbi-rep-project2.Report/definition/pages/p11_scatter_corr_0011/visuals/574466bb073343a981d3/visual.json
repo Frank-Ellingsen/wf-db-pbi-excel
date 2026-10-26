@@ -32,6 +32,24 @@
             }
           ]
         },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ERP Budsjett"
+                }
+              },
+              "queryRef": "_Measures.ERP Budsjett",
+              "nativeQueryRef": "ERP Budsjett"
+            }
+          ]
+        },
         "X": {
           "projections": [
             {
@@ -46,7 +64,8 @@
                 }
               },
               "queryRef": "_Measures.ERP Regnskap",
-              "nativeQueryRef": "ERP Regnskap"
+              "nativeQueryRef": "ERP Regnskap",
+              "active": true
             }
           ]
         },
@@ -65,24 +84,6 @@
               },
               "queryRef": "_Measures.ERP Avvik",
               "nativeQueryRef": "ERP Avvik"
-            }
-          ]
-        },
-        "Tooltips": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "ERP Budsjett"
-                }
-              },
-              "queryRef": "_Measures.ERP Budsjett",
-              "nativeQueryRef": "ERP Budsjett"
             }
           ]
         }

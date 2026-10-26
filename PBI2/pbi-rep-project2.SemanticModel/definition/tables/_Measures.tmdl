@@ -1287,6 +1287,69 @@ table _Measures
 		displayFolder: 17 Storytelling Commentary\Forecast
 		lineageTag: 5990ce6d-b235-4716-b21c-e73e837d722b
 
+	measure 'ERP RAG Background' = SWITCH ( [ERP RAG], "GREEN", "#E6F4EA", "YELLOW", "#FEF3C7", "RED", "#FEE2E2", "#F1F5F9" )
+		displayFolder: 14 Conditional Formatting\Colors
+		lineageTag: 557cb232-b37e-46d9-b333-65585075494b
+
+	measure 'ERP RAG Font Color' = SWITCH ( [ERP RAG], "GREEN", "#166534", "YELLOW", "#92400E", "RED", "#991B1B", "#334155" )
+		displayFolder: 14 Conditional Formatting\Colors
+		lineageTag: 4393277a-ac21-4636-84dc-ccc0466dc447
+
+	measure 'ERP Forecast EOY Background' = SWITCH ( [ERP Forecast EOY RAG], "GREEN", "#E6F4EA", "YELLOW", "#FEF3C7", "RED", "#FEE2E2", "#F1F5F9" )
+		displayFolder: 14 Conditional Formatting\Colors
+		lineageTag: 7c830128-3d53-4992-b565-14e345a53e37
+
+	measure 'ERP Bar Positiv' = IF ( [ERP Avvik] > 0, [ERP Avvik], BLANK () )
+		formatString: #,##0.00
+		displayFolder: 14 Conditional Formatting\Bars
+		lineageTag: 01620a30-7bd0-442b-a95e-2f1f4d2ab380
+
+	measure 'ERP Bar Negativ' = IF ( [ERP Avvik] < 0, [ERP Avvik], BLANK () )
+		formatString: #,##0.00
+		displayFolder: 14 Conditional Formatting\Bars
+		lineageTag: d328c796-9402-47dd-9349-d8e4cd1afcc0
+
+	measure 'ERP S-Kurve Budsjett Label' = IF ( MAX ( dim_date[month_number] ) = 12, "Budsjett: " & FORMAT ( [ERP Budsjett Running], "#,##0 MNOK" ), BLANK () )
+		displayFolder: 16 Titles & Labels
+		lineageTag: 948fb6b4-55a7-4f37-b0e8-13bcbefe838d
+
+	measure 'ERP S-Kurve Regnskap Label' = IF ( MAX ( dim_date[month_number] ) = MONTH ( [ERP Siste Rapporterte Dato] ), "Faktisk YTD: " & FORMAT ( [ERP Regnskap Running], "#,##0 MNOK" ), BLANK () )
+		displayFolder: 16 Titles & Labels
+		lineageTag: 4acdc578-a714-4bde-aced-32cf6e1f1e8b
+
+	measure 'ERP S-Kurve EAC Label' = IF ( MAX ( dim_date[month_number] ) = 12, "EAC Prognose: " & FORMAT ( [ERP Forecast EOY], "#,##0 MNOK" ), BLANK () )
+		displayFolder: 16 Titles & Labels
+		lineageTag: d04de75d-a83f-49fb-ae74-74b0c0949c75
+
+	measure 'Selected Account Drillthrough Title' = "Kontodybde: " & SELECTEDVALUE ( dim_account[account_code], "Konto" ) & " " & SELECTEDVALUE ( dim_account[account_name], "Alle konti" )
+		displayFolder: 16 Titles & Labels
+		lineageTag: bcde1feb-958a-42bd-b211-166464f2c47b
+
+	measure 'ERP Fastlønn Regnskap' = CALCULATE ( [ERP Regnskap], dim_account[account_code] IN { "101000", "101010" } )
+		formatString: #,##0.00
+		displayFolder: 01 Base\ERP
+		lineageTag: 7106a8d6-8cc0-4cc3-8095-816c7209b0b4
+
+	measure 'ERP Vikar Regnskap' = CALCULATE ( [ERP Regnskap], dim_account[account_code] IN { "102000", "102010", "102020", "102030", "102040", "127040" } )
+		formatString: #,##0.00
+		displayFolder: 01 Base\ERP
+		lineageTag: 3c1a8cfc-59fd-4df5-9b96-d80819b2084b
+
+	measure 'ERP Overtid Regnskap' = CALCULATE ( [ERP Regnskap], dim_account[account_code] IN { "104000", "104010", "104020" } )
+		formatString: #,##0.00
+		displayFolder: 01 Base\ERP
+		lineageTag: e2454ec0-19c6-43e9-97ba-1dedc76feb5e
+
+	measure 'ERP Turnustillegg Fast Regnskap' = CALCULATE ( [ERP Regnskap], dim_account[account_code] IN { "101020", "101030", "101040" } )
+		formatString: #,##0.00
+		displayFolder: 01 Base\ERP
+		lineageTag: 50f0629d-0f00-4834-9df3-d7ec7069d96b
+
+	measure 'ERP Turnustillegg Vikar Regnskap' = CALCULATE ( [ERP Regnskap], dim_account[account_code] IN { "102020", "102030", "102040" } )
+		formatString: #,##0.00
+		displayFolder: 01 Base\ERP
+		lineageTag: cab8b030-727e-44ed-ba69-7da5a6176047
+
 	column Value
 		lineageTag: 428c5744-f94a-41a9-b396-69d1d4d1badd
 		isNameInferred
@@ -1296,67 +1359,3 @@ table _Measures
 		mode: import
 		source = { 0 }
 
-
-	measure 'ERP RAG Background' = SWITCH ( [ERP RAG], "GREEN", "#E6F4EA", "YELLOW", "#FEF3C7", "RED", "#FEE2E2", "#F1F5F9" )
-		displayFolder: 14 Conditional Formatting\Colors
-		lineageTag: fef9263a-9806-4bdd-bb26-5f588bd40678
-
-	measure 'ERP RAG Font Color' = SWITCH ( [ERP RAG], "GREEN", "#166534", "YELLOW", "#92400E", "RED", "#991B1B", "#334155" )
-		displayFolder: 14 Conditional Formatting\Colors
-		lineageTag: c1fdbefa-1db9-4d9f-99bd-dae69b88584c
-
-	measure 'ERP Forecast EOY Background' = SWITCH ( [ERP Forecast EOY RAG], "GREEN", "#E6F4EA", "YELLOW", "#FEF3C7", "RED", "#FEE2E2", "#F1F5F9" )
-		displayFolder: 14 Conditional Formatting\Colors
-		lineageTag: 5bdf6e6d-72db-460b-8fc8-5b6a1365e4bd
-
-	measure 'ERP Bar Positiv' = IF ( [ERP Avvik] > 0, [ERP Avvik], BLANK () )
-		formatString: #,##0.00
-		displayFolder: 14 Conditional Formatting\Bars
-		lineageTag: f7af74e2-8f2c-48c7-8ac0-47c1f548385b
-
-	measure 'ERP Bar Negativ' = IF ( [ERP Avvik] < 0, [ERP Avvik], BLANK () )
-		formatString: #,##0.00
-		displayFolder: 14 Conditional Formatting\Bars
-		lineageTag: f10efedc-e852-433f-b153-6c1d7e923251
-
-	measure 'ERP S-Kurve Budsjett Label' = IF ( MAX ( dim_date[month_number] ) = 12, "Budsjett: " & FORMAT ( [ERP Budsjett Running], "#,##0 MNOK" ), BLANK () )
-		displayFolder: 16 Titles & Labels
-		lineageTag: 05955df3-393e-4e78-83b5-15e119d7d55c
-
-	measure 'ERP S-Kurve Regnskap Label' = VAR LastMonth = [ERP Siste Rapporterte Måned]
-RETURN IF ( MAX ( dim_date[month_number] ) = LastMonth, "Faktisk YTD: " & FORMAT ( [ERP Regnskap Running], "#,##0 MNOK" ), BLANK () )
-		displayFolder: 16 Titles & Labels
-		lineageTag: 2e9641d2-427f-4bc3-81e9-ec54a25ed0d8
-
-	measure 'ERP S-Kurve EAC Label' = IF ( MAX ( dim_date[month_number] ) = 12, "EAC Prognose: " & FORMAT ( [ERP Forecast EOY], "#,##0 MNOK" ), BLANK () )
-		displayFolder: 16 Titles & Labels
-		lineageTag: 969338a8-f051-463d-a3aa-b11ca95d9a50
-
-	measure 'Selected Account Drillthrough Title' = "Kontodybde: " & SELECTEDVALUE ( dim_account[account_code], "Konto" ) & " " & SELECTEDVALUE ( dim_account[account_name], "Alle konti" )
-		displayFolder: 16 Titles & Labels
-		lineageTag: aa1b0178-a9b3-49de-b41e-4f90fa06f410
-
-	measure 'ERP Fastlønn Regnskap' = CALCULATE ( [ERP Regnskap], dim_account[account_code] IN { "101000", "101010" } )
-		formatString: #,##0.00
-		displayFolder: 01 Base\ERP
-		lineageTag: 3b0ebe71-da52-481d-95a6-947d4273f364
-
-	measure 'ERP Vikar Regnskap' = CALCULATE ( [ERP Regnskap], dim_account[account_code] IN { "102000", "102010", "102020", "102030", "102040", "127040" } )
-		formatString: #,##0.00
-		displayFolder: 01 Base\ERP
-		lineageTag: 0c5dcde8-5045-48b7-b03b-407b7d863ac5
-
-	measure 'ERP Overtid Regnskap' = CALCULATE ( [ERP Regnskap], dim_account[account_code] IN { "104000", "104010", "104020" } )
-		formatString: #,##0.00
-		displayFolder: 01 Base\ERP
-		lineageTag: e6814d35-5794-468f-8c51-a6fca091798d
-
-	measure 'ERP Turnustillegg Fast Regnskap' = CALCULATE ( [ERP Regnskap], dim_account[account_code] IN { "101020", "101030", "101040" } )
-		formatString: #,##0.00
-		displayFolder: 01 Base\ERP
-		lineageTag: abad0f5d-8e39-4e80-8bcc-7b3d7b2913bc
-
-	measure 'ERP Turnustillegg Vikar Regnskap' = CALCULATE ( [ERP Regnskap], dim_account[account_code] IN { "102020", "102030", "102040" } )
-		formatString: #,##0.00
-		displayFolder: 01 Base\ERP
-		lineageTag: caf505d6-38e3-4674-98f1-36cc51701c6e
