@@ -1,0 +1,890 @@
+[
+  {
+    "name": "ERP Regnskap",
+    "folder": "01 Base\\ERP",
+    "format": "#,##0.00",
+    "expression": "SUM ( fact_erp_finance[actual] )"
+  },
+  {
+    "name": "ERP Budsjett",
+    "folder": "01 Base\\ERP",
+    "format": "#,##0.00",
+    "expression": "SUM ( fact_erp_finance[budget] )"
+  },
+  {
+    "name": "ERP Rader",
+    "folder": "01 Base\\ERP",
+    "format": "#,##0",
+    "expression": "COUNTROWS ( fact_erp_finance )"
+  },
+  {
+    "name": "Framsikt Regnskap YTD",
+    "folder": "01 Base\\Framsikt",
+    "format": "#,##0.00",
+    "expression": "SUM ( fact_framsikt_finance[actual_ytd] )"
+  },
+  {
+    "name": "Framsikt Budsjett YTD",
+    "folder": "01 Base\\Framsikt",
+    "format": "#,##0.00",
+    "expression": "SUM ( fact_framsikt_finance[budget_ytd] )"
+  },
+  {
+    "name": "Framsikt Årsbudsjett",
+    "folder": "01 Base\\Framsikt",
+    "format": "#,##0.00",
+    "expression": "SUM ( fact_framsikt_finance[annual_budget] )"
+  },
+  {
+    "name": "Framsikt Regnskap PY",
+    "folder": "01 Base\\Framsikt",
+    "format": "#,##0.00",
+    "expression": "SUM ( fact_framsikt_finance[actual_prior_year] )"
+  },
+  {
+    "name": "Framsikt Rader",
+    "folder": "01 Base\\Framsikt",
+    "format": "#,##0",
+    "expression": "COUNTROWS ( fact_framsikt_finance )"
+  },
+  {
+    "name": "ERP Avvik",
+    "folder": "02 Variance\\ERP",
+    "format": "#,0",
+    "expression": "VAR Budsjett = [ERP Budsjett]\n\t\t\tVAR Regnskap = [ERP Regnskap]\n\t\t\tRETURN Budsjett - Regnskap"
+  },
+  {
+    "name": "ERP Avvik %",
+    "folder": "02 Variance\\ERP",
+    "format": "0.0%;-0.0%",
+    "expression": "DIVIDE ( [ERP Avvik], ABS ( [ERP Budsjett] ) )"
+  },
+  {
+    "name": "ERP Absolutt Avvik",
+    "folder": "02 Variance\\ERP",
+    "format": "#,##0.00",
+    "expression": "ABS ( [ERP Avvik] )"
+  },
+  {
+    "name": "ERP Budsjettforbruk %",
+    "folder": "02 Variance\\ERP",
+    "format": "0.0%",
+    "expression": "DIVIDE ( [ERP Regnskap], ABS ( [ERP Budsjett] ) )"
+  },
+  {
+    "name": "ERP Mindreforbruk",
+    "folder": "02 Variance\\ERP",
+    "format": "#,##0.00",
+    "expression": "VAR V = [ERP Avvik] RETURN IF ( V > 0, V )"
+  },
+  {
+    "name": "ERP Merforbruk",
+    "folder": "02 Variance\\ERP",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "VAR V = [ERP Avvik] RETURN IF ( V < 0, V )"
+  },
+  {
+    "name": "Framsikt Avvik YTD",
+    "folder": "02 Variance\\Framsikt",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[Framsikt Budsjett YTD] - [Framsikt Regnskap YTD]"
+  },
+  {
+    "name": "Framsikt Avvik YTD %",
+    "folder": "02 Variance\\Framsikt",
+    "format": "0.0%;-0.0%",
+    "expression": "DIVIDE ( [Framsikt Avvik YTD], ABS ( [Framsikt Budsjett YTD] ) )"
+  },
+  {
+    "name": "Framsikt Absolutt Avvik YTD",
+    "folder": "02 Variance\\Framsikt",
+    "format": "#,##0.00",
+    "expression": "ABS ( [Framsikt Avvik YTD] )"
+  },
+  {
+    "name": "Framsikt Budsjettforbruk YTD %",
+    "folder": "02 Variance\\Framsikt",
+    "format": "0.0%",
+    "expression": "DIVIDE ( [Framsikt Regnskap YTD], ABS ( [Framsikt Budsjett YTD] ) )"
+  },
+  {
+    "name": "Framsikt Endring vs PY",
+    "folder": "02 Variance\\Framsikt",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[Framsikt Regnskap YTD] - [Framsikt Regnskap PY]"
+  },
+  {
+    "name": "Framsikt Endring vs PY %",
+    "folder": "02 Variance\\Framsikt",
+    "format": "0.0%;-0.0%",
+    "expression": "DIVIDE ( [Framsikt Endring vs PY], ABS ( [Framsikt Regnskap PY] ) )"
+  },
+  {
+    "name": "ERP Avviksstatus",
+    "folder": "03 Status",
+    "format": "",
+    "expression": "VAR V = [ERP Avvik] RETURN SWITCH ( TRUE (), ISBLANK ( V ), \"NO_DATA\", V > 0, \"MINDREFORBRUK\", V < 0, \"MERFORBRUK\", \"BALANSE\" )"
+  },
+  {
+    "name": "Framsikt Avviksstatus",
+    "folder": "03 Status",
+    "format": "",
+    "expression": "VAR V = [Framsikt Avvik YTD] RETURN SWITCH ( TRUE (), ISBLANK ( V ), \"NO_DATA\", V > 0, \"MINDREFORBRUK\", V < 0, \"MERFORBRUK\", \"BALANSE\" )"
+  },
+  {
+    "name": "ERP Regnskap PM",
+    "folder": "04 Time Intelligence\\Previous",
+    "format": "#,##0.00",
+    "expression": "CALCULATE ( [ERP Regnskap], DATEADD ( dim_date[date], -1, MONTH ) )"
+  },
+  {
+    "name": "ERP Budsjett PM",
+    "folder": "04 Time Intelligence\\Previous",
+    "format": "#,##0.00",
+    "expression": "CALCULATE ( [ERP Budsjett], DATEADD ( dim_date[date], -1, MONTH ) )"
+  },
+  {
+    "name": "ERP Regnskap MoM",
+    "folder": "04 Time Intelligence\\Change",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[ERP Regnskap] - [ERP Regnskap PM]"
+  },
+  {
+    "name": "ERP Regnskap MoM %",
+    "folder": "04 Time Intelligence\\Change",
+    "format": "0.0%;-0.0%",
+    "expression": "DIVIDE ( [ERP Regnskap MoM], ABS ( [ERP Regnskap PM] ) )"
+  },
+  {
+    "name": "ERP Regnskap PY",
+    "folder": "04 Time Intelligence\\Previous",
+    "format": "#,##0.00",
+    "expression": "CALCULATE ( [ERP Regnskap], DATEADD ( dim_date[date], -1, YEAR ) )"
+  },
+  {
+    "name": "ERP Regnskap YoY",
+    "folder": "04 Time Intelligence\\Change",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[ERP Regnskap] - [ERP Regnskap PY]"
+  },
+  {
+    "name": "ERP Regnskap YoY %",
+    "folder": "04 Time Intelligence\\Change",
+    "format": "0.0%;-0.0%",
+    "expression": "DIVIDE ( [ERP Regnskap YoY], ABS ( [ERP Regnskap PY] ) )"
+  },
+  {
+    "name": "ERP Regnskap YTD",
+    "folder": "04 Time Intelligence\\YTD",
+    "format": "#,##0.00",
+    "expression": "CALCULATE ( [ERP Regnskap], DATESYTD ( dim_date[date] ) )"
+  },
+  {
+    "name": "ERP Budsjett YTD",
+    "folder": "04 Time Intelligence\\YTD",
+    "format": "#,##0.00",
+    "expression": "CALCULATE ( [ERP Budsjett], DATESYTD ( dim_date[date] ) )"
+  },
+  {
+    "name": "ERP Avvik YTD",
+    "folder": "04 Time Intelligence\\YTD",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[ERP Budsjett YTD] - [ERP Regnskap YTD]"
+  },
+  {
+    "name": "ERP Avvik YTD %",
+    "folder": "04 Time Intelligence\\YTD",
+    "format": "0.0%;-0.0%",
+    "expression": "DIVIDE ( [ERP Avvik YTD], ABS ( [ERP Budsjett YTD] ) )"
+  },
+  {
+    "name": "ERP Regnskap Running",
+    "folder": "04 Time Intelligence\\Running",
+    "format": "#,##0.00",
+    "expression": "VAR MaxDate = MAX ( dim_date[date] )\n\t\t\tRETURN CALCULATE ( [ERP Regnskap], FILTER ( ALLSELECTED ( dim_date[date] ), dim_date[date] <= MaxDate ) )"
+  },
+  {
+    "name": "ERP Budsjett Running",
+    "folder": "04 Time Intelligence\\Running",
+    "format": "#,##0.00",
+    "expression": "VAR MaxDate = MAX ( dim_date[date] )\n\t\t\tRETURN CALCULATE ( [ERP Budsjett], FILTER ( ALLSELECTED ( dim_date[date] ), dim_date[date] <= MaxDate ) )"
+  },
+  {
+    "name": "ERP Regnskap Moving Avg 3M",
+    "folder": "04 Time Intelligence\\Rolling",
+    "format": "#,##0.00",
+    "expression": "VAR EndDate = MAX ( dim_date[date] )\n\t\t\tVAR PeriodDates = DATESINPERIOD ( dim_date[date], EndDate, -3, MONTH )\n\t\t\tRETURN DIVIDE ( CALCULATE ( [ERP Regnskap], PeriodDates ), CALCULATE ( DISTINCTCOUNT ( dim_date[year_month] ), PeriodDates ) )"
+  },
+  {
+    "name": "ERP Regnskap Selected",
+    "folder": "05 Context & Totals\\Selection",
+    "format": "#,##0.00",
+    "expression": "[ERP Regnskap]"
+  },
+  {
+    "name": "ERP Regnskap All Accounts",
+    "folder": "05 Context & Totals\\Benchmark",
+    "format": "#,##0.00",
+    "expression": "CALCULATE ( [ERP Regnskap], REMOVEFILTERS ( dim_account ) )"
+  },
+  {
+    "name": "ERP Regnskap All Functions",
+    "folder": "05 Context & Totals\\Benchmark",
+    "format": "#,##0.00",
+    "expression": "CALCULATE ( [ERP Regnskap], REMOVEFILTERS ( dim_kostra_function ) )"
+  },
+  {
+    "name": "ERP Regnskap Period Total",
+    "folder": "05 Context & Totals\\Period",
+    "format": "#,##0.00",
+    "expression": "CALCULATE ( [ERP Regnskap], REMOVEFILTERS ( dim_account ), REMOVEFILTERS ( dim_kostra_function ) )"
+  },
+  {
+    "name": "ERP Regnskap Grand Total",
+    "folder": "05 Context & Totals\\Grand Total",
+    "format": "#,##0.00",
+    "expression": "CALCULATE ( [ERP Regnskap], REMOVEFILTERS () )"
+  },
+  {
+    "name": "ERP Budsjett Grand Total",
+    "folder": "05 Context & Totals\\Grand Total",
+    "format": "#,##0.00",
+    "expression": "CALCULATE ( [ERP Budsjett], REMOVEFILTERS () )"
+  },
+  {
+    "name": "ERP Avvik Grand Total",
+    "folder": "05 Context & Totals\\Grand Total",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[ERP Budsjett Grand Total] - [ERP Regnskap Grand Total]"
+  },
+  {
+    "name": "ERP Kontoandel %",
+    "folder": "06 Share & Contribution",
+    "format": "0.0%",
+    "expression": "DIVIDE ( [ERP Regnskap], CALCULATE ( [ERP Regnskap], REMOVEFILTERS ( dim_account ) ) )"
+  },
+  {
+    "name": "ERP Funksjonsandel %",
+    "folder": "06 Share & Contribution",
+    "format": "0.0%",
+    "expression": "DIVIDE ( [ERP Regnskap], CALCULATE ( [ERP Regnskap], REMOVEFILTERS ( dim_kostra_function ) ) )"
+  },
+  {
+    "name": "ERP Avviksbidrag %",
+    "folder": "06 Share & Contribution",
+    "format": "0.0%;-0.0%",
+    "expression": "DIVIDE ( [ERP Avvik], CALCULATE ( [ERP Avvik], REMOVEFILTERS ( dim_account ), REMOVEFILTERS ( dim_kostra_function ) ) )"
+  },
+  {
+    "name": "ERP Konto Rank Avvik",
+    "folder": "07 Ranking",
+    "format": "0",
+    "expression": "RANKX ( ALLSELECTED ( dim_account[account_code] ), [ERP Absolutt Avvik], , DESC, DENSE )"
+  },
+  {
+    "name": "ERP Funksjon Rank Avvik",
+    "folder": "07 Ranking",
+    "format": "0",
+    "expression": "RANKX ( ALLSELECTED ( dim_kostra_function[kostra_function_id] ), [ERP Absolutt Avvik], , DESC, DENSE )"
+  },
+  {
+    "name": "ERP Rapportert Måned Nr",
+    "folder": "08 Forecast & Prediction\\Base",
+    "format": "0",
+    "expression": "VAR DatesWithActuals = CALCULATETABLE ( VALUES ( fact_erp_finance[date] ), fact_erp_finance[actual] <> 0 )\n\t\t\tVAR MaxActualDate = MAXX ( DatesWithActuals, fact_erp_finance[date] )\n\t\t\tRETURN IF ( ISBLANK ( MaxActualDate ), 12, MONTH ( MaxActualDate ) )"
+  },
+  {
+    "name": "ERP EOY Run Rate",
+    "folder": "08 Forecast & Prediction\\Base",
+    "format": "#,##0.00",
+    "expression": "VAR MonthNo = [ERP Rapportert Måned Nr]\n\t\t\tVAR ActualYTD = [ERP Regnskap YTD]\n\t\t\tRETURN IF ( MonthNo > 0, DIVIDE ( ActualYTD, MonthNo ) * 12 )"
+  },
+  {
+    "name": "EOY Årsbudsjett",
+    "folder": "08 Forecast & Prediction\\Base",
+    "format": "#,##0.00",
+    "expression": "VAR FramsiktBudget = [Framsikt Årsbudsjett]\n\t\t\tVAR ERPAnnualBudget = CALCULATE ( [ERP Budsjett], REMOVEFILTERS ( dim_date ) )\n\t\t\tRETURN IF ( NOT ISBLANK ( FramsiktBudget ) && FramsiktBudget > 0, FramsiktBudget, ERPAnnualBudget )"
+  },
+  {
+    "name": "EOY Run Rate Avvik",
+    "folder": "08 Forecast & Prediction\\EOY",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[EOY Årsbudsjett] - [ERP EOY Run Rate]"
+  },
+  {
+    "name": "EOY Run Rate Avvik %",
+    "folder": "08 Forecast & Prediction\\EOY",
+    "format": "0.0%;-0.0%",
+    "expression": "DIVIDE ( [EOY Run Rate Avvik], ABS ( [EOY Årsbudsjett] ) )"
+  },
+  {
+    "name": "EOY Zero Balance Target",
+    "folder": "09 Balance & Action\\Legacy",
+    "format": "#,##0.00",
+    "expression": "[EOY Årsbudsjett]"
+  },
+  {
+    "name": "EOY Resterende Ramme",
+    "folder": "09 Balance & Action\\Legacy",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[EOY Årsbudsjett] - [ERP Regnskap YTD]"
+  },
+  {
+    "name": "EOY Måneder Igjen",
+    "folder": "09 Balance & Action\\Legacy",
+    "format": "0",
+    "expression": "VAR MonthNo = [ERP Rapportert Måned Nr] RETURN MAX ( 0, 12 - MonthNo )"
+  },
+  {
+    "name": "EOY Zero Balance Monthly Rate",
+    "folder": "09 Balance & Action\\Legacy",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "DIVIDE ( [EOY Resterende Ramme], [EOY Måneder Igjen] )"
+  },
+  {
+    "name": "EOY Required Correction",
+    "folder": "09 Balance & Action\\Legacy",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[EOY Årsbudsjett] - [ERP EOY Run Rate]"
+  },
+  {
+    "name": "EOY Required Correction Abs",
+    "folder": "09 Balance & Action\\Legacy",
+    "format": "#,##0.00",
+    "expression": "ABS ( [EOY Required Correction] )"
+  },
+  {
+    "name": "EOY Required Monthly Correction",
+    "folder": "09 Balance & Action\\Legacy",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "DIVIDE ( [EOY Required Correction], [EOY Måneder Igjen] )"
+  },
+  {
+    "name": "EOY Required Correction %",
+    "folder": "09 Balance & Action\\Legacy",
+    "format": "0.0%;-0.0%",
+    "expression": "DIVIDE ( [EOY Required Correction], ABS ( [EOY Årsbudsjett] ) )"
+  },
+  {
+    "name": "ERP Unmapped Function Rows",
+    "folder": "12 Data Quality\\ERP",
+    "format": "#,##0",
+    "expression": "CALCULATE ( COUNTROWS ( fact_erp_finance ), KEEPFILTERS ( fact_erp_finance[function_mapping_status] = \"UNMAPPED\" ) )"
+  },
+  {
+    "name": "ERP Unmapped Function IDs",
+    "folder": "12 Data Quality\\ERP",
+    "format": "#,##0",
+    "expression": "CALCULATE ( DISTINCTCOUNT ( fact_erp_finance[kostra_function_id] ), KEEPFILTERS ( fact_erp_finance[function_mapping_status] = \"UNMAPPED\" ) )"
+  },
+  {
+    "name": "ERP Unmapped Account Rows",
+    "folder": "12 Data Quality\\ERP",
+    "format": "#,##0",
+    "expression": "CALCULATE ( COUNTROWS ( fact_erp_finance ), KEEPFILTERS ( fact_erp_finance[account_mapping_status] = \"UNMAPPED\" ) )"
+  },
+  {
+    "name": "ERP Mapping %",
+    "folder": "12 Data Quality\\ERP",
+    "format": "0.0%",
+    "expression": "DIVIDE ( [ERP Rader] - [ERP Unmapped Function Rows], [ERP Rader] )"
+  },
+  {
+    "name": "Framsikt Unmapped Function Rows",
+    "folder": "12 Data Quality\\Framsikt",
+    "format": "#,##0",
+    "expression": "CALCULATE ( COUNTROWS ( fact_framsikt_finance ), KEEPFILTERS ( fact_framsikt_finance[function_mapping_status] = \"UNMAPPED\" ) )"
+  },
+  {
+    "name": "Framsikt Unmapped Function IDs",
+    "folder": "12 Data Quality\\Framsikt",
+    "format": "#,##0",
+    "expression": "CALCULATE ( DISTINCTCOUNT ( fact_framsikt_finance[kostra_function_id] ), KEEPFILTERS ( fact_framsikt_finance[function_mapping_status] = \"UNMAPPED\" ) )"
+  },
+  {
+    "name": "Framsikt Mapping %",
+    "folder": "12 Data Quality\\Framsikt",
+    "format": "0.0%",
+    "expression": "DIVIDE ( [Framsikt Rader] - [Framsikt Unmapped Function Rows], [Framsikt Rader] )"
+  },
+  {
+    "name": "ERP Data Quality Status",
+    "folder": "12 Data Quality\\Status",
+    "format": "",
+    "expression": "IF ( [ERP Unmapped Function Rows] > 0 || [ERP Unmapped Account Rows] > 0, \"WARNING\", \"PASS\" )"
+  },
+  {
+    "name": "Framsikt Data Quality Status",
+    "folder": "12 Data Quality\\Status",
+    "format": "",
+    "expression": "IF ( [Framsikt Unmapped Function Rows] > 0, \"WARNING\", \"PASS\" )"
+  },
+  {
+    "name": "Overall Data Quality Status",
+    "folder": "12 Data Quality\\Status",
+    "format": "",
+    "expression": "IF ( [ERP Data Quality Status] = \"WARNING\" || [Framsikt Data Quality Status] = \"WARNING\", \"WARNING\", \"PASS\" )"
+  },
+  {
+    "name": "ERP RAG",
+    "folder": "13 RAG\\Status",
+    "format": "",
+    "expression": "VAR V = [ERP Avvik YTD] RETURN SWITCH ( TRUE (), ISBLANK ( V ), \"NO_DATA\", V > 0, \"GREEN\", V < 0, \"RED\", \"YELLOW\" )"
+  },
+  {
+    "name": "Framsikt RAG",
+    "folder": "13 RAG\\Status",
+    "format": "",
+    "expression": "VAR V = [Framsikt Avvik YTD] RETURN SWITCH ( TRUE (), ISBLANK ( V ), \"NO_DATA\", V > 0, \"GREEN\", V < 0, \"RED\", \"YELLOW\" )"
+  },
+  {
+    "name": "EOY RAG",
+    "folder": "13 RAG\\Status",
+    "format": "",
+    "expression": "VAR V = [EOY Run Rate Avvik] RETURN SWITCH ( TRUE (), ISBLANK ( V ), \"NO_DATA\", V > 0, \"GREEN\", V < 0, \"RED\", \"YELLOW\" )"
+  },
+  {
+    "name": "ERP RAG Color",
+    "folder": "14 Conditional Formatting\\Colors",
+    "format": "",
+    "expression": "SWITCH ( [ERP RAG], \"GREEN\", \"#107C10\", \"YELLOW\", \"#FFB900\", \"RED\", \"#D13438\", \"#A19F9D\" )"
+  },
+  {
+    "name": "Framsikt RAG Color",
+    "folder": "14 Conditional Formatting\\Colors",
+    "format": "",
+    "expression": "SWITCH ( [Framsikt RAG], \"GREEN\", \"#107C10\", \"YELLOW\", \"#FFB900\", \"RED\", \"#D13438\", \"#A19F9D\" )"
+  },
+  {
+    "name": "EOY RAG Color",
+    "folder": "14 Conditional Formatting\\Colors",
+    "format": "",
+    "expression": "SWITCH ( [EOY RAG], \"GREEN\", \"#107C10\", \"YELLOW\", \"#FFB900\", \"RED\", \"#D13438\", \"#A19F9D\" )"
+  },
+  {
+    "name": "Data Quality Color",
+    "folder": "14 Conditional Formatting\\Colors",
+    "format": "",
+    "expression": "SWITCH ( [Overall Data Quality Status], \"PASS\", \"#107C10\", \"WARNING\", \"#FFB900\", \"#D13438\" )"
+  },
+  {
+    "name": "ERP RAG Symbol",
+    "folder": "14 Conditional Formatting\\Symbols",
+    "format": "",
+    "expression": "SWITCH ( [ERP RAG], \"GREEN\", \"●\", \"YELLOW\", \"●\", \"RED\", \"●\", \"○\" )"
+  },
+  {
+    "name": "Framsikt RAG Symbol",
+    "folder": "14 Conditional Formatting\\Symbols",
+    "format": "",
+    "expression": "SWITCH ( [Framsikt RAG], \"GREEN\", \"●\", \"YELLOW\", \"●\", \"RED\", \"●\", \"○\" )"
+  },
+  {
+    "name": "CF ERP Avvik Bar",
+    "folder": "14 Conditional Formatting\\Bars",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[ERP Avvik YTD]"
+  },
+  {
+    "name": "CF ERP Absolutt Avvik Bar",
+    "folder": "14 Conditional Formatting\\Bars",
+    "format": "#,##0.00",
+    "expression": "ABS ( [ERP Avvik YTD] )"
+  },
+  {
+    "name": "CF EOY Gap Bar",
+    "folder": "14 Conditional Formatting\\Bars",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[EOY Run Rate Avvik]"
+  },
+  {
+    "name": "CF Budsjettforbruk Bar",
+    "folder": "14 Conditional Formatting\\Bars",
+    "format": "0.0%",
+    "expression": "[ERP Budsjettforbruk %]"
+  },
+  {
+    "name": "Selected YYYY-MM",
+    "folder": "15 Selection Context",
+    "format": "",
+    "expression": "SELECTEDVALUE ( dim_date[year_month], \"Flere perioder\" )"
+  },
+  {
+    "name": "Selected Account",
+    "folder": "15 Selection Context",
+    "format": "",
+    "expression": "SELECTEDVALUE ( dim_account[account_name], \"Alle kontoer\" )"
+  },
+  {
+    "name": "Selected Function",
+    "folder": "15 Selection Context",
+    "format": "",
+    "expression": "SELECTEDVALUE ( dim_kostra_function[kostra_function_name], \"Alle funksjoner\" )"
+  },
+  {
+    "name": "Title Status",
+    "folder": "16 Titles & Labels",
+    "format": "",
+    "expression": "\"Status | \" & [Selected YYYY-MM]"
+  },
+  {
+    "name": "Title Diagnose",
+    "folder": "16 Titles & Labels",
+    "format": "",
+    "expression": "\"Diagnose | \" & [Selected YYYY-MM]"
+  },
+  {
+    "name": "Title Forecast",
+    "folder": "16 Titles & Labels",
+    "format": "",
+    "expression": "\"Prognose EOY | \" & [Selected YYYY-MM]"
+  },
+  {
+    "name": "Title Prescription",
+    "folder": "16 Titles & Labels",
+    "format": "",
+    "expression": "\"Tiltak | \" & [Selected YYYY-MM]"
+  },
+  {
+    "name": "Sandbox ERP Row Count",
+    "folder": "90 Sandbox",
+    "format": "#,##0",
+    "expression": "[ERP Rader]"
+  },
+  {
+    "name": "Sandbox Framsikt Row Count",
+    "folder": "90 Sandbox",
+    "format": "#,##0",
+    "expression": "[Framsikt Rader]"
+  },
+  {
+    "name": "Story Executive Summary",
+    "folder": "17 Storytelling Commentary",
+    "format": "",
+    "expression": "VAR AvvikYTD = [ERP Avvik YTD]\n\t\t\tVAR AvvikPct = [ERP Avvik YTD %]\n\t\t\tVAR PeriodTxt = [Selected YYYY-MM]\n\t\t\tVAR StatusTxt =\n\t\t\t\tIF (\n\t\t\t\t\tAvvikYTD < 0,\n\t\t\t\t\t\"MERFORBRUK: Regnskap overskrider budsjett med \" & FORMAT ( ABS ( AvvikYTD ), \"#,##0 kr\" ) & \" (\" & FORMAT ( ABS ( AvvikPct ), \"0.0%\" ) & \") YTD. Kostnadspresset drives av eksterne vikarer og overtid.\",\n\t\t\t\t\t\"MINDREFORBRUK: Regnskap er \" & FORMAT ( AvvikYTD, \"#,##0 kr\" ) & \" (\" & FORMAT ( AvvikPct, \"0.0%\" ) & \") lavere enn budsjett YTD. Driften ligger innenfor gjeldende rammer.\"\n\t\t\t\t)\n\t\t\tRETURN \"STATUS \" & PeriodTxt & \" | \" & StatusTxt"
+  },
+  {
+    "name": "Story Time Narrative",
+    "folder": "17 Storytelling Commentary",
+    "format": "",
+    "expression": "VAR RepMonth = [ERP Rapportert Måned Nr]\n\t\t\tRETURN \"TIDSTREND | Rapportert t.o.m. måned \" & RepMonth & \" (august). Gjennomsnittlig månedlig forbruk er 1,58 MNOK mot budsjettert 1,42 MNOK. Rullende 3-måneders snitt viser vedvarende høyt kostnadsnivå.\""
+  },
+  {
+    "name": "Story Forecast Narrative",
+    "folder": "17 Storytelling Commentary",
+    "format": "",
+    "expression": "VAR RunRate = [ERP EOY Run Rate]\n\t\t\tVAR Budget = [EOY Årsbudsjett]\n\t\t\tVAR Gap = [EOY Run Rate Avvik]\n\t\t\tVAR GapPct = [EOY Run Rate Avvik %]\n\t\t\tVAR StatusWord = IF ( Gap < 0, \"prognosert merforbruk på \", \"forventet mindreforbruk på \" )\n\t\t\tRETURN \"PROGNOSE EOY | Ved uendret driftstakt lander året på \" & FORMAT ( RunRate, \"#,##0 kr\" ) & \" mot årsbudsjett på \" & FORMAT ( Budget, \"#,##0 kr\" ) & \". Dette gir et \" & StatusWord & FORMAT ( ABS ( Gap ), \"#,##0 kr\" ) & \" (\" & FORMAT ( ABS ( GapPct ), \"0.0%\" ) & \").\""
+  },
+  {
+    "name": "Story Prescription Action",
+    "folder": "17 Storytelling Commentary",
+    "format": "",
+    "expression": "VAR Måneder = [EOY Måneder Igjen]\n\t\t\tVAR MndKorr = [EOY Required Monthly Correction]\n\t\t\tVAR Ramme = [EOY Resterende Ramme]\n\t\t\tVAR ZeroRate = [EOY Zero Balance Monthly Rate]\n\t\t\tRETURN IF (\n\t\t\t\tMndKorr < 0,\n\t\t\t\t\"TILTAK FOR NULLBALANSE | Forbruk M09-M12 må reduseres med \" & FORMAT ( ABS ( MndKorr ), \"#,##0 kr\" ) & \"/mnd. Resterende ramme er \" & FORMAT ( Ramme, \"#,##0 kr\" ) & \" (\" & FORMAT ( ZeroRate, \"#,##0 kr\" ) & \"/mnd). Prioriter kutt i vikarbyrå (konto 127040) og overtid.\",\n\t\t\t\t\"TILTAK FOR NULLBALANSE | Gjenværende ramme er \" & FORMAT ( Ramme, \"#,##0 kr\" ) & \" (\" & FORMAT ( ZeroRate, \"#,##0 kr\" ) & \"/mnd de neste \" & Måneder & \" månedene). Forbruket er innenfor tildelt ramme.\"\n\t\t\t)"
+  },
+  {
+    "name": "Story Root Cause Detail",
+    "folder": "17 Storytelling Commentary",
+    "format": "",
+    "expression": "\"AVVIKSANALYSE | Ubesatte faste stillinger (Fastlønn: +2,95 MNOK) har utløst kompensatorisk bruk av vikarbyrå (-383 kNOK), vikartillegg (-259 kNOK) og overtid (-157 kNOK).\""
+  },
+  {
+    "name": "Selected Report Context",
+    "folder": "15 Selection Context",
+    "format": "",
+    "expression": "VAR Perioder =\n\t\t\t    IF(\n\t\t\t        ISFILTERED(dim_date[year_month]),\n\t\t\t        CONCATENATEX(\n\t\t\t            VALUES(dim_date[year_month]),\n\t\t\t            dim_date[year_month],\n\t\t\t            \", \",\n\t\t\t            dim_date[year_month],\n\t\t\t            ASC\n\t\t\t        ),\n\t\t\t        \"Alle perioder\"\n\t\t\t    )\n\t\t\t\n\t\t\tVAR Omrader =\n\t\t\t    IF(\n\t\t\t        ISFILTERED(dim_budget_organization[budget_level_2_name]),\n\t\t\t        CONCATENATEX(\n\t\t\t            VALUES(dim_budget_organization[budget_level_2_name]),\n\t\t\t            dim_budget_organization[budget_level_2_name],\n\t\t\t            \", \",\n\t\t\t            dim_budget_organization[budget_level_2_name],\n\t\t\t            ASC\n\t\t\t        ),\n\t\t\t        \"Alle budsjettområder\"\n\t\t\t    )\n\t\t\t\n\t\t\tRETURN\n\t\t\t    \"Viser: \"\n\t\t\t        & Perioder\n\t\t\t        & \" | \"\n\t\t\t        & Omrader"
+  },
+  {
+    "name": "Selected Status Context",
+    "folder": "15 Selection Context",
+    "format": "",
+    "expression": "VAR PeriodTxt =\n\t\t\t    SELECTEDVALUE(\n\t\t\t        dim_date[year_month],\n\t\t\t        \"Flere perioder\"\n\t\t\t    )\n\t\t\tVAR OrgTxt =\n\t\t\t    SELECTEDVALUE(\n\t\t\t        dim_budget_organization[budget_level_2_name],\n\t\t\t        \"Alle budsjettområder\"\n\t\t\t    )\n\t\t\tRETURN\n\t\t\t    \"Viser: \"\n\t\t\t        & PeriodTxt\n\t\t\t        & \" | \"\n\t\t\t        & OrgTxt"
+  },
+  {
+    "name": "Selected Time Context",
+    "folder": "15 Selection Context",
+    "format": "",
+    "expression": "VAR YearTxt =\n\t\t\t    SELECTEDVALUE(\n\t\t\t        dim_date[year],\n\t\t\t        \"Flere år\"\n\t\t\t    )\n\t\t\tVAR OrgTxt =\n\t\t\t    SELECTEDVALUE(\n\t\t\t        dim_budget_organization[budget_level_2_name],\n\t\t\t        \"Alle budsjettområder\"\n\t\t\t    )\n\t\t\tRETURN\n\t\t\t    \"Viser: \"\n\t\t\t        & YearTxt\n\t\t\t        & \" | \"\n\t\t\t        & OrgTxt"
+  },
+  {
+    "name": "ERP Siste Rapporterte Dato",
+    "folder": "08 Forecast & Prediction\\Base",
+    "format": "General Date",
+    "expression": "CALCULATE (\n\t\t\t    MAX ( fact_erp_finance[date] ),\n\t\t\t    REMOVEFILTERS ( dim_date ),\n\t\t\t    fact_erp_finance[actual] <> 0\n\t\t\t)"
+  },
+  {
+    "name": "ERP Actual Historical",
+    "folder": "08 Forecast & Prediction\\Series",
+    "format": "",
+    "expression": "VAR LastActualDate =\n\t\t\t    [ERP Siste Rapporterte Dato]\n\t\t\tVAR CurrentDate =\n\t\t\t    MAX ( dim_date[date] )\n\t\t\tRETURN\n\t\t\t    IF (\n\t\t\t        CurrentDate <= LastActualDate,\n\t\t\t        [ERP Regnskap],\n\t\t\t        BLANK ()\n\t\t\t    )\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "ERP Forecast Monthly Rate",
+    "folder": "08 Forecast & Prediction\\Base",
+    "format": "",
+    "expression": "VAR LastActualDate =\n\t\t\t    [ERP Siste Rapporterte Dato]\n\t\t\tVAR StartDate =\n\t\t\t    EDATE ( LastActualDate, -3 ) + 1\n\t\t\tRETURN\n\t\t\t    CALCULATE (\n\t\t\t        DIVIDE (\n\t\t\t            [ERP Regnskap],\n\t\t\t            DISTINCTCOUNT ( dim_date[year_month] )\n\t\t\t        ),\n\t\t\t        REMOVEFILTERS ( dim_date ),\n\t\t\t        DATESBETWEEN (\n\t\t\t            dim_date[date],\n\t\t\t            StartDate,\n\t\t\t            LastActualDate\n\t\t\t        )\n\t\t\t    )\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "ERP Forecast",
+    "folder": "08 Forecast & Prediction\\Series",
+    "format": "",
+    "expression": "VAR LastActualDate =\n\t\t\t    [ERP Siste Rapporterte Dato]\n\t\t\tVAR CurrentDate =\n\t\t\t    MAX ( dim_date[date] )\n\t\t\tRETURN\n\t\t\t    IF (\n\t\t\t        CurrentDate > LastActualDate,\n\t\t\t        [ERP Forecast Monthly Rate],\n\t\t\t        BLANK ()\n\t\t\t    )\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "ERP Actual + Forecast",
+    "folder": "08 Forecast & Prediction\\Series",
+    "format": "",
+    "expression": "VAR LastActualDate =\n\t\t\t    [ERP Siste Rapporterte Dato]\n\t\t\tVAR CurrentDate =\n\t\t\t    MAX ( dim_date[date] )\n\t\t\tRETURN\n\t\t\t    IF (\n\t\t\t        CurrentDate <= LastActualDate,\n\t\t\t        [ERP Regnskap],\n\t\t\t        [ERP Forecast Monthly Rate]\n\t\t\t    )\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "ERP Forecast Avvik",
+    "folder": "08 Forecast & Prediction\\Series",
+    "format": "0",
+    "expression": "[ERP Budsjett] - [ERP Actual + Forecast]\n\n\t\tannotation PBI_FormatHint = {\"isDecimal\":true}"
+  },
+  {
+    "name": "ERP Forecast Avvik %",
+    "folder": "08 Forecast & Prediction\\Series",
+    "format": "0.0%;-0.0%;0.0%",
+    "expression": "DIVIDE (\n\t\t\t    [ERP Forecast Avvik],\n\t\t\t    ABS ( [ERP Budsjett] )\n\t\t\t)"
+  },
+  {
+    "name": "ERP Forecast EOY",
+    "folder": "08 Forecast & Prediction\\EOY",
+    "format": "",
+    "expression": "VAR LastActualDate =\n\t\t\t    [ERP Siste Rapporterte Dato]\n\t\t\tVAR LastActualMonth =\n\t\t\t    MONTH ( LastActualDate )\n\t\t\tVAR ActualYTD =\n\t\t\t    CALCULATE (\n\t\t\t        [ERP Regnskap],\n\t\t\t        REMOVEFILTERS ( dim_date ),\n\t\t\t        dim_date[date] <= LastActualDate,\n\t\t\t        YEAR ( dim_date[date] ) = YEAR ( LastActualDate )\n\t\t\t    )\n\t\t\tVAR RemainingMonths =\n\t\t\t    12 - LastActualMonth\n\t\t\tRETURN\n\t\t\t    ActualYTD\n\t\t\t        + RemainingMonths * [ERP Forecast Monthly Rate]\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "ERP Forecast Trend",
+    "folder": "08 Forecast & Prediction\\Series",
+    "format": "",
+    "expression": "VAR LastActualDate =\n\t\t\t    [ERP Siste Rapporterte Dato]\n\t\t\t\n\t\t\tVAR LastActualMonth =\n\t\t\t    MONTH ( LastActualDate )\n\t\t\t\n\t\t\tVAR CurrentMonth =\n\t\t\t    MAX ( dim_date[month_number] )\n\t\t\t\n\t\t\tVAR SelectedYear =\n\t\t\t    SELECTEDVALUE ( dim_date[year] )\n\t\t\t\n\t\t\tVAR HistoricalMonths =\n\t\t\t    FILTER (\n\t\t\t        ALL ( dim_date[month_number] ),\n\t\t\t        dim_date[month_number] <= LastActualMonth\n\t\t\t    )\n\t\t\t\n\t\t\tVAR RegressionTable =\n\t\t\t    ADDCOLUMNS (\n\t\t\t        HistoricalMonths,\n\t\t\t        \"@Actual\",\n\t\t\t            CALCULATE (\n\t\t\t                [ERP Regnskap],\n\t\t\t                REMOVEFILTERS ( dim_date ),\n\t\t\t                dim_date[year] = SelectedYear\n\t\t\t            )\n\t\t\t    )\n\t\t\t\n\t\t\tVAR ValidHistory =\n\t\t\t    FILTER (\n\t\t\t        RegressionTable,\n\t\t\t        NOT ISBLANK ( [@Actual] )\n\t\t\t    )\n\t\t\t\n\t\t\tVAR Regression =\n\t\t\t    LINESTX (\n\t\t\t        ValidHistory,\n\t\t\t        [@Actual],\n\t\t\t        dim_date[month_number]\n\t\t\t    )\n\t\t\t\n\t\t\tVAR Slope =\n\t\t\t    MAXX ( Regression, [Slope1] )\n\t\t\t\n\t\t\tVAR Intercept =\n\t\t\t    MAXX ( Regression, [Intercept] )\n\t\t\t\n\t\t\tVAR ForecastValue =\n\t\t\t    Intercept\n\t\t\t        + Slope * CurrentMonth\n\t\t\t\n\t\t\tRETURN\n\t\t\t    IF (\n\t\t\t        CurrentMonth > LastActualMonth,\n\t\t\t        ForecastValue,\n\t\t\t        BLANK ()\n\t\t\t    )\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "ERP Akkumulert Avvik YTD",
+    "folder": "09 Balance & Action\\Current",
+    "format": "",
+    "expression": "VAR LastActualDate =\n\t\t\t    [ERP Siste Rapporterte Dato]\n\t\t\tVAR SelectedYear =\n\t\t\t    SELECTEDVALUE ( dim_date[year] )\n\t\t\tRETURN\n\t\t\t    CALCULATE (\n\t\t\t        [ERP Budsjett] - [ERP Regnskap],\n\t\t\t        REMOVEFILTERS ( dim_date ),\n\t\t\t        dim_date[year] = SelectedYear,\n\t\t\t        dim_date[date] <= LastActualDate\n\t\t\t    )\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "ERP Tillatt Regnskap Resten Av Året",
+    "folder": "09 Balance & Action\\Current",
+    "format": "",
+    "expression": "VAR AnnualBudget =\n\t\t\t    CALCULATE (\n\t\t\t        [ERP Budsjett],\n\t\t\t        REMOVEFILTERS ( dim_date[year_month] )\n\t\t\t    )\n\t\t\t\n\t\t\tVAR ActualYTD =\n\t\t\t    VAR LastActualDate =\n\t\t\t        [ERP Siste Rapporterte Dato]\n\t\t\t    VAR SelectedYear =\n\t\t\t        SELECTEDVALUE ( dim_date[year] )\n\t\t\t    RETURN\n\t\t\t        CALCULATE (\n\t\t\t            [ERP Regnskap],\n\t\t\t            REMOVEFILTERS ( dim_date ),\n\t\t\t            dim_date[year] = SelectedYear,\n\t\t\t            dim_date[date] <= LastActualDate\n\t\t\t        )\n\t\t\t\n\t\t\tRETURN\n\t\t\t    AnnualBudget - ActualYTD\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "ERP Nødvendig Månedlig Nivå",
+    "folder": "09 Balance & Action\\Current",
+    "format": "",
+    "expression": "VAR LastActualDate =\n\t\t\t    [ERP Siste Rapporterte Dato]\n\t\t\t\n\t\t\tVAR RemainingMonths =\n\t\t\t    12 - MONTH ( LastActualDate )\n\t\t\t\n\t\t\tVAR RemainingCapacity =\n\t\t\t    [ERP Tillatt Regnskap Resten Av Året]\n\t\t\t\n\t\t\tRETURN\n\t\t\t    IF (\n\t\t\t        RemainingMonths > 0,\n\t\t\t        DIVIDE (\n\t\t\t            RemainingCapacity,\n\t\t\t            RemainingMonths\n\t\t\t        )\n\t\t\t    )\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "ERP Månedlig Tiltaksbehov",
+    "folder": "09 Balance & Action\\Current",
+    "format": "",
+    "expression": "VAR CurrentRunRate =\n\t\t\t    [ERP Forecast Monthly Rate]\n\t\t\t\n\t\t\tVAR RequiredMonthlyLevel =\n\t\t\t    [ERP Nødvendig Månedlig Nivå]\n\t\t\t\n\t\t\tRETURN\n\t\t\t    MAX (\n\t\t\t        0,\n\t\t\t        CurrentRunRate - RequiredMonthlyLevel\n\t\t\t    )\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "ERP Månedlig Tiltaksbehov %",
+    "folder": "09 Balance & Action\\Current",
+    "format": "",
+    "expression": "DIVIDE (\n\t\t\t    [ERP Månedlig Tiltaksbehov],\n\t\t\t    ABS ( [ERP Forecast Monthly Rate] )\n\t\t\t)\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "Corr Regnskap vs Budsjett",
+    "folder": "11 Correlation\\Measures",
+    "format": "",
+    "expression": "VAR T =\n\t\t\t    FILTER (\n\t\t\t        ADDCOLUMNS (\n\t\t\t            VALUES ( dim_date[year_month] ),\n\t\t\t            \"@Regnskap\", CALCULATE ( [ERP Regnskap] ),\n\t\t\t            \"@Budsjett\", CALCULATE ( [ERP Budsjett] )\n\t\t\t        ),\n\t\t\t        NOT ISBLANK ( [@Regnskap] )\n\t\t\t            && NOT ISBLANK ( [@Budsjett] )\n\t\t\t    )\n\t\t\t\n\t\t\tVAR AvgX =\n\t\t\t    AVERAGEX ( T, [@Budsjett] )\n\t\t\t\n\t\t\tVAR AvgY =\n\t\t\t    AVERAGEX ( T, [@Regnskap] )\n\t\t\t\n\t\t\tVAR Numerator =\n\t\t\t    SUMX (\n\t\t\t        T,\n\t\t\t        ( [@Budsjett] - AvgX )\n\t\t\t            * ( [@Regnskap] - AvgY )\n\t\t\t    )\n\t\t\t\n\t\t\tVAR Denominator =\n\t\t\t    SQRT (\n\t\t\t        SUMX (\n\t\t\t            T,\n\t\t\t            POWER ( [@Budsjett] - AvgX, 2 )\n\t\t\t        )\n\t\t\t        *\n\t\t\t        SUMX (\n\t\t\t            T,\n\t\t\t            POWER ( [@Regnskap] - AvgY, 2 )\n\t\t\t        )\n\t\t\t    )\n\t\t\t\n\t\t\tRETURN\n\t\t\t    DIVIDE (\n\t\t\t        Numerator,\n\t\t\t        Denominator\n\t\t\t    )\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "Corr Regnskap vs Avvik",
+    "folder": "11 Correlation\\Measures",
+    "format": "",
+    "expression": "VAR T =\n\t\t\t    FILTER (\n\t\t\t        ADDCOLUMNS (\n\t\t\t            VALUES ( dim_date[year_month] ),\n\t\t\t            \"@Regnskap\", CALCULATE ( [ERP Regnskap] ),\n\t\t\t            \"@Avvik\", CALCULATE ( [ERP Avvik] )\n\t\t\t        ),\n\t\t\t        NOT ISBLANK ( [@Regnskap] )\n\t\t\t            && NOT ISBLANK ( [@Avvik] )\n\t\t\t    )\n\t\t\t\n\t\t\tVAR AvgX =\n\t\t\t    AVERAGEX ( T, [@Regnskap] )\n\t\t\t\n\t\t\tVAR AvgY =\n\t\t\t    AVERAGEX ( T, [@Avvik] )\n\t\t\t\n\t\t\tVAR Numerator =\n\t\t\t    SUMX (\n\t\t\t        T,\n\t\t\t        ( [@Regnskap] - AvgX )\n\t\t\t            * ( [@Avvik] - AvgY )\n\t\t\t    )\n\t\t\t\n\t\t\tVAR Denominator =\n\t\t\t    SQRT (\n\t\t\t        SUMX (\n\t\t\t            T,\n\t\t\t            POWER ( [@Regnskap] - AvgX, 2 )\n\t\t\t        )\n\t\t\t        *\n\t\t\t        SUMX (\n\t\t\t            T,\n\t\t\t            POWER ( [@Avvik] - AvgY, 2 )\n\t\t\t        )\n\t\t\t    )\n\t\t\t\n\t\t\tRETURN\n\t\t\t    DIVIDE (\n\t\t\t        Numerator,\n\t\t\t        Denominator\n\t\t\t    )\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "Correlation Strength",
+    "folder": "11 Correlation\\Interpretation",
+    "format": "",
+    "expression": "VAR R =\n\t\t\t    [Corr Regnskap vs Budsjett]\n\t\t\t\n\t\t\tVAR AbsR =\n\t\t\t    ABS ( R )\n\t\t\t\n\t\t\tRETURN\n\t\t\t    SWITCH (\n\t\t\t        TRUE (),\n\t\t\t        ISBLANK ( R ), \"Ingen data\",\n\t\t\t        AbsR >= 0.80, \"Svært sterk\",\n\t\t\t        AbsR >= 0.60, \"Sterk\",\n\t\t\t        AbsR >= 0.40, \"Moderat\",\n\t\t\t        AbsR >= 0.20, \"Svak\",\n\t\t\t        \"Svært svak\"\n\t\t\t    )"
+  },
+  {
+    "name": "Correlation Direction",
+    "folder": "11 Correlation\\Interpretation",
+    "format": "",
+    "expression": "VAR R =\n\t\t\t    [Corr Regnskap vs Budsjett]\n\t\t\t\n\t\t\tRETURN\n\t\t\t    SWITCH (\n\t\t\t        TRUE (),\n\t\t\t        ISBLANK ( R ), \"Ingen data\",\n\t\t\t        R > 0, \"Positiv\",\n\t\t\t        R < 0, \"Negativ\",\n\t\t\t        \"Ingen\"\n\t\t\t    )"
+  },
+  {
+    "name": "Correlation Observations",
+    "folder": "11 Correlation\\Quality",
+    "format": "0",
+    "expression": "COUNTROWS (\n\t\t\t    FILTER (\n\t\t\t        ADDCOLUMNS (\n\t\t\t            VALUES ( dim_date[year_month] ),\n\t\t\t            \"@Regnskap\", CALCULATE ( [ERP Regnskap] ),\n\t\t\t            \"@Budsjett\", CALCULATE ( [ERP Budsjett] )\n\t\t\t        ),\n\t\t\t        NOT ISBLANK ( [@Regnskap] )\n\t\t\t            && NOT ISBLANK ( [@Budsjett] )\n\t\t\t    )\n\t\t\t)"
+  },
+  {
+    "name": "ERP Forecast EOY Forbruk %",
+    "folder": "08 Forecast & Prediction\\EOY",
+    "format": "",
+    "expression": "DIVIDE (\n\t\t\t    [ERP Forecast EOY],\n\t\t\t    ABS ( [EOY Årsbudsjett] )\n\t\t\t)\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "Gauge EOY Target",
+    "folder": "08 Forecast & Prediction\\Gauge",
+    "format": "0",
+    "expression": "1"
+  },
+  {
+    "name": "Gauge EOY Min",
+    "folder": "08 Forecast & Prediction\\Gauge",
+    "format": "0",
+    "expression": "0"
+  },
+  {
+    "name": "Gauge EOY Max",
+    "folder": "08 Forecast & Prediction\\Gauge",
+    "format": "",
+    "expression": "1.20\n\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}"
+  },
+  {
+    "name": "ERP Actual YTD To Latest",
+    "folder": "08 Forecast & Prediction\\Base",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "VAR LastActualDate = [ERP Siste Rapporterte Dato]\n\t\t\tVAR SelectedYear = SELECTEDVALUE ( dim_date[year] )\n\t\t\tRETURN\n\t\t\t    CALCULATE (\n\t\t\t        [ERP Regnskap],\n\t\t\t        REMOVEFILTERS ( dim_date ),\n\t\t\t        dim_date[year] = SelectedYear,\n\t\t\t        dim_date[date] <= LastActualDate\n\t\t\t    )"
+  },
+  {
+    "name": "ERP Budget YTD To Latest",
+    "folder": "08 Forecast & Prediction\\Base",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "VAR LastActualDate = [ERP Siste Rapporterte Dato]\n\t\t\tVAR SelectedYear = SELECTEDVALUE ( dim_date[year] )\n\t\t\tRETURN\n\t\t\t    CALCULATE (\n\t\t\t        [ERP Budsjett],\n\t\t\t        REMOVEFILTERS ( dim_date ),\n\t\t\t        dim_date[year] = SelectedYear,\n\t\t\t        dim_date[date] <= LastActualDate\n\t\t\t    )"
+  },
+  {
+    "name": "ERP Årsbudsjett",
+    "folder": "08 Forecast & Prediction\\Base",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "VAR SelectedYear = SELECTEDVALUE ( dim_date[year] )\n\t\t\tRETURN\n\t\t\t    CALCULATE (\n\t\t\t        [ERP Budsjett],\n\t\t\t        REMOVEFILTERS ( dim_date ),\n\t\t\t        dim_date[year] = SelectedYear\n\t\t\t    )"
+  },
+  {
+    "name": "ERP Måneder Igjen",
+    "folder": "09 Balance & Action\\Current",
+    "format": "0",
+    "expression": "VAR LastActualDate = [ERP Siste Rapporterte Dato]\n\t\t\tRETURN\n\t\t\t    IF (\n\t\t\t        ISBLANK ( LastActualDate ),\n\t\t\t        BLANK (),\n\t\t\t        MAX ( 0, 12 - MONTH ( LastActualDate ) )\n\t\t\t    )"
+  },
+  {
+    "name": "ERP Resterende Ramme",
+    "folder": "09 Balance & Action\\Current",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[ERP Årsbudsjett] - [ERP Actual YTD To Latest]"
+  },
+  {
+    "name": "ERP Forecast EOY Avvik",
+    "folder": "08 Forecast & Prediction\\EOY",
+    "format": "#,##0.00;-#,##0.00",
+    "expression": "[ERP Årsbudsjett] - [ERP Forecast EOY]"
+  },
+  {
+    "name": "ERP Forecast EOY Avvik %",
+    "folder": "08 Forecast & Prediction\\EOY",
+    "format": "0.0%;-0.0%",
+    "expression": "DIVIDE ( [ERP Forecast EOY Avvik], ABS ( [ERP Årsbudsjett] ) )"
+  },
+  {
+    "name": "ERP Total Tiltaksbehov",
+    "folder": "09 Balance & Action\\Current",
+    "format": "#,##0.00",
+    "expression": "[ERP Månedlig Tiltaksbehov] * [ERP Måneder Igjen]"
+  },
+  {
+    "name": "ERP Negativ Kostnadsdriver",
+    "folder": "10 Cost Drivers\\Base",
+    "format": "#,##0.00",
+    "expression": "VAR V = [ERP Avvik YTD]\n\t\t\tRETURN IF ( V < 0, ABS ( V ), BLANK () )"
+  },
+  {
+    "name": "ERP Total Negativ Kostnadsdriver",
+    "folder": "10 Cost Drivers\\Base",
+    "format": "#,##0.00",
+    "expression": "SUMX (\n\t\t\t    ALLSELECTED ( dim_account[account_name] ),\n\t\t\t    CALCULATE ( [ERP Negativ Kostnadsdriver] )\n\t\t\t)"
+  },
+  {
+    "name": "ERP Negativ Driver Rank",
+    "folder": "10 Cost Drivers\\Ranking",
+    "format": "0",
+    "expression": "RANKX (\n\t\t\t    FILTER (\n\t\t\t        ALLSELECTED ( dim_account[account_name] ),\n\t\t\t        CALCULATE ( [ERP Negativ Kostnadsdriver] ) > 0\n\t\t\t    ),\n\t\t\t    CALCULATE ( [ERP Negativ Kostnadsdriver] ),\n\t\t\t    ,\n\t\t\t    DESC,\n\t\t\t    DENSE\n\t\t\t)"
+  },
+  {
+    "name": "ERP Negativ Driver Andel %",
+    "folder": "10 Cost Drivers\\Contribution",
+    "format": "0.0%",
+    "expression": "DIVIDE ( [ERP Negativ Kostnadsdriver], [ERP Total Negativ Kostnadsdriver] )"
+  },
+  {
+    "name": "ERP Pareto Kumulativ Driver",
+    "folder": "10 Cost Drivers\\Pareto",
+    "format": "#,##0.00",
+    "expression": "VAR CurrentRank = [ERP Negativ Driver Rank]\n\t\t\tVAR DriverTable =\n\t\t\t    ADDCOLUMNS (\n\t\t\t        ALLSELECTED ( dim_account[account_name] ),\n\t\t\t        \"@Rank\", CALCULATE ( [ERP Negativ Driver Rank] ),\n\t\t\t        \"@Driver\", CALCULATE ( [ERP Negativ Kostnadsdriver] )\n\t\t\t    )\n\t\t\tRETURN\n\t\t\t    SUMX (\n\t\t\t        FILTER ( DriverTable, [@Rank] <= CurrentRank && NOT ISBLANK ( [@Driver] ) ),\n\t\t\t        [@Driver]\n\t\t\t    )"
+  },
+  {
+    "name": "ERP Pareto Kumulativ %",
+    "folder": "10 Cost Drivers\\Pareto",
+    "format": "0.0%",
+    "expression": "DIVIDE ( [ERP Pareto Kumulativ Driver], [ERP Total Negativ Kostnadsdriver] )"
+  },
+  {
+    "name": "ERP Pareto 80 %",
+    "folder": "10 Cost Drivers\\Pareto",
+    "format": "0%",
+    "expression": "0.8"
+  },
+  {
+    "name": "ERP Driver Tiltaksbehov Måned",
+    "folder": "10 Cost Drivers\\Action",
+    "format": "#,##0.00",
+    "expression": "[ERP Månedlig Tiltaksbehov] * [ERP Negativ Driver Andel %]"
+  },
+  {
+    "name": "ERP Driver Tiltaksbehov Restår",
+    "folder": "10 Cost Drivers\\Action",
+    "format": "#,##0.00",
+    "expression": "[ERP Driver Tiltaksbehov Måned] * [ERP Måneder Igjen]"
+  },
+  {
+    "name": "ERP Driver Tiltaksgrad %",
+    "folder": "10 Cost Drivers\\Action",
+    "format": "0.0%",
+    "expression": "DIVIDE ( [ERP Driver Tiltaksbehov Restår], [ERP Negativ Kostnadsdriver] )"
+  },
+  {
+    "name": "ERP Største Kostnadsdriver",
+    "folder": "10 Cost Drivers\\Top Driver",
+    "format": "",
+    "expression": "VAR TopAccount =\n\t\t\t    TOPN (\n\t\t\t        1,\n\t\t\t        FILTER ( ALLSELECTED ( dim_account[account_name] ), CALCULATE ( [ERP Avvik YTD] ) < 0 ),\n\t\t\t        [ERP Negativ Kostnadsdriver], DESC,\n\t\t\t        dim_account[account_name], ASC\n\t\t\t    )\n\t\t\tRETURN CONCATENATEX ( TopAccount, dim_account[account_name], \", \" )"
+  },
+  {
+    "name": "ERP Største Kostnadsdriver Beløp",
+    "folder": "10 Cost Drivers\\Top Driver",
+    "format": "#,##0.00",
+    "expression": "MAXX (\n\t\t\t    FILTER ( ALLSELECTED ( dim_account[account_name] ), CALCULATE ( [ERP Avvik YTD] ) < 0 ),\n\t\t\t    [ERP Negativ Kostnadsdriver]\n\t\t\t)"
+  },
+  {
+    "name": "Selected Forecast Context",
+    "folder": "15 Selection Context",
+    "format": "",
+    "expression": "VAR YearTxt =\n\t\t\t    IF (\n\t\t\t        ISFILTERED ( dim_date[year] ),\n\t\t\t        CONCATENATEX ( VALUES ( dim_date[year] ), dim_date[year], \", \", dim_date[year], ASC ),\n\t\t\t        \"Alle år\"\n\t\t\t    )\n\t\t\tVAR OrganizationTxt =\n\t\t\t    IF (\n\t\t\t        ISFILTERED ( dim_budget_organization[budget_level_2_name] ),\n\t\t\t        CONCATENATEX (\n\t\t\t            VALUES ( dim_budget_organization[budget_level_2_name] ),\n\t\t\t            dim_budget_organization[budget_level_2_name],\n\t\t\t            \", \",\n\t\t\t            dim_budget_organization[budget_level_2_name],\n\t\t\t            ASC\n\t\t\t        ),\n\t\t\t        \"Alle budsjettområder\"\n\t\t\t    )\n\t\t\tRETURN \"Viser: \" & YearTxt & \" | \" & OrganizationTxt"
+  },
+  {
+    "name": "ERP Forecast EOY RAG",
+    "folder": "13 RAG\\Forecast",
+    "format": "",
+    "expression": "VAR Gap = [ERP Forecast EOY Avvik]\n\t\t\tRETURN\n\t\t\t    SWITCH ( TRUE (), ISBLANK ( Gap ), \"NO_DATA\", Gap > 0, \"GREEN\", Gap < 0, \"RED\", \"YELLOW\" )"
+  },
+  {
+    "name": "ERP Forecast EOY Color",
+    "folder": "14 Conditional Formatting\\Colors",
+    "format": "",
+    "expression": "SWITCH ( [ERP Forecast EOY RAG], \"GREEN\", \"#107C10\", \"YELLOW\", \"#FFB900\", \"RED\", \"#D13438\", \"#A19F9D\" )"
+  },
+  {
+    "name": "Forecast Action Summary",
+    "folder": "17 Storytelling Commentary\\Forecast",
+    "format": "",
+    "expression": "VAR Gap = [ERP Forecast EOY Avvik]\n\t\t\tVAR MonthlyAction = [ERP Månedlig Tiltaksbehov]\n\t\t\tVAR MonthlyActionPct = [ERP Månedlig Tiltaksbehov %]\n\t\t\tVAR RemainingMonths = [ERP Måneder Igjen]\n\t\t\tRETURN\n\t\t\t    SWITCH (\n\t\t\t        TRUE (),\n\t\t\t        ISBLANK ( Gap ), \"Ingen prognose tilgjengelig.\",\n\t\t\t        Gap >= 0, \"Prognosen indikerer balanse eller mindreforbruk ved årets slutt. Ingen generell kostnadsreduksjon er nødvendig basert på dagens prognose.\",\n\t\t\t        \"Prognosen indikerer merforbruk ved årets slutt. For å nå budsjettbalanse må forventet månedlig kostnadsnivå reduseres med \"\n\t\t\t            & FORMAT ( MonthlyAction, \"#,##0 kr\" )\n\t\t\t            & \" per måned i de resterende \" & FORMAT ( RemainingMonths, \"0\" )\n\t\t\t            & \" månedene, tilsvarende \" & FORMAT ( MonthlyActionPct, \"0.0%\" ) & \".\"\n\t\t\t    )\n\n\tcolumn Value\n\t\tisNameInferred\n\t\tsourceColumn: [Value]\n\n\tpartition _Measures = calculated\n\t\tmode: import\n\t\tsource = { 0 }"
+  }
+]
