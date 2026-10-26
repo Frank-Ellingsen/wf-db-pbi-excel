@@ -1,0 +1,28 @@
+relationship AutoDetected_b95d03f8-bfe2-4f77-b766-6d1c7b9e5de3
+	fromColumn: fact_erp_finance.account_code
+	toColumn: dim_account.account_code
+
+relationship AutoDetected_a45284a9-6301-4f88-8ef0-1758377a0743
+	fromColumn: fact_framsikt_finance.kostra_function_id
+	toColumn: dim_kostra_function.kostra_function_id
+
+relationship df30b957-8c80-7e36-1915-413c9c62539a
+	fromColumn: fact_erp_finance.date
+	toColumn: dim_date.date
+
+relationship a134a379-f904-3bf7-d731-1f18d46744d3
+	fromColumn: fact_framsikt_finance.date
+	toColumn: dim_date.date
+
+relationship 5eb0a7a0-be2b-3cb0-7c6c-9fbb3ef9c1ab
+	fromColumn: fact_erp_finance.kostra_function_id
+	toColumn: dim_kostra_function.kostra_function_id
+
+relationship 4890403d-dc7f-d5d9-557d-85c686e282d6
+	fromColumn: fact_framsikt_finance.account_name
+	toColumn: dim_account.account_name
+
+relationship AutoDetected_293dd35a-cedc-426d-a13d-e274a7cd930d
+	fromColumn: fact_erp_finance.budget_organization_key
+	toColumn: dim_budget_organization.budget_organization_key
+

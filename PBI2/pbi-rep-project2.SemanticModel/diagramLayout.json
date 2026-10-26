@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 178.07788944723617,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 858,
+            "y": 242
+          },
+          "nodeIndex": "dim_account",
+          "nodeLineageTag": "75a42886-b6d4-46dd-b3d2-ff4c592f5de8",
+          "size": {
+            "height": 194,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 315,
+            "y": 216
+          },
+          "nodeIndex": "dim_date",
+          "nodeLineageTag": "bc15844e-3ab5-4d07-85e9-65cd8af2fbd3",
+          "size": {
+            "height": 218,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 567,
+            "y": 230
+          },
+          "nodeIndex": "dim_kostra_function",
+          "nodeLineageTag": "f636dda4-6620-49a2-8fa1-b09046d6ac07",
+          "size": {
+            "height": 191,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 476,
+            "y": 508
+          },
+          "nodeIndex": "fact_erp_finance",
+          "nodeLineageTag": "a8a1e555-615e-411b-b8d0-e928ba6f26a5",
+          "size": {
+            "height": 185,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 497,
+            "y": 0
+          },
+          "nodeIndex": "fact_framsikt_finance",
+          "nodeLineageTag": "5327761e-698e-4a6a-a73e-5f1ab5e2257c",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1392,
+            "y": 1
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "584df2ea-fd59-4d7c-9010-78e369b678b1",
+          "size": {
+            "height": 725,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 3,
+            "y": 0
+          },
+          "nodeIndex": "dim_budget_organization",
+          "nodeLineageTag": "6dc5f7e2-8f3a-499f-8938-dfd00e378e82",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 90.971428571428575,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

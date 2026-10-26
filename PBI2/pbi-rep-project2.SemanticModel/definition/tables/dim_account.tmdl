@@ -1,0 +1,128 @@
+table dim_account
+	lineageTag: 75a42886-b6d4-46dd-b3d2-ff4c592f5de8
+
+	column account_code
+		dataType: string
+		lineageTag: 4f0f0918-c60f-49c7-aa12-69579900d165
+		summarizeBy: none
+		sourceColumn: account_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_name
+		dataType: string
+		lineageTag: 076f52a6-3b34-48e4-bc46-f8e894105e56
+		summarizeBy: none
+		sourceColumn: account_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_key
+		dataType: string
+		lineageTag: e3728b54-7dd7-47bf-8656-9b5339366607
+		summarizeBy: none
+		sourceColumn: account_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_art_4digit
+		dataType: string
+		lineageTag: 637aa171-5a06-4a96-a770-7f0817ea0106
+		summarizeBy: none
+		sourceColumn: kostra_art_4digit
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_art_3digit
+		dataType: string
+		lineageTag: 98984be5-a737-41fc-8b9d-75d0419a60bc
+		summarizeBy: none
+		sourceColumn: kostra_art_3digit
+
+		annotation SummarizationSetBy = Automatic
+
+	column kostra_art_name
+		dataType: string
+		lineageTag: bcee707a-f86d-4c53-a3e1-76c3866d4831
+		summarizeBy: none
+		sourceColumn: kostra_art_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_class_id
+		dataType: string
+		lineageTag: 44b02355-eeeb-4778-a187-515e246525d5
+		summarizeBy: none
+		sourceColumn: account_class_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_class_name
+		dataType: string
+		lineageTag: 086ab1b5-15cd-4301-af84-d57654877384
+		summarizeBy: none
+		sourceColumn: account_class_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_category_code
+		dataType: string
+		lineageTag: 84a22d52-4294-42ef-80ab-76d5d1b63d0c
+		summarizeBy: none
+		sourceColumn: main_category_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_category_name
+		dataType: string
+		lineageTag: be88d5fd-bf79-418e-b4b2-bf14edcbd1d9
+		summarizeBy: none
+		sourceColumn: main_category_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_group_code
+		dataType: string
+		lineageTag: 193b49d8-446c-460a-8a39-b2c7fdfd235a
+		summarizeBy: none
+		sourceColumn: main_group_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_group_name
+		dataType: string
+		lineageTag: 1419a4b4-2118-4cb1-a8a1-ee34a1938088
+		summarizeBy: none
+		sourceColumn: main_group_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column accounting_rule_description
+		dataType: string
+		lineageTag: 312308a5-b9d1-4334-ad4b-be2c93004651
+		summarizeBy: none
+		sourceColumn: accounting_rule_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column active
+		dataType: string
+		lineageTag: e9517b71-0bd6-477c-8d41-359d1e9e0999
+		summarizeBy: none
+		sourceColumn: active
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_account = m
+		mode: import
+		source =
+				let
+				    Source = Odbc.DataSource("access_mode=read_only;dsn=DuckDB_pbi", [HierarchicalNavigation=true]),
+				    project_finance_powerbi_Database = Source{[Name="project_finance_powerbi",Kind="Database"]}[Data],
+				    gold_Schema = project_finance_powerbi_Database{[Name="gold",Kind="Schema"]}[Data],
+				    dim_account_Table = gold_Schema{[Name="dim_account",Kind="Table"]}[Data]
+				in
+				    dim_account_Table
+
+	annotation PBI_ResultType = Table
+

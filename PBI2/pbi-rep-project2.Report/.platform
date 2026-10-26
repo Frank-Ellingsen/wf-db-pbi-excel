@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "pbi-rep-project2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "564628c0-d8ed-45ba-91a6-b1e902dddf14"
+  }
+}
