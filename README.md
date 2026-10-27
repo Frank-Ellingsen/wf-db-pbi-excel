@@ -1,788 +1,253 @@
-# WF1 Project Finance Controller
+# WF1 Project Finance Controller (`pbi-rep-project-rapport`)
 
-WF1 is a Power BI based controller and decision-support solution for financial follow-up, variance analysis, forecasting, cost-driver analysis, and action planning.
+WF1 is a Power BI based controller and decision-support solution for municipal/project financial follow-up (KOSTRA), variance analysis, EAC/EOY forecasting, cost-driver analysis, data quality assurance (DQA), and What-If action simulation.
 
-The project combines ERP actual/budget data, Framsikt planning data, KOSTRA dimensions, budget organization, a Power BI semantic model, and rule-based controller logic. The objective is to answer four practical questions:
+The project combines multi-file fact data (`fact_data`), KOSTRA function and chart-of-accounts dimensions (`dim_kostra_funksjon`, `dim_kostra_kontoplan`), organizational responsibility units (`dim_ansvar`), calendar intelligence (`dim_date`), What-If simulation parameters, and centralized DAX controller logic (`_Måltall`). The objective is to answer four practical controller questions:
 
-1. Where are we now?
-2. What is driving the variance?
-3. Where are we likely to finish the year?
-4. What action is required to return to budget balance?
+1. **Where are we now?** (YTD budget vs. actuals, consumption %, and RAG status)
+2. **What is driving the variance?** (Cost-driver decomposition, agency/temporary labor & overtime tracking, Pareto 80/20, and root-cause drilldown)
+3. **Where are we likely to finish the year?** (Linear EAC/EOY run-rate forecast, remaining budget frame, and Tufte S-Curve trajectory)
+4. **What action is required to return to budget balance?** (Required monthly run rate for zero balance and What-If scenario simulation on primary cost drivers and budget reallocation)
 
-The design deliberately separates calculation, business rules, and presentation so that recommendations can be transparent and auditable without depending on generative AI.
+The design adheres to Edward Tufte's **Data-Ink Ratio** principles and Financial Times (FT) visual vocabulary standards, separating calculation, business rules, and presentation so that controller recommendations remain transparent and auditable.
 
 ---
 
-## 1. Current project structure
+## 1. Current Project Structure
 
-The Power BI project is stored as PBIP and currently contains the report and semantic-model folders plus supporting scripts and status artifacts. The current project status file shows the main PBIP components under `pbi-rep-project.Report` and `pbi-rep-project.SemanticModel`. [^status]
+The primary Power BI project is stored in the workspace root as `pbi-rep-project-rapport.pbip` (PBIR v4.0 / TMDL semantic model), alongside the legacy DuckDB sandbox under `powerbi/`.
 
 ```text
 WF1/
-├─ powerbi/
-│  ├─ pbi-rep-project.pbip
-│  ├─ pbi-rep-project.Report/
-│  │  └─ definition/
-│  │     ├─ report.json
-│  │     └─ pages/
-│  ├─ pbi-rep-project.SemanticModel/
-│  │  └─ definition/
-│  │     ├─ model.tmdl
-│  │     ├─ relationships.tmdl
-│  │     └─ tables/
-│  │        ├─ _Measures.tmdl
-│  │        ├─ dim_account.tmdl
-│  │        ├─ dim_date.tmdl
-│  │        ├─ dim_kostra_function.tmdl
-│  │        ├─ dim_budget_organization.tmdl
-│  │        ├─ fact_erp_finance.tmdl
-│  │        └─ fact_framsikt_finance.tmdl
-│  ├─ Get-WF1-PowerBIStatus.ps1
-│  ├─ get_wf1_status_plus.ps1
-│  ├─ cleanup_wf1_pbi.ps1
-│  └─ reorganize_wf1_measure_folders.ps1
-└─ db/
-   └─ project_finance_powerbi.duckdb
-```
-
-> Note: The exact model files should be treated as the source of truth. The tree above documents the working architecture and the principal objects discussed in the project.
-
----
-
-## 2. Data architecture
-
-The reporting flow is designed around a Gold reporting layer and a Power BI oriented DuckDB database.
-
-```text
-Source data
-   ↓
-Cleaning / Silver
-   ↓
-Gold finance model
-   ↓
-Gold reporting transformations
-   ↓
-Power BI DuckDB
-   ↓
-Power BI semantic model
-   ↓
-Reports and controller decision support
-```
-
-Principal reporting entities:
-
-- `fact_erp_finance`: ERP actual and budget data
-- `fact_framsikt_finance`: Framsikt actual/budget/planning data
-- `dim_date`: calendar and time intelligence
-- `dim_account`: account hierarchy
-- `dim_kostra_function`: KOSTRA function hierarchy
-- `dim_budget_organization`: budget organization hierarchy
-- `_Measures`: centralized DAX measures
-
-The current Power BI project includes the PBIP report and semantic-model structure documented in the generated project status. [^status]
-
----
-
-## 3. Budget organization
-
-ERP finance data is enriched with a budget-organization key. This allows organizational slicing independently of account and KOSTRA dimensions.
-
-The intended relationship is:
-
-```text
-dim_budget_organization[budget_organization_key]
-                    1
-                    │
-                    ▼
-                    *
-fact_erp_finance[budget_organization_key]
-```
-
-The organization slicer can therefore be synchronized across ERP-based report pages while time filters can remain page-specific.
-
-Example report context:
-
-```text
-Viser: 2024-08 | Helse og mestring
-```
-
-For time-series pages, the context is year-based instead:
-
-```text
-Viser: 2024 | Helse og mestring
+├─ pbi-rep-project-rapport.pbip
+├─ pbi-rep-project-rapport.Report/
+│  ├─ definition.pbir
+│  └─ definition/
+│     ├─ report.json
+│     ├─ version.json
+│     └─ pages/
+│        ├─ pages.json
+│        ├─ qa03_filkontroll/                 (DQA 0: Fil- og Ingestion-kontroll)
+│        ├─ qa01_dekning_og_kompletthet/      (DQA 1: Dekning & Kompletthet)
+│        ├─ p01_executive_summary/            (01. Hovedrapport)
+│        ├─ p02_trend_og_tidsserie/           (03.Tidserie-innsikt)
+│        ├─ p04_avvik_og_drivere/             (04.Rotårsak)
+│        ├─ 787cb8c3ce10a1326f82/             (041.Decomposition Tree)
+│        ├─ p03_tufte_scurve_og_prognose/     (05. Månedlig Avvik og Prognose)
+│        ├─ p_ft01_deviation/                 (FT 01: Deviation (Avviksanalyser))
+│        ├─ p05_pareto_og_korrelasjon/        (06. Avvik-drivere)
+│        └─ p06_scenario_simulering/          (07. What-If Scenario og Balanse)
+├─ pbi-rep-project-rapport.SemanticModel/
+│  ├─ definition.pbism
+│  └─ definition/
+│     ├─ database.tmdl                        (compatibilityLevel: 1606)
+│     ├─ model.tmdl
+│     ├─ expressions.tmdl                     (Folder ingestion helper queries)
+│     ├─ relationships.tmdl
+│     ├─ cultures/
+│     │  └─ en-US.tmdl
+│     └─ tables/
+│        ├─ _Måltall.tmdl                     (66 centralized DAX measures)
+│        ├─ _Valg_Maltall.tmdl                (Dynamic metric selector)
+│        ├─ dim_ansvar.tmdl                   (Responsibility & organizational units)
+│        ├─ dim_date.tmdl                     (Calendar & time intelligence)
+│        ├─ dim_kostra_funksjon.tmdl          (KOSTRA function & service area hierarchy)
+│        ├─ dim_kostra_kontoplan.tmdl         (6-digit account & KOSTRA art hierarchy)
+│        ├─ dim_oppdatering.tmdl              (Model refresh timestamp)
+│        ├─ fact_data.tmdl                    (Consolidated monthly budget & actuals)
+│        ├─ Kutt_Hoveddrivere_Pct.tmdl        (What-If parameter: 0–30% driver cut)
+│        └─ Omdisponering_Pct.tmdl            (What-If parameter: 0–100% reallocation)
+└─ powerbi/
+   ├─ Get-WF1-PowerBIStatus.ps1
+   ├─ get_wf1_status_plus.ps1
+   ├─ cleanup_wf1_pbi.ps1
+   └─ reorganize_wf1_measure_folders.ps1
 ```
 
 ---
 
-## 4. Report-filter strategy
+## 2. Data Architecture & Semantic Model
 
-Not all pages should use the same time grain.
+`pbi-rep-project-rapport.SemanticModel` ingests structured KOSTRA CSV files via Power Query (M) from `C:\Users\frank\Desktop\Kom\powerbi_kostra_datamodell\`:
 
-### Point-in-time / YTD pages
+```text
+CSV Folder Source (faktatabeller/*.csv) + Dimension CSVs (dimensjoner/*.csv)
+   ↓
+Power Query (M) Transformations & Type Enforcement (expressions.tmdl + table partitions)
+   ↓
+Star Schema Semantic Model (fact_data + 4 core dimensions + What-If & utility tables)
+   ↓
+Centralized DAX Controller Logic (_Måltall)
+   ↓
+10 Tufte / FT-styled Power BI Report Pages (1920×1080)
+```
 
-Examples:
+### Semantic Model Tables
 
-- Status
-- Deviation
-- Diagnosis
-- Ranking
-
-These can use `dim_date[year_month]`.
-
-### Full-year time-series pages
-
-`11_Time` should use `dim_date[year]` and leave `year_month` unfiltered so that all months in the selected year remain available to the visual.
-
-Recommended synchronization model:
-
-- Budget organization: sync broadly
-- Account: sync where analytically useful
-- KOSTRA function: sync where analytically useful
-- `year_month`: do not sync to pages requiring a full annual timeline
-- `year`: use locally on annual trend/forecast pages
+| Table | Type | Source / Partition | Key Columns & Purpose |
+| :--- | :--- | :--- | :--- |
+| `fact_data` | Fact | `Folder.Files("...\faktatabeller")` | `Source.Name`, `Dato`, `KOSTRA_Funksjonsgruppe_Kode`, `Kontokode_6Siffer`, `Ansvar_Kode`, `Sektor`, `Budsjett`, `Regnskap` |
+| `dim_date` | Dimension (Time) | `dimensjoner\dim_date.csv` | `Dato` (Key), `Ar`, `Maned_Nummer`, `month`, `Maned_Navn`, `Uke`, `Start of month`, `Start of year`, `yyyy-mm` |
+| `dim_ansvar` | Dimension | `dimensjoner\dim_ansvar.csv` | `Ansvar_Kode` (Key), `Enhet_Navn`, `Ansvar_Navn`, `Omrade_Kode`, `Omrade_Navn`, `Omrade_Kode_Navn`, `Ansvar_Kode_Navn`, `Er_Aktiv` |
+| `dim_kostra_funksjon` | Dimension | `dimensjoner\dim_kostra_funksjon.csv` | `KOSTRA_Funksjonsgruppe_Kode` (Key), `KOSTRA_Funksjonsgruppe_Navn`, `Funksjonsgruppe_Kode_Navn`, `KOSTRA_Funksjon_ID`, `KOSTRA_Funksjon_Navn`, `Tjenesteomrade_Kode_Navn`, `Hovedfunksjon_Kode_Navn`, `Regnskapsregel_Beskrivelse` |
+| `dim_kostra_kontoplan` | Dimension | `dimensjoner\dim_kostra_kontoplan.csv` | `Kontokode_6Siffer` (Key), `Kontonavn`, `Konto_Kode_Navn`, `KOSTRA_Art_4Siffer`, `KOSTRA_Art_4Siffer_Navn`, `KOSTRA_Art_3Siffer`, `Hovedgruppe_Kode_Navn`, `Hovedkategori_Kode_Navn`, `Kontoklasse_Kode_Navn`, `Er_Aktiv` |
+| `_Måltall` | Measure Table | Calculated / Compressed row | Hosts 66 DAX measures across 11 functional display folders |
+| `_Valg_Maltall` | Selector Table | In-memory `#table` | Dynamic metric selector (`1: Regnskap`, `2: Budsjett`, `3: Avvik Kr`, `4: Avvik YTD %`) |
+| `Kutt_Hoveddrivere_Pct` | What-If Parameter | `0..30` (`0%` to `30%`, step `1%`) | Parameter column + `Kutt_Hoveddrivere_Pct Value` measure (default `10.0%`) |
+| `Omdisponering_Pct` | What-If Parameter | `0..20 * 0.05` (`0%` to `100%`, step `5%`) | Parameter column + `Omdisponering_Pct Value` measure (default `50.0%`) |
+| `dim_oppdatering` | Metadata | `DateTime.LocalNow()` | Single-column table (`Sist_Oppdatert`) tracking the latest data refresh |
 
 ---
 
-## 5. Measure architecture
+## 3. Model Relationships
 
-Measures are centralized in `_Measures` and organized by function.
-
-Recommended folder structure:
+All relationships follow a clean single-direction (`many-to-one`) star schema into `fact_data`:
 
 ```text
-01 Base
-02 Variance
-03 Status
-04 Time Intelligence
-05 Context & Totals
-06 Share & Contribution
-07 Ranking
-08 Forecast & Prediction
-   ├─ Base
-   ├─ Series
-   ├─ EOY
-   └─ Gauge
-09 Balance & Action
-   ├─ Current
-   └─ Legacy
-10 Cost Drivers
-   ├─ Base
-   ├─ Ranking
-   ├─ Contribution
-   ├─ Pareto
-   ├─ Action
-   └─ Top Driver
-11 Correlation
-   ├─ Measures
-   ├─ Interpretation
-   └─ Quality
-12 Data Quality
-13 RAG
-14 Conditional Formatting
-15 Selection Context
-16 Titles & Labels
-17 Storytelling Commentary
-90 Sandbox
-```
-
-### Format convention
-
-Numeric format strings should not embed color names such as `[Red]`.
-
-Use numeric formatting for representation:
-
-```text
-#,##0.00;-#,##0.00
-0.0%;-0.0%
-```
-
-Use dedicated color measures such as RAG color measures for conditional formatting.
-
----
-
-## 6. Core financial measures
-
-The model includes core ERP and Framsikt measures for:
-
-- actuals
-- budget
-- variance
-- variance percentage
-- budget consumption
-- YTD
-- previous month
-- MoM change
-- prior year
-- YoY change
-- running values
-- rolling three-month average
-
-The project also contains context, contribution, ranking, data-quality, RAG, conditional-formatting, title and narrative measures. The current semantic-model status confirms these functional measure groups are part of the model. [^status]
-
----
-
-## 7. Forecasting framework
-
-Forecasting is intentionally divided into multiple perspectives rather than presenting one forecast as absolute truth.
-
-### YTD run rate
-
-```text
-ERP EOY Run Rate
-```
-
-Conceptually:
-
-```text
-Actual YTD / elapsed months × 12
-```
-
-### Recent run rate
-
-```text
-ERP Forecast Monthly Rate
-ERP Forecast EOY
-```
-
-Conceptually:
-
-```text
-Actual YTD
-+
-remaining months × recent monthly run rate
-```
-
-### Trend forecast
-
-```text
-ERP Forecast Trend
-```
-
-This gives a trend-based alternative for the remaining periods.
-
-### Forecast variance
-
-```text
-ERP Forecast EOY Avvik
-ERP Forecast EOY Avvik %
-ERP Forecast EOY Forbruk %
-```
-
-The forecast page should therefore communicate:
-
-```text
-Actual YTD
-   ↓
-Forecast EOY
-   ↓
-EOY variance
-   ↓
-Required action
+dim_date[Dato] (1) ───────────────────────────────────► (*) fact_data[Dato]
+dim_ansvar[Ansvar_Kode] (1) ──────────────────────────► (*) fact_data[Ansvar_Kode]
+dim_kostra_funksjon[KOSTRA_Funksjonsgruppe_Kode] (1) ─► (*) fact_data[KOSTRA_Funksjonsgruppe_Kode]
+dim_kostra_kontoplan[Kontokode_6Siffer] (1) ──────────► (*) fact_data[Kontokode_6Siffer]
 ```
 
 ---
 
-## 8. Balance and action logic
+## 4. Measure Architecture (`_Måltall`)
 
-The controller logic calculates how much financial room remains and what monthly cost level is required to reach year-end balance.
-
-Key concepts:
+Implicit measures are discouraged (`discourageImplicitMeasures`). All 66 primary controller measures reside in `_Måltall` and are organized into 11 numbered display folders:
 
 ```text
-Annual budget
--
-Actual YTD
-=
-Remaining budget capacity
+_Måltall
+├─ 01. Kjerne
+├─ 02. MoM & Trend
+├─ 03. YTD
+├─ 04. Prognose & EOY
+├─ 05. RAG & Formatering
+├─ 06. Driveranalyse
+├─ 07. Dynamisk Tekst
+├─ 08. What-If Simulering
+├─ 09. Tufte S-Curve
+├─ 10. FT Visuals
+└─ 11. DQA Kontroller
 ```
 
-```text
-Remaining budget capacity
-/
-Months remaining
-=
-Required monthly level
-```
+### Summary of Measures by Display Folder
 
-```text
-Forecast monthly rate
--
-Required monthly level
-=
-Monthly action requirement
-```
+#### `01. Kjerne` (Core Financials)
+- `Sum Regnskap` = `SUM('fact_data'[Regnskap])`
+- `Sum Budsjett` = `SUM('fact_data'[Budsjett])`
+- `Årsbudsjett` = Full-year budget across `ALL('dim_date')` for selected `VALUES('dim_date'[Ar])`
+- `Avvik Kr` = `[Sum Budsjett] - [Sum Regnskap]` *(Positive = favorable/mindreforbruk, Negative = unfavorable/merforbruk)*
+- `Forbruk %` = `DIVIDE([Sum Regnskap], [Sum Budsjett], 0)`
+- `Avvik %` = `DIVIDE([Avvik Kr], [Sum Budsjett], 0)`
+- `abs Avvik`, `abs Avvik %`, `Max avvik %` (`1.2`), `Target Avvik %` (`1`)
 
-Core measures include:
+#### `02. MoM & Trend` (Month-over-Month & Rolling Trends)
+- `Regnskap PM` / `Budsjett PM` (`DATEADD('dim_date'[Dato], -1, MONTH)`)
+- `Regnskap MoM Endring Kr` / `Regnskap MoM Endring %`
+- `Regnskap 3M Moving Average` (3-month rolling average via `DATESINPERIOD`)
+- `Regnskap Base 100` (Indexed consumption where January = `100.0`)
 
-- `ERP Akkumulert Avvik YTD`
-- `ERP Tillatt Regnskap Resten Av Året`
-- `ERP Nødvendig Månedlig Nivå`
-- `ERP Månedlig Tiltaksbehov`
-- `ERP Månedlig Tiltaksbehov %`
-- `ERP Total Tiltaksbehov`
+#### `03. YTD` (Year-to-Date)
+- `Regnskap YTD` = `TOTALYTD([Sum Regnskap], 'dim_date'[Dato])`
+- `Budsjett YTD` = `TOTALYTD([Sum Budsjett], 'dim_date'[Dato])`
+- `Avvik YTD Kr` = `[Budsjett YTD] - [Regnskap YTD]`
+- `Avvik YTD %` = `DIVIDE([Avvik YTD Kr], [Budsjett YTD], 0)`
 
-This converts a forecast from a passive prediction into an actionable controller metric.
+#### `04. Prognose & EOY` (EAC / Year-End Forecasting)
+- `Budsjett Resten av Året` (Remaining budget from `MAX('dim_date'[Dato]) + 1` to `ENDOFYEAR`)
+- `EOY Estimat Lineær` (`ERP EOY Run Rate`) = `[Regnskap YTD] + [Budsjett Resten av Året]`
+- `EOY Estimert Avvik Kr` (`EOY Run Rate Avvik`) = `[Årsbudsjett] - [EOY Estimat Lineær]`
+- `EOY Estimert Avvik %` = `DIVIDE([EOY Estimert Avvik Kr], [Årsbudsjett], 0)`
+- `EOY Årsbudsjett` = `[Årsbudsjett]`
+- `Bullet Target 80%` / `Bullet Target 110%`
+
+#### `05. RAG & Formatering` (Conditional Formatting & Status)
+- `RAG Farge Avvik`:
+  - `< -5.0%` (`Avvik YTD %`): `#D13438` (Muted Red — Significant overspend > 5%)
+  - `-5.0%` to `0.0%`: `#FFB900` (Muted Amber — Minor overspend 0–5%)
+  - `>= +5.0%`: `#0078D4` (Steel Blue — Significant underspend > 5%)
+  - `0.0%` to `+5.0%`: `#107C41` (Forest Green — On track / favorable)
+- `RAG Ikon Avvik` (`🔴`, `🟡`, `🔵`, `🟢`)
+- `Status Indikator` (Descriptive RAG status text)
+- `Avvik Bar Farge` (`#D13438` if `Avvik Kr < 0`, else `#107C41`)
+
+#### `06. Driveranalyse` (Cost Drivers & Pareto)
+- `Merforbruk Kr` (`Overforbruk Kr`, `ERP Negativ Kostnadsdriver`) = `IF([Avvik Kr] < 0, ABS([Avvik Kr]), 0)`
+- `Mindreforbruk Kr` = `IF([Avvik Kr] > 0, [Avvik Kr], 0)`
+- `Pct Bidrag til Totalt Merforbruk` (`Pct Bidrag til Totalt Overforbruk`, `ERP Negativ Driver Andel %`)
+- `Pct Bidrag til Total Regnskap`
+- `Rangering Merforbruk` (`Rangering Overforbruk`) = Dense `RANKX` across `dim_kostra_kontoplan[Konto_Kode_Navn]`
+- `ERP Pareto Kumulativ %` = Cumulative share of total overspend across ranked accounts
+- `Kostnad Vikarer Kr` = Actuals on accounts `102000`, `102013`, `127040`
+- `Kostnad Overtid Kr` = Actuals on account `104000`
+- `ERP Største Kostnadsdriver` / `ERP Største Kostnadsdriver Beløp`
+
+#### `07. Dynamisk Tekst` (Selection Context & Controller Narratives)
+- Selection context measures: `Txt Valgt År`, `Txt Valgt Måned`, `Txt Valgt Område`, `Txt Valgt Ansvar`, `Txt Valgt Tjeneste og Funksjon`
+- Dynamic headers: `Txt Master Selection Header`, `Dynamisk Rapporttittel`, `Dynamisk Rapportittel Komplett`
+- Automated narratives: `Story Executive Summary`, `Story Time Narrative`, `Story Forecast Narrative`, `Story Root Cause Detail`, `Forecast Action Summary`
+
+#### `08. What-If Simulering` (Action & Scenario Modeling)
+- `Simulert Kutt Hoveddrivere Kr` = 50% reduction in overspend on temporary staff & overtime (`102013`, `102000`, `104000`)
+- `Simulert Frigjort Mindreforbruk Kr` = 20% reallocation of favorable variance on regular payroll (`101000`, `109000`)
+- `Simulert Totale Tiltak Kr` = `[Simulert Kutt Hoveddrivere Kr] + [Simulert Frigjort Mindreforbruk Kr]`
+- `Simulert EOY Avvik Etter Tiltak Kr` = `[EOY Estimert Avvik Kr] + [Simulert Totale Tiltak Kr]`
+- `Simulert EOY Status Indikator` (`🟢 I Balanse / Overskudd`, `🟡 Nær Balanse`, `🔴 Fortsatt Underskudd`)
+- `ERP Driver Tiltaksbehov Måned`, `ERP Driver Tiltaksbehov Restår`, `ERP Driver Tiltaksgrad %`
+
+#### `09. Tufte S-Curve` (Cumulative Trajectory & Run-Rate Targets)
+- `Avvik Akkumulert S-Curve` = `TOTALYTD([Avvik Kr], 'dim_date'[Dato])`
+- `ERP Actual Historical` (Actuals up to `LASTDATE('fact_data'[Dato])`)
+- `ERP Forecast Trend` (3M moving average projected for dates after `LASTDATE('fact_data'[Dato])`)
+- `ERP Resterende Ramme` = `[Budsjett Resten av Året]`
+- `ERP Nødvendig Månedlig Nivå` = `DIVIDE([Budsjett Resten av Året], 4, 0)`
+
+#### `10. FT Visuals` (Financial Times Visual Vocabulary Measures)
+- `FT_Dev_Diverging_Avvik_Kr`, `FT_Corr_Scatter_Size`
+- `FT_Time_Cumulative_Actual`, `FT_Time_Cumulative_Budget`, `FT_Time_Cumulative_EAC`
+- `FT_Time_Diverging_Deficit`, `FT_Time_Diverging_Surplus`, `FT_Time_Stepped_Budget`
+- `Corr Regnskap vs Budsjett` (Pearson $r$ across months), `Correlation Strength`
+
+#### `11. DQA Kontroller` (Data Quality & Ingestion Auditing)
+- Coverage & completeness: `QA Har Regnskap`, `QA Har Budsjett`, `QA Dekningsstatus Indikator`, `QA Dekningsgrad %`
+- Referential integrity (orphan key checks): `QA Umappede Kontokoder Antall`, `QA Umappede Kontokoder Regnskap Kr`, `QA Umappede Ansvar Antall`, `QA Umappede Funksjoner Antall`, `QA Nøkkelstatus Sammendrag`
+- File ingestion & anomaly detection: `QA Antall Filer Importert`, `QA Antall Rader Per Fil`, `QA Duplikatsjekk Filnavn`, `QA Ubudsjetterte Kostnader Kr`, `QA Ubudsjetterte Poster Antall`, `QA Ekstreme MoM Endringer`, `QA Negativt Regnskap Antall`, `QA Sist Oppdatert`
 
 ---
 
-## 9. Cost-driver analysis
+## 5. Report Pages (`pbi-rep-project-rapport.Report`)
 
-Negative budget variance is decomposed by account to identify the drivers of overspending.
+All 10 report pages are configured at **1920 × 1080** (`FitToPage`) using the `Fluent2-CY26SU10` base theme and follow Tufte's high data-ink ratio design standards:
 
-Core concepts:
-
-- negative cost driver amount
-- contribution to total unfavorable variance
-- rank
-- cumulative Pareto percentage
-- indicative action allocation
-- largest driver
-
-Recommended measures:
-
-```text
-ERP Negativ Kostnadsdriver
-ERP Total Negativ Kostnadsdriver
-ERP Negativ Driver Rank
-ERP Negativ Driver Andel %
-ERP Pareto Kumulativ Driver
-ERP Pareto Kumulativ %
-ERP Pareto 80 %
-ERP Driver Tiltaksbehov Måned
-ERP Driver Tiltaksbehov Restår
-ERP Driver Tiltaksgrad %
-ERP Største Kostnadsdriver
-ERP Største Kostnadsdriver Beløp
-```
-
-### Pareto visual
-
-Use a line and clustered-column visual:
-
-- Category: account
-- Column: negative cost driver
-- Line: cumulative driver percentage
-- Optional reference: 80%
-
-The purpose is prioritization, not an assumption that real data must follow an exact 80/20 distribution.
-
-### Top-5 driver table
-
-Recommended columns:
-
-```text
-Account
-Rank
-Negative YTD variance
-Share of negative variance
-Indicative action/month
-Action remaining year
-```
-
-Apply a visual filter:
-
-```text
-ERP Negativ Driver Rank <= 5
-```
+| Order | Page Folder ID | Display Name | Primary Analytical Role |
+| :---: | :--- | :--- | :--- |
+| 1 | `qa03_filkontroll` | **DQA 0: Fil- og Ingestion-kontroll (Folder Metadata)** | Audits imported CSV files (`Source.Name`), row counts per file, duplicate period/sector checks, and refresh timestamp (`QA Sist Oppdatert`). |
+| 2 | `qa01_dekning_og_kompletthet` | **DQA 1: Dekning & Kompletthet (Data Coverage)** | Validates referential integrity (`QA Nøkkelstatus Sammendrag`), unmapped accounts/units/functions, unbudgeted costs, and data coverage %. |
+| 3 | `p01_executive_summary` | **01. Hovedrapport** *(Active Page)* | Executive YTD overview: KPI cards, dynamic selection header, executive narrative, and variance breakdown by area/service. |
+| 4 | `p02_trend_og_tidsserie` | **03.Tidserie-innsikt** | Monthly actual vs. budget evolution, 3-month rolling average (`Regnskap 3M Moving Average`), MoM changes, and Base-100 indexing. |
+| 5 | `p04_avvik_og_drivere` | **04.Rotårsak** | Root-cause variance analysis across organizational units (`dim_ansvar`), KOSTRA functions, and accounts, tracking agency labor and overtime. |
+| 6 | `787cb8c3ce10a1326f82` | **041.Decomposition Tree** | Interactive drilldown of variances across Area → Unit → Service Area → Function Group → Account Class → Account. |
+| 7 | `p03_tufte_scurve_og_prognose` | **05. Månedlig Avvik og Prognose** | Tufte S-Curve (`FT_Time_Cumulative_Actual` vs. `FT_Time_Cumulative_Budget`), EOY linear forecast, and required monthly run-rate target. |
+| 8 | `p_ft01_deviation` | **FT 01: Deviation (Avviksanalyser)** | Diverging variance bars (`FT_Dev_Diverging_Avvik_Kr`, surplus vs. deficit) styled according to the FT Visual Vocabulary. |
+| 9 | `p05_pareto_og_korrelasjon` | **06. Avvik-drivere** | Account-level overspend ranking (`Rangering Merforbruk`), Pareto cumulative curve (`ERP Pareto Kumulativ %`), and budget-vs-actual correlation ($r$). |
+| 10 | `p06_scenario_simulering` | **07. What-If Scenario og Balanse** | Interactive controller simulation combining driver cuts (`Kutt_Hoveddrivere_Pct`) and payroll reallocation (`Omdisponering_Pct`) to close the EOY gap. |
 
 ---
 
-## 10. Controllability and governance mapping
+## 6. Utilities & Status Scripts (`powerbi/`)
 
-The next model extension is a governed action-mapping dimension rather than hardcoded DAX assumptions.
+The PowerShell scripts in `powerbi/` support automated inspection and maintenance of the PBIP project:
 
-Proposed source/master table:
+- **`powerbi/Get-WF1-PowerBIStatus.ps1`**: Scans `C:\Users\frank\Desktop\WF1` for `.pbip`, `.Report`, and `.SemanticModel` folders, outputting page inventory, visual counts by type, TMDL table definitions, relationships, and DAX measure inventory.
+- **`powerbi/get_wf1_status_plus.ps1`**: Generates a comprehensive diagnostic dump (`WF1_STATUS_PLUS.txt`) of the report tree, TMDL definitions, `_Måltall` measures, visual bindings, slicer configurations, and JSON validation checks.
+- **`powerbi/cleanup_wf1_pbi.ps1`**: Backs up the report definition and removes duplicate single-field slicers on a target page while validating all `visual.json` files.
+- **`powerbi/reorganize_wf1_measure_folders.ps1`**: Utility script for batch-updating `displayFolder` metadata in TMDL measure tables with automatic timestamped backups.
 
-```text
-cost_driver_action_mapping
-```
+### Safe TMDL / PBIR Editing Workflow
 
-Recommended structure:
-
-| Field                          | Purpose                                   |
-| ------------------------------ | ----------------------------------------- |
-| `account_code`                 | join key to account dimension             |
-| `account_name`                 | readable label                            |
-| `driver_category`              | cost-driver category                      |
-| `controllability`              | HIGH / MEDIUM / LOW                       |
-| `binding_type`                 | rule/binding classification               |
-| `action_horizon`               | expected realization horizon              |
-| `max_action_factor`            | governed maximum realizability assumption |
-| `action_category`              | standardized action type                  |
-| `recommended_action`           | standard non-AI action text               |
-| `requires_management_approval` | governance flag                           |
-| `requires_political_decision`  | governance flag                           |
-| `requires_legal_review`        | governance flag                           |
-| `active`                       | active/inactive mapping                   |
-| `valid_from`                   | start of validity                         |
-| `valid_to`                     | end of validity                           |
-| `source_reference`             | source or governing reference             |
-| `mapping_note`                 | rationale/documentation                   |
-
-Suggested `binding_type` domain:
-
-```text
-OPERATIONAL
-CONTRACT
-TARIFF
-LEGAL
-POLITICAL
-STATUTORY_SERVICE
-FINANCIAL
-UNKNOWN
-```
-
-These are project governance categories, not legal classifications.
-
-### Design principle
-
-A large cost driver is not automatically a feasible short-term saving.
-
-The model should distinguish:
-
-```text
-Financial importance
-        ×
-Controllability
-        ×
-Binding
-        ×
-Action horizon
-        ↓
-Realizable action
-```
-
-Large, low-controllability items can still have high decision priority because escalation may be required.
-
----
-
-## 11. Planned realizable-action measures
-
-After `dim_cost_driver_action` is created and related to `dim_account`, the model can safely add:
-
-```text
-ERP Realiserbar Tiltaksfaktor
-ERP Driver Handlingsstatus
-ERP Driver Teoretisk Tiltak Restår
-ERP Driver Realiserbart Tiltak Restår
-ERP Driver Realiserbart Tiltak Måned
-ERP Realiserbart Tiltak Totalt
-ERP Realiserbart Tiltak Måned Totalt
-ERP Tiltaksgap
-ERP Tiltaksgap %
-ERP Tiltaksdekning %
-ERP Tiltaksdekning Capped %
-ERP Udekket Tiltaksbehov Måned
-ERP Tiltaksstatus
-ERP Tiltaksstatus Color
-ERP Driver Prioritet
-ERP Driver Prioritet Color
-ERP Tiltaksanbefaling
-```
-
-These measures should **not** be added until the mapping dimension exists. This avoids DAX dependencies on nonexistent objects.
-
-Target decision chain:
-
-```text
-Forecast EOY
-   ↓
-Forecast gap
-   ↓
-Required action
-   ↓
-Cost drivers
-   ↓
-Controllability + binding + horizon
-   ↓
-Realizable actions
-   ↓
-Action coverage
-   ↓
-Action gap
-   ↓
-Act now / investigate / plan / monitor / escalate
-```
-
----
-
-## 12. Correlation analysis
-
-Correlation is intended as exploratory driver analysis, not proof of causality.
-
-Current analytical measures include:
-
-```text
-Corr Regnskap vs Budsjett
-Corr Regnskap vs Avvik
-Correlation Strength
-Correlation Direction
-Correlation Observations
-```
-
-Recommended visual pattern:
-
-- Scatter: Budget vs Actual, one point per month
-- Scatter: Actual vs Variance, one point per month
-- Controller cards: correlation coefficient, strength, direction, observations
-
-For account/function contribution analysis, use either:
-
-- cross-sectional analysis at a selected month, where each point is an account/function, or
-- time-series analysis for a selected account/function, where each point is a month.
-
-Do not interpret financial-variable correlation as causal evidence.
-
----
-
-## 13. Suggested report pages
-
-### `00_Control`
-
-Central filter/control page.
-
-Use for global business dimensions while keeping time-grain behavior page-specific.
-
-### `10_Status`
-
-Executive/YTD financial status:
-
-- budget YTD
-- actual YTD
-- variance YTD
-- variance %
-- RAG
-- selected-report context
-
-### `11_Time`
-
-Full-year time reporting:
-
-- year filter
-- all months in selected year
-- actual vs budget by month
-- monthly variance
-- rolling trends
-- historical actual and forecast series
-
-Do not restrict this page with a synchronized single `year_month` selection.
-
-### Deviation / diagnosis / ranking
-
-Use account and KOSTRA views to explain why variance exists and rank major contributors.
-
-### Correlation
-
-Use exploratory scatter analysis and correlation measures to investigate relationships.
-
-### Forecast & Action
-
-Recommended layout:
-
-```text
-Forecast & Action
-Selected year | Selected budget organization
-
-[KPI Actual YTD]
-[KPI Forecast EOY]
-[KPI EOY variance]
-[KPI Monthly action requirement]
-
-[Actual → Forecast → Budget chart]    [EOY budget-consumption gauge]
-
-[Balance / required monthly level]    [Top cost-driver Pareto]
-
-[Top-5 driver table]
-
-[Dynamic action summary]
-```
-
-When governed controllability mapping is added, extend the page with:
-
-- realizable actions
-- action coverage %
-- action gap
-- binding status
-- action horizon
-- escalation requirement
-
----
-
-## 14. Conditional formatting conventions
-
-Use color consistently and keep numeric format independent of color.
-
-Suggested status palette:
-
-```text
-GREEN   #107C10
-YELLOW  #FFB900
-RED     #D13438
-GRAY    #A19F9D
-```
-
-For tables and matrices:
-
-- unfavorable variance: light red
-- favorable variance: light green
-- contribution: data bars
-- priority/action status: separate governed colors
-
-Avoid coloring every metric simply because conditional formatting is available. Color should communicate status or required attention.
-
----
-
-## 15. Power BI context text
-
-Use dynamic context cards to make hidden/synchronized filters visible to the user.
-
-Examples:
-
-```text
-Viser: 2024-08 | Helse og mestring
-```
-
-and on annual pages:
-
-```text
-Viser: 2024 | Helse og mestring
-```
-
-Relevant measures include:
-
-```text
-Selected Report Context
-Selected Status Context
-Selected Time Context
-Selected Forecast Context
-```
-
----
-
-## 16. Validation workflow
-
-Before changing report visuals, validate the pipeline in order:
-
-```text
-Gold build
-   ↓
-Gold reporting build
-   ↓
-Power BI DuckDB build
-   ↓
-DuckDB validation
-   ↓
-Semantic model refresh
-   ↓
-Relationship validation
-   ↓
-Measure validation
-   ↓
-Report validation
-```
-
-For model-file edits:
-
-1. Close Power BI Desktop before direct TMDL changes.
-2. Back up the existing file.
-3. Make small targeted edits.
-4. Preserve table declaration and calculated partition.
-5. Validate that `_Measures.tmdl` starts with `table _Measures`.
-6. Validate the final calculated partition remains present.
-7. Reopen the PBIP and test affected visuals.
-
----
-
-## 17. Development principles
-
-### Transparent logic over opaque recommendations
-
-Forecasts and recommendations should be decomposable into measures and governed assumptions.
-
-### Separate facts from assumptions
-
-Examples of assumptions that belong in mapping/configuration data:
-
-- controllability
-- realizability factor
-- action horizon
-- legal/contract/political binding classification
-- approval requirements
-
-### Do not hardcode governance conclusions in DAX
-
-DAX should evaluate rules. Master data should define the business/governance attributes used by those rules.
-
-### Keep recommendations advisory
-
-Examples:
-
-- `Tiltak nå`
-- `Undersøk`
-- `Planlegg`
-- `Overvåk`
-- `Eskaler`
-
-The report should support decisions, not claim that a cost can legally or operationally be removed solely because it has an unfavorable variance.
-
----
-
-## 18. Next development steps
-
-1. Create `cost_driver_action_mapping` master data.
-2. Load it through the existing data pipeline.
-3. Materialize `dim_cost_driver_action` in the Power BI DuckDB.
-4. Add the relationship to `dim_account` using `account_code`.
-5. Add realizable-action and action-gap DAX measures.
-6. Complete the Forecast & Action page.
-7. Add action-coverage gauge and binding-aware Top-5 table.
-8. Validate filter behavior across organization, account, KOSTRA and year.
-9. Add further operational driver data when available, such as staffing, overtime, temporary labor, absence or activity volumes.
-
----
-
-## 19. Project direction
-
-WF1 is evolving from a conventional budget-vs-actual report into a rule-based controller framework:
-
-```text
-DESCRIPTIVE
-What happened?
-        ↓
-DIAGNOSTIC
-Why did it happen?
-        ↓
-PREDICTIVE
-Where are we heading?
-        ↓
-PRESCRIPTIVE
-What action is required?
-        ↓
-GOVERNED ACTION
-What can realistically be done, when, and under which constraints?
-```
-
-That final layer is particularly important: financial impact alone is not enough. Recommendations should incorporate operational controllability, time horizon, contractual constraints, tariff constraints, legal requirements, political decisions, and documented governance assumptions.
-
----
-
-## 20. Status
-
-The PBIP report/semantic-model structure and supporting Power BI project utilities are present in the current WF1 project status. [^status]
-
-Current development focus:
-
-```text
-Forecasting
-Cost-driver analysis
-Pareto / Top-5 drivers
-Action requirement
-Controllability mapping
-Realizable actions
-Action-gap analysis
-Governance-aware recommendations
-```
-
----
-
-[^status]: Source: `WF1_STATUS_PLUS.txt`, generated project-status extract from the WF1 Power BI project.
+1. Close Power BI Desktop before making direct edits to `.tmdl` or `visual.json` files.
+2. Create a backup of the target file or folder before editing.
+3. Keep table headers (`table _Måltall`) and partition blocks (`partition _Måltall = m`) intact.
+4. Run `powerbi/Get-WF1-PowerBIStatus.ps1` or `powerbi/get_wf1_status_plus.ps1` to verify JSON and TMDL integrity.
+5. Reopen `pbi-rep-project-rapport.pbip` in Power BI Desktop to verify visuals and measures.

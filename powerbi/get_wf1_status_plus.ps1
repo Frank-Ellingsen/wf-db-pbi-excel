@@ -1,11 +1,11 @@
 param(
-    [string]$ProjectRoot = "C:\Users\frank\Desktop\WF1\powerbi"
+    [string]$ProjectRoot = "C:\Users\frank\Desktop\WF1"
 )
 
 $ErrorActionPreference = "Stop"
 
-$SemanticRoot = Join-Path $ProjectRoot "pbi-rep-project.SemanticModel"
-$ReportRoot   = Join-Path $ProjectRoot "pbi-rep-project.Report"
+$SemanticRoot = Join-Path $ProjectRoot "pbi-rep-project-rapport.SemanticModel"
+$ReportRoot   = Join-Path $ProjectRoot "pbi-rep-project-rapport.Report"
 
 $SemanticDefinition = Join-Path $SemanticRoot "definition"
 $ReportDefinition   = Join-Path $ReportRoot "definition"
@@ -168,7 +168,7 @@ Write-Section "_MEASURES"
 $MeasuresFile =
     Join-Path `
         $SemanticDefinition `
-        "tables\_Measures.tmdl"
+        "tables\_Måltall.tmdl"
 
 if (Test-Path $MeasuresFile) {
 
@@ -179,7 +179,7 @@ if (Test-Path $MeasuresFile) {
 }
 else {
 
-    "_Measures.tmdl NOT FOUND" |
+    "_Måltall.tmdl NOT FOUND" |
         Add-Content $OutputFile
 }
 
@@ -192,7 +192,15 @@ Write-Section "CORE TABLE DEFINITIONS"
 
 $CoreTables = @(
 
+    "fact_data.tmdl",
     "dim_date.tmdl",
+    "dim_ansvar.tmdl",
+    "dim_kostra_funksjon.tmdl",
+    "dim_kostra_kontoplan.tmdl",
+    "_Valg_Maltall.tmdl",
+    "Kutt_Hoveddrivere_Pct.tmdl",
+    "Omdisponering_Pct.tmdl",
+    "dim_oppdatering.tmdl",
     "dim_account.tmdl",
     "dim_kostra_function.tmdl",
     "fact_erp_finance.tmdl",
@@ -347,7 +355,7 @@ Write-Section "_MEASURES VISUAL BINDINGS"
 $MeasureHits =
     $VisualFiles |
     Select-String `
-        -Pattern '"Entity"\s*:\s*"_Measures"'
+        -Pattern '"Entity"\s*:\s*"(_Måltall|_Measures)"'
 
 if ($MeasureHits) {
 

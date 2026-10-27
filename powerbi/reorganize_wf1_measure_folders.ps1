@@ -1,10 +1,10 @@
 param(
-    [string]$ProjectRoot = "C:\Users\frank\Desktop\WF1\powerbi"
+    [string]$ProjectRoot = "C:\Users\frank\Desktop\WF1"
 )
 
 $ErrorActionPreference = "Stop"
-$MeasuresFile = Join-Path $ProjectRoot "pbi-rep-project.SemanticModel\definition\tables\_Measures.tmdl"
-if (-not (Test-Path -LiteralPath $MeasuresFile)) { throw "_Measures.tmdl not found: $MeasuresFile" }
+$MeasuresFile = Join-Path $ProjectRoot "pbi-rep-project-rapport.SemanticModel\definition\tables\_Måltall.tmdl"
+if (-not (Test-Path -LiteralPath $MeasuresFile)) { throw "_Måltall.tmdl not found: $MeasuresFile" }
 
 $stamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $backup = "$MeasuresFile.$stamp.bak"

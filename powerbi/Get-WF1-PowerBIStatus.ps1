@@ -1,5 +1,5 @@
 param(
-    [string]$ProjectRoot = "C:\Users\frank\Desktop\WF1\powerbi\WF1_Controller"
+    [string]$ProjectRoot = "C:\Users\frank\Desktop\WF1"
 )
 
 $ErrorActionPreference = "Stop"
@@ -472,7 +472,7 @@ if ($ModelFolder) {
         -Recurse `
         -File |
         Select-String `
-            -Pattern "dim_date|reporting_date|dateTable"
+            -Pattern "dim_date|Dato|reporting_date|dateTable"
 
 
     if ($DateMatches) {

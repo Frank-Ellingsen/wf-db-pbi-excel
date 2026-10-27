@@ -1,30 +1,31 @@
 param(
-    [string]$ProjectRoot = "C:\Users\frank\Desktop\WF1\powerbi"
+    [string]$ProjectRoot = "C:\Users\frank\Desktop\WF1",
+    [string]$TargetPageDisplayName = "01. Hovedrapport"
 )
 
 $ErrorActionPreference = "Stop"
 
-$ReportRoot = Join-Path $ProjectRoot "pbi-rep-project.Report"
+$ReportRoot = Join-Path $ProjectRoot "pbi-rep-project-rapport.Report"
 $PagesRoot  = Join-Path $ReportRoot "definition\pages"
 
 if (-not (Test-Path -LiteralPath $PagesRoot)) {
     throw "Pages folder not found: $PagesRoot"
 }
 
-# Find 00_Control by displayName
+# Find target page by displayName
 $ControlPage = $null
 foreach ($dir in @(Get-ChildItem -LiteralPath $PagesRoot -Directory)) {
     $pageFile = Join-Path $dir.FullName "page.json"
     if (-not (Test-Path -LiteralPath $pageFile)) { continue }
     $page = Get-Content -LiteralPath $pageFile -Raw | ConvertFrom-Json
-    if ($page.displayName -eq "00_Control") {
+    if ($page.displayName -eq $TargetPageDisplayName) {
         $ControlPage = $dir.FullName
         break
     }
 }
 
 if (-not $ControlPage) {
-    throw "00_Control page not found."
+    throw "$TargetPageDisplayName page not found."
 }
 
 $VisualRoot = Join-Path $ControlPage "visuals"
